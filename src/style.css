@@ -35,15 +35,63 @@ main .charactersList {
 } */
 
 /*Text Style Characters List*/
-main .charactersList .item {
+section .charactersList .item {
 	padding: 16px;
 	border-bottom: 1px solid #CCC;
 }
-main .charactersList .item:last-of-type {
+section .charactersList .item:last-of-type {
 	border-bottom: none;
 }
-main .charactersList .item:hover {
+section .charactersList .item:hover {
 	background: rgba(0, 0, 0, 0.05);
+}
+
+/*OVERLAY*/
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay.activo {
+    display: flex;
+}
+
+.overlay img {
+    max-width: 100%;
+}
+
+.overlay .description {
+    display: block;
+    background: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 5px;
+    border-radius: 1opx;
+    max-width: 50%;
+}
+
+.overlayList {
+    position: relative;
+}
+
+.overlay #btn-cerrar-popup {
+    background: none;
+    font-size: 20px;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: -20px;
+    top: -20px;
 }
 
 /*PAGINATION*/
@@ -82,3 +130,54 @@ main .charactersList .item:hover {
 	background-color: #44EEAA;
 	box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2);
 } 
+
+/*footer*/
+
+footer .redes-sociales {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+footer .redes-sociales a{
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: #000;
+    color: #FFF;
+    margin: 20px;
+    text-align: center;
+    border-radius: 100px;
+    transition: .3s ease all;
+}
+
+footer .redes-sociales .github {background: black;}
+footer .redes-sociales .facebook {background: #3B5998;}
+footer .redes-sociales .instagram {background: #c13584;}
+
+footer .redes-sociales a i {
+    font-size: 20px;
+    line-height: 60px;
+}
+
+footer .contenedor-icono:hover a {
+    animation: icono .5s ease;
+}
+
+@keyframes icono {
+    from {
+        transform: rotate3d(0,0,0,0);
+    }
+    to {
+        transform: rotate3d(0,1,0,360deg);
+    }
+}
+
+footer .creado-por {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: blue;
+}
