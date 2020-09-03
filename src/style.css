@@ -1,183 +1,301 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: sans-serif;
-}
 
+/*-----Univeral-----*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*-----Body------*/
 body {
-	background: #F3F3F3;
+    background-image: url('https://user-images.githubusercontent.com/55853256/91184100-daa3f700-e6b1-11ea-96b2-62bb82ed786e.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 header {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 60px;
-	background-color: #EEE;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background-color: rgba(11, 17, 17, 0.8);
+    /* background-color:rgba(17, 49, 57, 0.8); */
 }
 
-.main {
-    display: flex;
-    align-items: center;
-}
+/*-----Container-----*/
+/* .container {
+    width: 100%;
+    margin: auto; */
 
-main .charactersList {
-	width: 100%;
-	background-color: #FFF;
-	border: 1px solid #CCC;
-	margin-top: 25px;
-}
-
-/* .characterName {
-    color: rebeccapurple;
+/*-----Header-----*/
+/* header {
+    width: 100%;
+    height: 70px;
 } */
 
-/*Text Style Characters List*/
-section .charactersList .item {
-	padding: 16px;
-	border-bottom: 1px solid #CCC;
-}
-section .charactersList .item:last-of-type {
-	border-bottom: none;
-}
-section .charactersList .item:hover {
-	background: rgba(0, 0, 0, 0.05);
+/* header nav {
+   height: 100px;
+   display: flex;
+   background-color: rgba(11, 12, 12, 0.8);
+   
+} */
+/* oculto para responsive */
+
+nav img {
+    padding: 15px;
 }
 
-/*OVERLAY*/
-.overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.9);
-    width: 100%;
-    height: 100vh;
-    display: none;
-    align-items: center;
-    justify-content: center;
+div { 
+    color:  #fafbfc;
 }
 
-.overlay.activo {
+.flex-container {
     display: flex;
-}
-
-.overlay img {
-    max-width: 100%;
-}
-
-.overlay .description {
-    display: block;
-    background: white;
-    padding: 20px;
-    text-align: center;
-    margin-top: 5px;
-    border-radius: 1opx;
-    max-width: 50%;
-}
-
-.overlayList {
-    position: relative;
-}
-
-.overlay #btn-cerrar-popup {
-    background: none;
-    font-size: 20px;
-    color: #FFF;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    right: -20px;
-    top: -20px;
-}
-
-/*PAGINATION*/
-.pagination {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-}
-
-.pagination button {
-	width: 50px;
-	height: 50px;
-
-	appearance: none;
-	border: none;
-	outline: none;
-	cursor: pointer;
-
-	background-color: #44AAEE;
-
-	margin: 5px;
-	transition: 0.4s;
-
-	color: #FFF;
-	font-size: 18px;
-	text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
-	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
-}
-
-.pagination button:hover {
-	background-color: #44EEAA;
-}
-
-.pagination button.active {
-	background-color: #44EEAA;
-	box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2);
-} 
-
-/*footer*/
-
-footer .redes-sociales {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
     flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(11, 12, 12, 0.3);
+    padding: 50px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 0.05em;
 }
 
-footer .redes-sociales a{
+.characterName {
+    font-family:'Open Sans', sans-serif;
+}
+
+.buttonsContainer {
+    padding-top: 40px;
+    padding-right: 100px;
+    padding-bottom: 140px;
+    padding-left: 100px;
+    background-color: rgba(11, 12, 12, 0.3);
+    align-items: center;
+}
+
+.buttonsContainer button {
+    margin: 5px;
+    padding: 15px;
+    cursor: pointer;
+    /* font-family: 'Patrick Hand SC', cursive; */
+    font-size: 16px;
+    font-weight: bold;
+    color:black;
+    background-color: #3fbec4;
+    letter-spacing: 0.10em;
+    border: none;
+    width: 50px;
+    outline: none;
+}
+
+.buttonsContainer button:hover {
+    background-color: white;
+    color: #072C44;
+    border-bottom: 4px solid #072C44;
+}
+
+#listCharacters img{
+    width: 200px;
+    border-radius: 50%;
+    margin: 25px;
+}
+
+p {
+    margin-top: 10px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    text-align: center;
+}
+
+h3 {
+    margin-top: 0px;
+    margin-right: 25px;
+    margin-bottom: 0px;
+    margin-left: 25px;
+    text-align: center;
+    color:yellow;
+}
+
+#listCharacters div {
+    width: 250px;
+    background-color: rgba(11, 12, 12, 0.75);
+    margin: 25px;
+    list-style-type: none;
+    font-family:'Open Sans', sans-serif;
+    letter-spacing: 0.05em;
+    
+}
+
+/* #listCharacters {
+    opacity: 0;
+}
+
+.imgLoaded {
+    opacity: 1;
+} */
+
+/* .hide {
+    display: none;
+} */
+
+/* 
+header form {
+    display: flex;
+    justify-content: center;
+} */
+
+/* header .search-bar {
+    width: 70%;
+    height: 42px;
+    line-height: 40px;
+    background: white;
+    padding: 0 20px;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+} */
+
+/* .more-icon a {
+    padding-right: 24px;
+} */
+
+/* 
+.sort-icon {
+    display: flex;
+    height: 100%;
+    width: 30%;
+    justify-content: space-around;
+    align-items: center;
+} */
+
+
+.center {
+    opacity: 0;
+    transition: opacity 0.5s linear 1s;
+}
+
+.images-loaded {
+    opacity: 1;
+}
+
+
+
+
+/* Responsive menu mobile */
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.topnav {
+    overflow: hidden;
+    font-family: 'Patrick Hand SC', cursive;
+}
+  
+  .topnav a {
+    float: left;
     display: block;
-    width: 60px;
-    height: 60px;
-    background: #000;
-    color: #FFF;
-    margin: 20px;
+    color: #f2f2f2;
     text-align: center;
-    border-radius: 100px;
-    transition: .3s ease all;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  header .topnav a.active {
+    color: #072C44;
+    background-color: #eee;
 }
 
-footer .redes-sociales .github {background: black;}
-footer .redes-sociales .facebook {background: #3B5998;}
-footer .redes-sociales .instagram {background: #c13584;}
-
-footer .redes-sociales a i {
-    font-size: 20px;
-    line-height: 60px;
+header .dropdown .dropdown-content a.active {
+    color: #072C44;
+    background-color: #eee;
 }
 
-footer .contenedor-icono:hover a {
-    animation: icono .5s ease;
+.topnav .icon {
+    display: none;
 }
-
-@keyframes icono {
-    from {
-        transform: rotate3d(0,0,0,0);
+  
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+  
+.dropdown .dropbtn {
+    font-size: 18px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    overflow: auto;
+    width: 200px;
+    height: 150px;
+}
+  
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #072C44;
+    color: white;
+}
+  
+.dropdown-content a:hover {
+    background-color:#072C44;
+    color: white;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+        display: none;
     }
-    to {
-        transform: rotate3d(0,1,0,360deg);
+
+    .topnav a.icon {
+        float: right;
+        display: block;
     }
 }
+  
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
 
-footer .creado-por {
-    margin-bottom: 40px;
-    text-align: center;
-    font-size: 14px;
-    color: blue;
 }
