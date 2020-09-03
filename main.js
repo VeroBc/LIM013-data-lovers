@@ -1,6 +1,3 @@
- 
-import {filterStatus, filterSpecies, filterGender, order } from './data.js'
-
 import data from './data/rickandmorty/rickandmorty.js';
 
 const allCharacters = data.results;
