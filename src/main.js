@@ -1,23 +1,218 @@
+import { filterStatus, filterSpecies, filterGender, order } from './data.js'
 import data from './data/rickandmorty/rickandmorty.js';
 
 const allCharacters = data.results;
 
+const listCharactersElement = document.getElementById("listCharacters");
+const paginationElement = document.getElementById('pagination');
 
-const getListAllCharacters = () => {
+let currentPage = 1;
+let rows = 20;
+
+/*----------GENERAL FUNCTION TO DIPSLAY CHARACTERS----------*/
+function displayList(characters, wrapper, rowsPerPage, page) {
+    wrapper.innerHTML = "";
+    page--;
+
+    let start = rowsPerPage * page;
+    let end = start + rowsPerPage;
+    let paginatedCharacters = characters.slice(start, end);
+
+    for (let i = 0; i < paginatedCharacters.length; i++) {
+        let character = paginatedCharacters[i];
+
+        let characterElement = document.createElement('div');
+        characterElement.classList.add('character');
+        characterElement.innerHTML = `<div class="card-character"
+        data-name="${character.name}"
+        data-status="${character.status}"
+        data-gender="${character.gender}"
+        data-species="${character.species}"
+        >
+        <img src="${character.image}" alt="${character.name}">
+        <h2>${character.name}</h2>
+        </div>`
+
+        wrapper.appendChild(characterElement);
+
+        /*----------OVERLAY----------*/
+        const overlay = document.getElementById('overlay');
+        document.querySelectorAll('.listCharacters .character img').forEach((element) => {
+            element.addEventListener('click', () => {
+                const path = element.getAttribute('src');
+                const nameDescription = element.parentNode.dataset.name;
+                const specieDescription = element.parentNode.dataset.species;
+                const genderDescription = element.parentNode.dataset.gender;
+                const statusDescription = element.parentNode.dataset.status;
+
+                overlay.classList.add('active');
+                document.querySelector('#overlay img').src = path;
+                document.querySelector('#overlay .description').innerHTML = `<div>
+                <div class="character-name">${nameDescription}</div>
+                <div>Status: ${statusDescription}</div>
+                <div>Gender: ${genderDescription}</div>
+                <div>Specie: ${specieDescription}</div>
+                </div>`;
+            });
+        });
+
+        document.querySelector('#btn-close').addEventListener('click', () => {
+            overlay.classList.remove('active');
+        });
+
+        overlay.addEventListener('click', (event) => {
+            event.target.id === 'overlay' ? overlay.classList.remove('active') : "";
+        })
+    }
+}
+/*----------PAGINATION----------*/
+function setUpPagination(characters, wrapper, rowsPerPage) {
+    wrapper.innerHTML = "";
+
+    let pageCount = Math.ceil(characters.length / rowsPerPage);
+
+    for (let i = 1; i < pageCount + 1; i++) {
+        let btn = paginationButton(i, characters);
+        wrapper.appendChild(btn);
+    }
+}
+
+function paginationButton(page, characters) {
+    let button = document.createElement('button');
+    button.innerText = page;
+
+    if (currentPage == page) button.classList.add('active');
     
+    /*------------ACTIVE PAGE BUTTON------------*/
+    button.addEventListener('click', function () {
+        currentPage = page;
+        displayList(characters, listCharactersElement, rows, currentPage);
+
+        let currentBtn = document.querySelector(".pagination button.active");
+        currentBtn.classList.remove('active');
+
+        button.classList.add('active');
+    });
+
+    return button;
+}
+
+displayList(allCharacters, listCharactersElement, rows, currentPage);
+setUpPagination(allCharacters, paginationElement, rows);
+
+// // GENERAL DISPLAYED CHARACTERS FUNCTION
+// function drawResults(arrayData) {
+
+//     const buttonsContainer = document.getElementById("buttonsContainer");
+//     buttonsContainer.innerHTML = "";
+
+//     let page = [];
+//     page = arrayData.slice(0, 20);
+
+//     const elementOrderedList = document.getElementById('listCharacters');
+//     elementOrderedList.innerHTML = "";
+
+//     for (let i = 0; i < page.length; i++) {
+
+//         const result = page[i];
+//         const characterElement = document.createElement("div");
+//         characterElement.classList.add("character");
+//         characterElement.innerHTML = `<div class="card-character"
+//         data-name="${result.name}"
+//         data-status="${result.status}"
+//         data-gender="${result.gender}"
+//         data-species="${result.species}"
+//         >
+//         <img src="${result.image}" alt="${result.name}">
+//         <h2>${result.name}</h2>
+//         </div>`
+
+//         elementOrderedList.appendChild(characterElement);
+
+//                 // OVERLAY
+//                 const overlay = document.getElementById('overlay');
+//                 document.querySelectorAll('.listCharacters .character img').forEach((element) => {
+//                     element.addEventListener('click', () => {
+//                         const path = element.getAttribute('src');
+//                         const nameDescription = element.parentNode.dataset.name;
+//                         const specieDescription = element.parentNode.dataset.species;
+//                         const genderDescription = element.parentNode.dataset.gender;
+//                         const statusDescription = element.parentNode.dataset.status;
+        
+//                         overlay.classList.add('active');
+//                         document.querySelector('#overlay img').src = path;
+//                         document.querySelector('#overlay .description').innerHTML = `<div>
+//                                 <div class="character-name">${nameDescription}</div>
+//                                 <div>Status: ${statusDescription}</div>
+//                                 <div>Gender: ${genderDescription}</div>
+//                                 <div>Specie: ${specieDescription}</div>
+//                                 </div>`;
+//                     });
+//                 });
+        
+//                 document.querySelector('#btn-close').addEventListener('click', () => {
+//                     overlay.classList.remove('active');
+//                 });
+        
+//                 overlay.addEventListener('click', (event) => {
+//                     event.target.id === 'overlay' ? overlay.classList.remove('active') : "";
+//                 })
+//     }
+
+//     for (let i = 0; i < arrayData.length; i = i + 20) {
+
+//         const button = document.createElement("button");
+//         const buttonText = document.createTextNode(parseInt(i / 20) + 1);
+//         button.appendChild(buttonText);
+//         buttonsContainer.appendChild(button);
+
+//         function getPageCharacters() {
+
+//             button.addEventListener('click', function () {
+
+//                 let page = [];
+//                 page = arrayData.slice(i, i + 20);
+
+//                 const result = page[i];
+//                 const characterElement = document.createElement("div");
+//                 characterElement.classList.add("character");
+//                 characterElement.innerHTML = `<div class="card-character"
+//                 data-name="${result.name}"
+//                 data-status="${result.status}"
+//                 data-gender="${result.gender}"
+//                 data-species="${result.species}"
+//                 >
+//                 <img src="${result.image}" alt="${result.name}">
+//                 <h2>${result.name}</h2>
+//                 </div>`
+        
+//                 elementOrderedList.appendChild(characterElement);
+        
+//           
+//             });
+//         }
+//         getPageCharacters();
+//     }
+// }
+
+
+
+// FILTERS
+const getListAllCharacters = () => {
+
     drawResults(allCharacters);
- 
+
 }
 document.querySelector('#all').addEventListener('click', getListAllCharacters);
 
 
 const getListSpeciesHuman = () => {
-    
+
     let speciesHuman = [];
     speciesHuman = filterSpecies.human(allCharacters);
 
     drawResults(speciesHuman);
-    
+
 }
 document.querySelector('#human').addEventListener('click', getListSpeciesHuman);
 
@@ -28,7 +223,7 @@ const getListSpeciesAlien = () => {
     let speciesAlien = [];
     speciesAlien = filterSpecies.alien(allCharacters);
     drawResults(speciesAlien);
-    
+
 }
 document.querySelector('#alien').addEventListener('click', getListSpeciesAlien);
 
@@ -39,7 +234,7 @@ const getListSpeciesHumanoid = () => {
     let speciesHumanoid = [];
     speciesHumanoid = filterSpecies.humanoid(allCharacters);
     drawResults(speciesHumanoid);
-    
+
 }
 document.querySelector('#humanoid').addEventListener('click', getListSpeciesHumanoid);
 
@@ -49,7 +244,7 @@ const getListSpeciesAnimal = () => {
     let specieAnimal = [];
     specieAnimal = filterSpecies.animal(allCharacters);
     drawResults(specieAnimal);
-    
+
 }
 document.querySelector('#animal').addEventListener('click', getListSpeciesAnimal);
 
@@ -60,7 +255,7 @@ const getListSpeciesMytholog = () => {
     let specieMytholog = [];
     specieMytholog = filterSpecies.mytholog(allCharacters);
     drawResults(specieMytholog);
-    
+
 }
 document.querySelector('#mytholog').addEventListener('click', getListSpeciesMytholog);
 
@@ -71,7 +266,7 @@ const getListSpeciesRobot = () => {
     let specieRobot = [];
     specieRobot = filterSpecies.robot(allCharacters);
     drawResults(specieRobot);
-    
+
 }
 document.querySelector('#robot').addEventListener('click', getListSpeciesRobot);
 
@@ -82,7 +277,7 @@ const getListSpeciesUnknown = () => {
     let specieUnknown = [];
     specieUnknown = filterSpecies.unknown(allCharacters);
     drawResults(specieUnknown);
-    
+
 }
 document.querySelector('#unknownSpecie').addEventListener('click', getListSpeciesUnknown);
 
@@ -92,7 +287,7 @@ const getListSpeciesCronenberg = () => {
     let specieCronenberg = [];
     specieCronenberg = filterSpecies.cronenberg(allCharacters);
     drawResults(specieCronenberg);
-    
+
 }
 document.querySelector('#cronenberg').addEventListener('click', getListSpeciesCronenberg);
 
@@ -102,7 +297,7 @@ const getListSpeciesPoopybutthole = () => {
     let speciePoopybutthole = [];
     speciePoopybutthole = filterSpecies.poopybutthole(allCharacters);
     drawResults(speciePoopybutthole);
-    
+
 }
 document.querySelector('#poopybutthole').addEventListener('click', getListSpeciesPoopybutthole);
 
@@ -112,7 +307,7 @@ const getListSpeciesDisease = () => {
     let specieDisease = [];
     specieDisease = filterSpecies.disease(allCharacters);
     drawResults(specieDisease);
-    
+
 }
 document.querySelector('#disease').addEventListener('click', getListSpeciesDisease);
 
@@ -123,17 +318,17 @@ const getListStatusAlive = () => {
     let statusAlive = [];
     statusAlive = filterStatus.alive(allCharacters);
     drawResults(statusAlive);
-    
+
 }
 document.querySelector('#alive').addEventListener('click', getListStatusAlive);
 
 
-const getListStatusDead = () => {  
+const getListStatusDead = () => {
 
     let statusDead = [];
     statusDead = filterStatus.dead(allCharacters);
     drawResults(statusDead);
-    
+
 }
 document.querySelector('#dead').addEventListener('click', getListStatusDead);
 
@@ -143,7 +338,7 @@ const getListStatusUnknown = () => {
     let statusUnknown = [];
     statusUnknown = filterStatus.unknown(allCharacters);
     drawResults(statusUnknown);
-    
+
 }
 document.querySelector('#unknown').addEventListener('click', getListStatusUnknown);
 
@@ -153,7 +348,7 @@ const getListGenderMale = () => {
     let genderMale = [];
     genderMale = filterGender.male(allCharacters);
     drawResults(genderMale);
-    
+
 }
 document.querySelector('#male').addEventListener('click', getListGenderMale);
 
@@ -163,7 +358,7 @@ const getListGenderFemale = () => {
     let genderFemale = [];
     genderFemale = filterGender.female(allCharacters);
     drawResults(genderFemale);
-    
+
 }
 document.querySelector('#female').addEventListener('click', getListGenderFemale);
 
@@ -173,7 +368,7 @@ const getListGenderGenderless = () => {
     let genderGenderless = [];
     genderGenderless = filterGender.genderless(allCharacters);
     drawResults(genderGenderless);
-    
+
 }
 document.querySelector('#genderless').addEventListener('click', getListGenderGenderless);
 
@@ -183,7 +378,7 @@ const getListGenderUnknown = () => {
     let genderUnknown = [];
     genderUnknown = filterGender.unknown(allCharacters);
     drawResults(genderUnknown);
-    
+
 }
 document.querySelector('#unknownGender').addEventListener('click', getListGenderUnknown);
 
@@ -193,7 +388,7 @@ const getListAtoZ = () => {
     let sortedAscending = [];
     sortedAscending = order.ascending(allCharacters);
     drawResults(sortedAscending);
-    
+
 }
 document.querySelector('#orderAtoZ').addEventListener('click', getListAtoZ);
 
@@ -203,7 +398,7 @@ const getListZtoA = () => {
     let sortedDescending = [];
     sortedDescending = order.descending(allCharacters);
     drawResults(sortedDescending);
-    
+
 }
 document.querySelector('#orderZtoA').addEventListener('click', getListZtoA);
 
@@ -362,76 +557,14 @@ window.addEventListener('load', () => {
 
 })
 
-
-
-function drawResults(arrayData){
-
-    const buttonsContainer = document.getElementById("buttonsContainer");
-    buttonsContainer.innerHTML = "";
-
-    let page = [];
-    page = arrayData.slice(0, 20);
-
-    const elementOrderedList = document.getElementById('listCharacters');
-    elementOrderedList.innerHTML = "";
-
-    for (let i=0; i < page.length; i++) {
-
-        const result = page[i];
-        const elementLi = document.createElement("div"); 
-
-        elementLi.innerHTML = `<img src="${result.image}" alt="${result.name}">
-        <h3>${result.name}</h3>
-        <p>${result.species}</p>`;
-
-        elementOrderedList.appendChild(elementLi);
-    }
-
-    for (let i=0; i < arrayData.length; i=i+20 ){
-
-        const button = document.createElement("button");
-        const buttonText = document.createTextNode(parseInt(i / 20) + 1);
-        button.appendChild(buttonText);
-        buttonsContainer.appendChild(button);
-
-        function getPageCharacters(){
-            
-            button.addEventListener('click', function() {
-
-            let page = [];
-            page = arrayData.slice(i, i+20);
-
-            const elementOrderedList = document.getElementById('listCharacters');
-            elementOrderedList.innerHTML = "";
-
-            for (let i=0; i < page.length; i++) {
-
-                const result = page[i]; 
-                const elementLi = document.createElement("div"); 
-
-                elementLi.innerHTML = `<img src="${result.image}" alt="${result.name}">
-                <h3>${result.name}</h3>
-                <p>${result.species}</p>`;
-
-                elementOrderedList.appendChild(elementLi);
-
-            }
-                console.log(i);
-            })
-        }
-        getPageCharacters();
-    }
-}
-
-
-
 function clickHambMenu() {
     let menuBar = document.getElementById("myTopnav");
     if (menuBar.className === "topnav") {
-      menuBar.className += " responsive";
+        menuBar.className += " responsive";
     } else {
-     menuBar.className = "topnav";
+        menuBar.className = "topnav";
     }
-  }
-  
+}
+
 document.querySelector('#iconMenu').addEventListener('click', clickHambMenu);
+
