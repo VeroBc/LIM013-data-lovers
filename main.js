@@ -3,90 +3,76 @@ import data from './data/rickandmorty/rickandmorty.js';
 
 const allCharacters = data.results;
 
-const listCharactersElement = document.getElementById("listCharacters");
-const paginationElement = document.getElementById('pagination');
-
+const elementOrderedList = document.getElementById('listCharacters')
+const buttonsContainer = document.getElementById('buttonsContainer');
+// 
 let currentPage = 1;
 let rows = 20;
 
 /*----------GENERAL FUNCTION TO DIPSLAY CHARACTERS----------*/
-function displayList(characters, wrapper, rowsPerPage, page) {
-    wrapper.innerHTML = "";
+function displayList(arrayData, rowsPerPage, page) {
+    elementOrderedList.innerHTML = "";
     page--;
-
+    // 
     let start = rowsPerPage * page;
     let end = start + rowsPerPage;
-    let paginatedCharacters = characters.slice(start, end);
+    let paginatedCharacters = arrayData.slice(start, end);
 
     for (let i = 0; i < paginatedCharacters.length; i++) {
-        let character = paginatedCharacters[i];
+        // 
+        let result = paginatedCharacters[i];
 
-        let characterElement = document.createElement('div');
-        characterElement.classList.add('character');
-        characterElement.innerHTML = `<div class="card-character"
-        data-name="${character.name}"
-        data-status="${character.status}"
-        data-gender="${character.gender}"
-        data-species="${character.species}"
+        let liElement = document.createElement('div');
+        liElement.classList.add('character');
+        liElement.innerHTML = `<div class="card-character"
+        data-name="${result.name}"
+        data-status="${result.status}"
+        data-gender="${result.gender}"
+        data-species="${result.species}"
         >
-        <img src="${character.image}" alt="${character.name}">
-        <h2>${character.name}</h2>
+        <img src="${result.image}" alt="${result.name}">
+        <h2>${result.name}</h2>
         </div>`
 
-        wrapper.appendChild(characterElement);
+        elementOrderedList.appendChild(liElement);
 
-        /*----------OVERLAY----------*/
-        const overlay = document.getElementById('overlay');
-        document.querySelectorAll('.listCharacters .character img').forEach((element) => {
-            element.addEventListener('click', () => {
-                const path = element.getAttribute('src');
-                const nameDescription = element.parentNode.dataset.name;
-                const specieDescription = element.parentNode.dataset.species;
-                const genderDescription = element.parentNode.dataset.gender;
-                const statusDescription = element.parentNode.dataset.status;
-
-                overlay.classList.add('active');
-                document.querySelector('#overlay img').src = path;
-                document.querySelector('#overlay .description').innerHTML = `<div>
-                <div class="character-name">${nameDescription}</div>
-                <div>Status: ${statusDescription}</div>
-                <div>Gender: ${genderDescription}</div>
-                <div>Specie: ${specieDescription}</div>
-                </div>`;
-            });
-        });
-
-        document.querySelector('#btn-close').addEventListener('click', () => {
-            overlay.classList.remove('active');
-        });
-
-        overlay.addEventListener('click', (event) => {
-            event.target.id === 'overlay' ? overlay.classList.remove('active') : "";
-        })
+        
     }
 }
-/*----------PAGINATION----------*/
-function setUpPagination(characters, wrapper, rowsPerPage) {
-    wrapper.innerHTML = "";
 
-    let pageCount = Math.ceil(characters.length / rowsPerPage);
+/*----------PAGINATION----------*/
+function setUpPagination(arrayData, rowsPerPage) {
+    buttonsContainer.innerHTML = "";
+
+    let pageCount = Math.ceil(arrayData.length / rowsPerPage);
 
     for (let i = 1; i < pageCount + 1; i++) {
-        let btn = paginationButton(i, characters);
-        wrapper.appendChild(btn);
+        let btn = paginationButton(i, arrayData);
+        buttonsContainer.appendChild(btn);
     }
 }
 
-function paginationButton(page, characters) {
+displayList(allCharacters, rows, currentPage);
+setUpPagination(allCharacters, rows);
+
+
+
+
+
+
+
+
+/*------------ACTIVE PAGE BUTTON------------*/
+function paginationButton(page, arrayData) {
     let button = document.createElement('button');
     button.innerText = page;
 
     if (currentPage == page) button.classList.add('active');
-    
-    /*------------ACTIVE PAGE BUTTON------------*/
+
+
     button.addEventListener('click', function () {
         currentPage = page;
-        displayList(characters, listCharactersElement, rows, currentPage);
+        displayList(arrayData, rows, currentPage);
 
         let currentBtn = document.querySelector(".pagination button.active");
         currentBtn.classList.remove('active');
@@ -97,8 +83,38 @@ function paginationButton(page, characters) {
     return button;
 }
 
-displayList(allCharacters, listCharactersElement, rows, currentPage);
-setUpPagination(allCharacters, paginationElement, rows);
+
+
+/*----------OVERLAY----------*/
+const overlay = document.getElementById('overlay');
+document.querySelectorAll('.listCharacters .character img').forEach((element) => {
+    element.addEventListener('click', () => {
+        const path = element.getAttribute('src');
+        const nameDescription = element.parentNode.dataset.name;
+        const specieDescription = element.parentNode.dataset.species;
+        const genderDescription = element.parentNode.dataset.gender;
+        const statusDescription = element.parentNode.dataset.status;
+
+        overlay.classList.add('active');
+        document.querySelector('#overlay img').src = path;
+        document.querySelector('#overlay .description').innerHTML = `<div>
+                <div class="character-name">${nameDescription}</div>
+                <div>Status: ${statusDescription}</div>
+                <div>Gender: ${genderDescription}</div>
+                <div>Specie: ${specieDescription}</div>
+                </div>`;
+    });
+});
+
+document.querySelector('#btn-close').addEventListener('click', () => {
+    overlay.classList.remove('active');
+});
+
+overlay.addEventListener('click', (event) => {
+    event.target.id === 'overlay' ? overlay.classList.remove('active') : "";
+})
+
+
 
 // // GENERAL DISPLAYED CHARACTERS FUNCTION
 // function drawResults(arrayData) {
@@ -115,9 +131,9 @@ setUpPagination(allCharacters, paginationElement, rows);
 //     for (let i = 0; i < page.length; i++) {
 
 //         const result = page[i];
-//         const characterElement = document.createElement("div");
-//         characterElement.classList.add("character");
-//         characterElement.innerHTML = `<div class="card-character"
+//         const liElement = document.createElement("div");
+//         liElement.classList.add("character");
+//         liElement.innerHTML = `<div class="card-character"
 //         data-name="${result.name}"
 //         data-status="${result.status}"
 //         data-gender="${result.gender}"
@@ -127,36 +143,7 @@ setUpPagination(allCharacters, paginationElement, rows);
 //         <h2>${result.name}</h2>
 //         </div>`
 
-//         elementOrderedList.appendChild(characterElement);
-
-//                 // OVERLAY
-//                 const overlay = document.getElementById('overlay');
-//                 document.querySelectorAll('.listCharacters .character img').forEach((element) => {
-//                     element.addEventListener('click', () => {
-//                         const path = element.getAttribute('src');
-//                         const nameDescription = element.parentNode.dataset.name;
-//                         const specieDescription = element.parentNode.dataset.species;
-//                         const genderDescription = element.parentNode.dataset.gender;
-//                         const statusDescription = element.parentNode.dataset.status;
-        
-//                         overlay.classList.add('active');
-//                         document.querySelector('#overlay img').src = path;
-//                         document.querySelector('#overlay .description').innerHTML = `<div>
-//                                 <div class="character-name">${nameDescription}</div>
-//                                 <div>Status: ${statusDescription}</div>
-//                                 <div>Gender: ${genderDescription}</div>
-//                                 <div>Specie: ${specieDescription}</div>
-//                                 </div>`;
-//                     });
-//                 });
-        
-//                 document.querySelector('#btn-close').addEventListener('click', () => {
-//                     overlay.classList.remove('active');
-//                 });
-        
-//                 overlay.addEventListener('click', (event) => {
-//                     event.target.id === 'overlay' ? overlay.classList.remove('active') : "";
-//                 })
+//         elementOrderedList.appendChild(liElement);
 //     }
 
 //     for (let i = 0; i < arrayData.length; i = i + 20) {
@@ -185,10 +172,10 @@ setUpPagination(allCharacters, paginationElement, rows);
 //                 <img src="${result.image}" alt="${result.name}">
 //                 <h2>${result.name}</h2>
 //                 </div>`
-        
+
 //                 elementOrderedList.appendChild(characterElement);
-        
-//           
+
+
 //             });
 //         }
 //         getPageCharacters();
@@ -196,11 +183,13 @@ setUpPagination(allCharacters, paginationElement, rows);
 // }
 
 
-
 // FILTERS
+
 const getListAllCharacters = () => {
 
-    drawResults(allCharacters);
+    //     drawResults(allCharacters);
+    displayList(allCharacters, rows, currentPage);
+    setUpPagination(allCharacters, rows);
 
 }
 document.querySelector('#all').addEventListener('click', getListAllCharacters);
@@ -211,8 +200,9 @@ const getListSpeciesHuman = () => {
     let speciesHuman = [];
     speciesHuman = filterSpecies.human(allCharacters);
 
-    drawResults(speciesHuman);
-
+    // drawResults(speciesHuman);
+    displayList(speciesHuman, rows, currentPage);
+    setUpPagination(speciesHuman, rows);
 }
 document.querySelector('#human').addEventListener('click', getListSpeciesHuman);
 
@@ -222,8 +212,9 @@ const getListSpeciesAlien = () => {
 
     let speciesAlien = [];
     speciesAlien = filterSpecies.alien(allCharacters);
-    drawResults(speciesAlien);
-
+    // drawResults(speciesAlien);
+    displayList(speciesAlien, rows, currentPage);
+    setUpPagination(speciesAlien, rows);
 }
 document.querySelector('#alien').addEventListener('click', getListSpeciesAlien);
 
@@ -233,7 +224,9 @@ const getListSpeciesHumanoid = () => {
 
     let speciesHumanoid = [];
     speciesHumanoid = filterSpecies.humanoid(allCharacters);
-    drawResults(speciesHumanoid);
+    // drawResults(speciesHumanoid);
+    displayList(speciesHumanoid, rows, currentPage);
+    setUpPagination(speciesHumanoid, rows);
 
 }
 document.querySelector('#humanoid').addEventListener('click', getListSpeciesHumanoid);
@@ -243,7 +236,9 @@ const getListSpeciesAnimal = () => {
 
     let specieAnimal = [];
     specieAnimal = filterSpecies.animal(allCharacters);
-    drawResults(specieAnimal);
+    // drawResults(specieAnimal);
+    displayList(specieAnimal, rows, currentPage);
+    setUpPagination(specieAnimal, rows);
 
 }
 document.querySelector('#animal').addEventListener('click', getListSpeciesAnimal);
@@ -254,7 +249,9 @@ const getListSpeciesMytholog = () => {
 
     let specieMytholog = [];
     specieMytholog = filterSpecies.mytholog(allCharacters);
-    drawResults(specieMytholog);
+    // drawResults(specieMytholog);
+    displayList(specieMytholog, rows, currentPage);
+    setUpPagination(specieMytholog, rows);
 
 }
 document.querySelector('#mytholog').addEventListener('click', getListSpeciesMytholog);
@@ -265,8 +262,9 @@ const getListSpeciesRobot = () => {
 
     let specieRobot = [];
     specieRobot = filterSpecies.robot(allCharacters);
-    drawResults(specieRobot);
-
+    // drawResults(specieRobot);
+    displayList(specieRobot, rows, currentPage);
+    setUpPagination(specieRobot, rows);
 }
 document.querySelector('#robot').addEventListener('click', getListSpeciesRobot);
 
@@ -276,8 +274,9 @@ const getListSpeciesUnknown = () => {
 
     let specieUnknown = [];
     specieUnknown = filterSpecies.unknown(allCharacters);
-    drawResults(specieUnknown);
-
+    // drawResults(specieUnknown);
+    displayList(specieUnknown, rows, currentPage);
+    setUpPagination(specieUnknown, rows);
 }
 document.querySelector('#unknownSpecie').addEventListener('click', getListSpeciesUnknown);
 
@@ -286,7 +285,9 @@ const getListSpeciesCronenberg = () => {
 
     let specieCronenberg = [];
     specieCronenberg = filterSpecies.cronenberg(allCharacters);
-    drawResults(specieCronenberg);
+    // drawResults(specieCronenberg);
+    displayList(specieCronenberg, rows, currentPage);
+    setUpPagination(specieCronenberg, rows);
 
 }
 document.querySelector('#cronenberg').addEventListener('click', getListSpeciesCronenberg);
@@ -296,7 +297,9 @@ const getListSpeciesPoopybutthole = () => {
 
     let speciePoopybutthole = [];
     speciePoopybutthole = filterSpecies.poopybutthole(allCharacters);
-    drawResults(speciePoopybutthole);
+    // drawResults(speciePoopybutthole);
+    displayList(speciePoopybutthole, rows, currentPage);
+    setUpPagination(speciePoopybutthole, rows);
 
 }
 document.querySelector('#poopybutthole').addEventListener('click', getListSpeciesPoopybutthole);
@@ -306,7 +309,9 @@ const getListSpeciesDisease = () => {
 
     let specieDisease = [];
     specieDisease = filterSpecies.disease(allCharacters);
-    drawResults(specieDisease);
+    // drawResults(specieDisease);
+    displayList(specieDisease, rows, currentPage);
+    setUpPagination(specieDisease, rows);
 
 }
 document.querySelector('#disease').addEventListener('click', getListSpeciesDisease);
@@ -317,7 +322,9 @@ const getListStatusAlive = () => {
 
     let statusAlive = [];
     statusAlive = filterStatus.alive(allCharacters);
-    drawResults(statusAlive);
+    // drawResults(statusAlive);
+    displayList(statusAlive, rows, currentPage);
+    setUpPagination(statusAlive, rows);
 
 }
 document.querySelector('#alive').addEventListener('click', getListStatusAlive);
@@ -327,7 +334,9 @@ const getListStatusDead = () => {
 
     let statusDead = [];
     statusDead = filterStatus.dead(allCharacters);
-    drawResults(statusDead);
+    // drawResults(statusDead);
+    displayList(statusDead, rows, currentPage);
+    setUpPagination(statusDead, rows);
 
 }
 document.querySelector('#dead').addEventListener('click', getListStatusDead);
@@ -337,7 +346,9 @@ const getListStatusUnknown = () => {
 
     let statusUnknown = [];
     statusUnknown = filterStatus.unknown(allCharacters);
-    drawResults(statusUnknown);
+    // drawResults(statusUnknown);
+    displayList(statusUnknown, rows, currentPage);
+    setUpPagination(statusUnknown, rows);
 
 }
 document.querySelector('#unknown').addEventListener('click', getListStatusUnknown);
@@ -347,7 +358,9 @@ const getListGenderMale = () => {
 
     let genderMale = [];
     genderMale = filterGender.male(allCharacters);
-    drawResults(genderMale);
+    // drawResults(genderMale);
+    displayList(genderMale, rows, currentPage);
+    setUpPagination(genderMale, rows);
 
 }
 document.querySelector('#male').addEventListener('click', getListGenderMale);
@@ -357,7 +370,9 @@ const getListGenderFemale = () => {
 
     let genderFemale = [];
     genderFemale = filterGender.female(allCharacters);
-    drawResults(genderFemale);
+    // drawResults(genderFemale);
+    displayList(genderFemale, rows, currentPage);
+    setUpPagination(genderFemale, rows);
 
 }
 document.querySelector('#female').addEventListener('click', getListGenderFemale);
@@ -367,7 +382,9 @@ const getListGenderGenderless = () => {
 
     let genderGenderless = [];
     genderGenderless = filterGender.genderless(allCharacters);
-    drawResults(genderGenderless);
+    // drawResults(genderGenderless);
+    displayList(genderGenderless, rows, currentPage);
+    setUpPagination(genderGenderless, rows);
 
 }
 document.querySelector('#genderless').addEventListener('click', getListGenderGenderless);
@@ -377,7 +394,9 @@ const getListGenderUnknown = () => {
 
     let genderUnknown = [];
     genderUnknown = filterGender.unknown(allCharacters);
-    drawResults(genderUnknown);
+    // drawResults(genderUnknown);
+    displayList(genderUnknown, rows, currentPage);
+    setUpPagination(genderUnknown, rows);
 
 }
 document.querySelector('#unknownGender').addEventListener('click', getListGenderUnknown);
@@ -387,7 +406,9 @@ const getListAtoZ = () => {
 
     let sortedAscending = [];
     sortedAscending = order.ascending(allCharacters);
-    drawResults(sortedAscending);
+    // drawResults(sortedAscending);
+    displayList(sortedAscending, rows, currentPage);
+    setUpPagination(sortedAscending, rows);
 
 }
 document.querySelector('#orderAtoZ').addEventListener('click', getListAtoZ);
@@ -397,12 +418,13 @@ const getListZtoA = () => {
 
     let sortedDescending = [];
     sortedDescending = order.descending(allCharacters);
-    drawResults(sortedDescending);
+    // drawResults(sortedDescending);
+    displayList(sortedDescending, rows, currentPage);
+    setUpPagination(sortedDescending, rows);
+
 
 }
 document.querySelector('#orderZtoA').addEventListener('click', getListZtoA);
-
-
 
 // function getListAll(){
 
@@ -516,8 +538,6 @@ document.querySelector('#orderZtoA').addEventListener('click', getListZtoA);
 // }
 // document.querySelector('#order').addEventListener('click', getListOrderZtoA);
 // document.querySelector('#order').addEventListener('click', getListZtoA);
-
-
 
 window.addEventListener('load', () => {
     document.getElementById('listCharacters').classList.add('images-loaded');
