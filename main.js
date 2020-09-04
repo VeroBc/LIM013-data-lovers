@@ -367,63 +367,107 @@ window.addEventListener('load', () => {
 
 
 
-function drawResults(arrayData){
+
+// const overlay = document.getElementById('overlay');
+
+// const clickToShowCharacterDetail = (characterElement) => {
+//     const path =    characterElement.getAttribute('src');
+//     const name =    characterElement.dataset.name;
+//     const species = characterElement.dataset.species;
+//     const gender =  characterElement.dataset.gender;
+//     const status =  characterElement.dataset.status;
+//     overlay.classList.add('active');
+//     document.querySelector('#overlay img').src = path;
+//     document.querySelector('#overlay .description').innerHTML = `
+//         <div>
+//             <div class="character-name">${name}</div>
+//             <div>Status: ${status}</div>
+//             <div>Gender: ${gender}</div>
+//             <div>Specie: ${species}</div>
+//         </div>
+//      `;
+// };
+
+
+const overlay = document.getElementById('overlay');
+
+const clickToShowCharacterDetail = (characterElement) => {
+    const path =    characterElement.dataset.image;
+    const name =    characterElement.dataset.name;
+    const species = characterElement.dataset.species;
+    const gender =  characterElement.dataset.gender;
+    const status =  characterElement.dataset.status;
+    overlay.classList.add('active');
+    document.querySelector('#overlay img').src = path;
+    document.querySelector('#overlay .description').innerHTML = `
+        <div>
+            <div class="character-name">${name}</div>
+            <div>Status: ${status}</div>
+            <div>Gender: ${gender}</div>
+            <div>Specie: ${species}</div>
+        </div>
+     `;
+};
+
+
+document.querySelector('#btn-close').addEventListener('click', () => {
+    overlay.classList.remove('active');
+});
+overlay.addEventListener('click', (event) => {
+    event.target.id === 'overlay' ? overlay.classList.remove('active') : "";
+})
+
+
+
+function drawCharactersPage(index, arrayOfCharacters) {
+        //selecciona los 20 charaacters de la pagina actual
+        let pageOfCharacters = arrayOfCharacters.slice(index, index+20);
+
+        // borrar los caracteres que hayan estado antes
+        const elementOrderedList = document.getElementById('listCharacters');
+        elementOrderedList.innerHTML = "";
+
+        // dibuja cada character, y escucha el clik para mostrar detalle
+        for (let i=0; i < pageOfCharacters.length; i++) {
+
+            const result = pageOfCharacters[i]; 
+            const elementDiv = document.createElement("div");
+            elementDiv.classList.add("character");
+
+            // Pegar en el cuadro la data del personaje
+            elementDiv.dataset.image = result.image;
+            elementDiv.dataset.name = result.name;
+            elementDiv.dataset.species = result.species;
+            elementDiv.dataset.gender = result.gender;
+            elementDiv.dataset.status = result.status;
+
+            // Set click event to show detail popup
+            elementDiv.addEventListener('click', () => clickToShowCharacterDetail(elementDiv))
+            elementDiv.innerHTML = `
+                <img src="${result.image}" alt="${result.name}">
+                <h3>${result.name}</h3>
+                <h4>${result.species}</h4>`
+            elementOrderedList.appendChild(elementDiv);            
+        }
+}
+
+
+function drawResults(arrayOfCharacters){
 
     const buttonsContainer = document.getElementById("buttonsContainer");
     buttonsContainer.innerHTML = "";
 
-    let page = [];
-    page = arrayData.slice(0, 20);
+    drawCharactersPage(0, arrayOfCharacters);
 
-    const elementOrderedList = document.getElementById('listCharacters');
-    elementOrderedList.innerHTML = "";
-
-    for (let i=0; i < page.length; i++) {
-
-        const result = page[i];
-        const elementLi = document.createElement("div"); 
-
-        elementLi.innerHTML = `<img src="${result.image}" alt="${result.name}">
-        <h3>${result.name}</h3>
-        <p>${result.species}</p>`;
-
-        elementOrderedList.appendChild(elementLi);
-    }
-
-    for (let i=0; i < arrayData.length; i=i+20 ){
-
+    // Paginación. Cada cuadradito numero de página
+    for (let pageIndex=0; pageIndex < arrayOfCharacters.length; pageIndex=pageIndex+20 ){
         const button = document.createElement("button");
-        const buttonText = document.createTextNode(parseInt(i / 20) + 1);
+        const buttonText = document.createTextNode(parseInt(pageIndex / 20) + 1);
         button.appendChild(buttonText);
+        button.addEventListener('click', () => drawCharactersPage(pageIndex, arrayOfCharacters));
         buttonsContainer.appendChild(button);
-
-        function getPageCharacters(){
-            
-            button.addEventListener('click', function() {
-
-            let page = [];
-            page = arrayData.slice(i, i+20);
-
-            const elementOrderedList = document.getElementById('listCharacters');
-            elementOrderedList.innerHTML = "";
-
-            for (let i=0; i < page.length; i++) {
-
-                const result = page[i]; 
-                const elementLi = document.createElement("div"); 
-
-                elementLi.innerHTML = `<img src="${result.image}" alt="${result.name}">
-                <h3>${result.name}</h3>
-                <p>${result.species}</p>`;
-
-                elementOrderedList.appendChild(elementLi);
-
-            }
-                console.log(i);
-            })
-        }
-        getPageCharacters();
     }
+
 }
 
 
@@ -438,3 +482,19 @@ function clickHambMenu() {
   }
   
 document.querySelector('#iconMenu').addEventListener('click', clickHambMenu);
+
+
+
+const searchBar = document.getElementById('searchBar');
+let hpcharacters = [];
+hpcharacters = data.results;
+
+searchBar.addEventListener('keyup', (e) =>{
+   const searchString = e.target.value.toLowerCase();
+   const filteredCharacters = hpcharacters.filter( character => {
+        return character.name.toLowerCase().includes(searchString);
+    });
+    drawResults(filteredCharacters);
+});
+
+
