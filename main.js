@@ -1,4 +1,3 @@
- 
 import {filterStatus, filterSpecies, filterGender, order } from './data.js'
 
 import data from './data/rickandmorty/rickandmorty.js';
@@ -496,5 +495,4 @@ searchBar.addEventListener('keyup', (e) =>{
     });
     drawResults(filteredCharacters);
 });
-
 

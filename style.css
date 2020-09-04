@@ -1,5 +1,4 @@
-/*-----Univeral-----*/
-* {
+/*-----Univeral-----*/* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -362,4 +361,3 @@ header .dropdown .dropdown-content a.active {
     right: -20px;
     top: -20px;
 }
-
