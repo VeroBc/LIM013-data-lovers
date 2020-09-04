@@ -19,37 +19,51 @@
             </div>
             <div class="topnav" id="myTopnav">
                 <a href="#" id="home" >HOME</a>
-                <a href="#" id="all" >ALL</a>
+                <a href="#" id="all" >CHARACTERS</a>
+                <a href="#" id="all" >EPISODES</a>
+                <a href="#" id="all" >LOCATIONS</a>
+                <div>
+                    <a href="javascript:void(0);" style="font-size:15px;" id="iconMenu" class="icon">&#9776;</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+        
+    <section>
+
+        <main class="mainContainer">
+        
+            <div>
                 <div class="dropdown">
                     <button id="species" class="dropbtn">SPECIE <i class="fa fa-caret-down"></i></button>
                     <div class="dropdown-content listSpecies">
-                    <a href="#" id="human">HUMAN</a>
-                    <a href="#" id="alien">ALIEN</a>
-                    <a href="#" id="humanoid">HUMANOID</a>
-                    <a href="#" id="animal">ANIMAL</a>
-                    <a href="#" id="mytholog">MYTHOLOGICAL</a>
-                    <a href="#" id="robot">ROBOT</a>
-                    <a href="#" id="unknownSpecie">UNKNOWN</a>
-                    <a href="#" id="cronenberg">CRONENBERG</a>
-                    <a href="#" id="poopybutthole">POOPYBUTHOLE</a>
-                    <a href="#" id="disease">DISEASE</a>
+                    <a href="#" id="human">Human</a>
+                    <a href="#" id="alien">Alien</a>
+                    <a href="#" id="humanoid">Humanoid</a>
+                    <a href="#" id="animal">Animal</a>
+                    <a href="#" id="mytholog">Mythological</a>
+                    <a href="#" id="robot">Robot</a>
+                    <a href="#" id="unknownSpecie">Unknown</a>
+                    <a href="#" id="cronenberg">Cronenberg</a>
+                    <a href="#" id="poopybutthole">Poopybutthole</a>
+                    <a href="#" id="disease">Disease</a>
                     </div>
                 </div>
                 <div class="dropdown">
                     <button id="gender" class="dropbtn">GENDER <i class="fa fa-caret-down"></i></button>
                     <div class="dropdown-content listGender">
-                        <a href="#" id="male">MALE</a>
-                        <a href="#" id="female">FEMALE</a>
-                        <a href="#" id="genderless">GENDERLESS</a>
-                        <a href="#" id="unknownGender">UNKNOWN</a>
+                        <a href="#" id="male">Male</a>
+                        <a href="#" id="female">Female</a>
+                        <a href="#" id="genderless">Genderless</a>
+                        <a href="#" id="unknownGender">Unknown</a>
                     </div>
                 </div>
                 <div class="dropdown">
                     <button id="status" class="dropbtn">STATUS <i class="fa fa-caret-down"></i></button>
                     <div class="dropdown-content listStatus">
-                        <a href="#" id="alive">ALIVE</a>
-                        <a href="#" id="dead">DEAD</a>
-                        <a href="#" id="unknown">UNKNOWN</a>
+                        <a href="#" id="alive">Alive</a>
+                        <a href="#" id="dead">Dead</a>
+                        <a href="#" id="unknown">Unknown</a>
                     </div>
                 </div>
                 <div class="dropdown">
@@ -59,20 +73,30 @@
                         <a href="#" id="orderZtoA">Z - A</a>
                     </div>
                 </div>
-                <div>
-                    <a href="javascript:void(0);" style="font-size:15px;" id="iconMenu" class="icon">&#9776;</a>
-                </div>
             </div>
-        </nav>
-    </header>
         
-    <section>    
-        <main>
+            <div id="searchWrapper"class="searchWrapper">
+                <input type="text" name="searchBar" id="searchBar" placeholder="Search for a Character"/>
+            </div>
+            
             <div id="listCharacters" class="flex-container"></div>
             <div id="buttonsContainer" class="buttonsContainer active" ></div>
+        
+            <section class="overlay" id="overlay">
+                <div class="overlay-characters" id="overlay-characters"></div>
+                <button id="btn-close"><i class="fas fa-times"></i></button>
+                <img id="image" src="">
+                <p class="description"></p>
+                </div>
+            </section>
+
+            
+
         </main>
+    
     </section>
 
+    
 <script src="main.js" type="module"></script>
 
 </body>
