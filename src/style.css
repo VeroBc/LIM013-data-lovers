@@ -45,12 +45,17 @@ div {
     color:  #fafbfc;
 }
 
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+}
+
 .flex-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     background-color: rgba(11, 12, 12, 0.3);
-    padding: 50px;
+    padding: 30px;
     text-align: center;
     font-size: 16px;
     letter-spacing: 0.05em;
@@ -96,10 +101,10 @@ div {
     margin: 25px;
 }
 
-p {
+h4 {
     margin-top: 10px;
     margin-right: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     margin-left: 25px;
     text-align: center;
 }
@@ -218,6 +223,7 @@ header .dropdown .dropdown-content a.active {
 .dropdown {
     float: left;
     overflow: hidden;
+    font-family: 'Patrick Hand SC', cursive;
 }
   
 .dropdown .dropbtn {
@@ -267,7 +273,7 @@ header .dropdown .dropdown-content a.active {
 }
   
 @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child), .dropdown .dropbtn {
+    .topnav a:not(:first-child) {
         display: none;
     }
 
@@ -297,3 +303,63 @@ header .dropdown .dropdown-content a.active {
       text-align: left;
     }
 }
+
+
+
+/* modal */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.overlay.active {
+    display: flex;
+    flex-direction: column;
+}
+.overlay img {
+    max-width: 100%;
+    border-radius: 8px 8px 0px 0px;
+}
+.overlay .description {
+    display: block;
+    background: rgba(0, 0, 0, 1);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-size: 18px;
+    letter-spacing: 0.08em;
+    border: 2px solid #94E858;
+    border-radius: 0px 0px 8px 8px;
+    /* max-width: 50%; */
+    width: 300px;
+    height: 200px;
+}
+.overlay-characters {
+    position: relative;
+}
+.character-name {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+}
+.overlay #btn-close {
+    background: none;
+    font-size: 20px;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: -20px;
+    top: -20px;
+}
+
