@@ -1,4 +1,3 @@
-
 export const filterSpecies = {
 
     human: (allCharacters) => {
