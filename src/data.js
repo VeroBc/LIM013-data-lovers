@@ -1,176 +1,66 @@
-export const filterSpecies = {
+import charactersData from './data/rickandmorty/rickandmorty.js';
 
-    human: (allCharacters) => {
-        
-        return allCharacters.filter(function(filtro) {
-            return filtro.species == "Human";
-        });
-    },
+export const allCharacters = charactersData;
 
-    alien: (allCharacters) => {
+export const filterBySpecies = (species) => 
+    allCharacters.filter(c => c.species == species)
 
-        return allCharacters.filter(function(filtro) {
-            return filtro.species == "Alien";
+export const filterByStatus = (status) => 
+    allCharacters.filter(c => c.status == status)
 
-        });
-    },    
-
-    humanoid: (allCharacters) => {
-
-        return allCharacters.filter(function(filtro) {
-            return filtro.species == "Humanoid";
-
-        });
-    },
-
-    animal: (allCharacters) => {
-        
-        return allCharacters.filter(function(filtro) {
-            return filtro.species == "Animal";
-        });
-    },
-
-    mytholog: (allCharacters) => {
-
-        return allCharacters.filter(function(filtro) {
-            return filtro.species == "Mytholog";
-
-        });
-    },    
-
-    robot: (allCharacters) => {
-
-        return allCharacters.filter(function(filtro) {
-            return filtro.species == "Robot";
-
-        });
-    },
-
-    unknown: (allCharacters) => {
-        
-        return allCharacters.filter(function(filtro) {
-            return filtro.species == "unknown";
-        });
-    },
-
-    cronenberg: (allCharacters) => {
-
-        return allCharacters.filter(function(filtro) {
-            return filtro.species == "Cronenberg";
-
-        });
-    },    
-
-    poopybutthole: (allCharacters) => {
-
-        return allCharacters.filter(function(filtro) {
-            return filtro.species == "Poopybutthole";
-
-        });
-    },
-
-    disease: (allCharacters) => {
-
-        return allCharacters.filter(function(filtro) {
-            return filtro.species == "Disease";
-
-        });
-    },    
-};
+export const filterByGender = (gender) => 
+    allCharacters.filter(c => c.gender == gender)
 
 
+export const getSpeciesArray = () => {
+    let speciesList = [];
+    allCharacters.forEach(c => {
+        if (!speciesList.includes(c.species))
+            speciesList.push(c.species) 
+    })
+    return speciesList;
+}    
 
-export const filterStatus = {
+export const getStatusArray = () => {
+    let statusList = [];
+    allCharacters.forEach(c => {
+        if (!statusList.includes(c.status))
+            statusList.push(c.status) 
+    })
+    return statusList;
+}  
 
-    alive: (allCharacters) => {
-        
-        return allCharacters.filter(function(filtro) {
-            return filtro.status == "Alive";
-        });
-    },
-
-    dead: (allCharacters) => {
-
-        return allCharacters.filter(function(filtro) {
-            return filtro.status == "Dead";
-
-        });
-    },    
-
-    unknown: (allCharacters) => {
-
-        return allCharacters.filter(function(filtro) {
-            return filtro.status == "unknown";
-
-        });
-    },    
-};
-
-
-export const filterGender = {
-
-    male: (allCharacters) => {
-        
-        return allCharacters.filter(function(filtro) {
-            return filtro.gender == "Male";
-        });
-    },
-
-    female: (allCharacters) => {
-
-        return allCharacters.filter(function(filtro) {
-            return filtro.gender == "Female";
-
-        });
-    },    
-
-    genderless: (allCharacters) => {
-
-        return allCharacters.filter(function(filtro) {
-            return filtro.gender == "Genderless";
-
-        });
-    },
-    
-    unknown: (allCharacters) => {
-
-        return allCharacters.filter(function(filtro) {
-            return filtro.gender == "unknown";
-
-        });
-    },
-};
-
+export const getGenderArray = () => {
+    let genderList = [];
+    allCharacters.forEach(c => {
+        if (!genderList.includes(c.gender))
+            genderList.push(c.gender) 
+    })
+    return genderList;
+}
 
 
 export const order = {
-
     ascending: (allCharacters) => {
-        
         return allCharacters.sort(function(a,b) { 
-    
             if (a.name > b.name) {
                 return 1;
             }
             if (a.name < b.name) {
                 return -1;
             }
-                return 0;
+            return 0;
         });
     },
-
     descending: (allCharacters) => {
-        
         return allCharacters.sort(function(a,b) { 
-    
             if (a.name > b.name) {
                 return -1;
             }
             if (a.name < b.name) {
                 return 1;
             }
-                return 0;
+            return 0;
         });
     },    
-
 };
