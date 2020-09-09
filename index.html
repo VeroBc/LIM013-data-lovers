@@ -6,82 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/800e65a272.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
+    <!-- NAV BAR -->
+
     <header>
         <nav>
-            <div>
-                <img class="logo" id="logo" src="images/Rick_and_Morty_logo.png" alt="">
+            <div class="logo">
+                <img src="images/Rick_and_Morty_logo.png" alt="">
             </div>
-            <div class="topnav" id="myTopnav">
-                <a href="#" id="home" >HOME</a>
-                <a href="#" id="all" >CHARACTERS</a>
-                <a href="#" id="all" >EPISODES</a>
-                <a href="#" id="all" >LOCATIONS</a>
-                <div>
-                    <a href="javascript:void(0);" style="font-size:15px;" id="iconMenu" class="icon">&#9776;</a>
-                </div>
+            <div class="icon" id="iconMenu">
+                <span><i class="fas fa-bars"></i></span>
+            </div>
+            <div class="topnav open-menu" id="myTopnav">
+                <a href="#" class="active" id="home">HOME</a>
+                <a href="#" id="all">CHARACTERS</a>
+                <a href="#" id="episodes">EPISODES</a>
+                <!-- <a href="#" id="locations">LOCATIONS</a> -->
             </div>
         </nav>
     </header>
-        
-    <section>
 
+    <!-- SEARCH BAR -->
+
+    <form id="searchWrapper" class="searchWrapper">
+        <input type="text" name="searchBar" class="searchBar" id="searchBar" placeholder="Search your character" />
+        <span class="search-btn"><i class="fas fa-search"></i></span>
+    </form>
+
+    <!-- FILTERS MENU AND ORDER -->
+
+    <div class="more-menu">
+        <div class="dropdown">
+            <button id="species" class="dropbtn">SPECIE <i class="fa fa-caret-down"></i></button>
+            <div id="scroll" class="dropdown-content listSpecies">
+                <a href="#" id="human">Human</a>
+                <a href="#" id="alien">Alien</a>
+                <a href="#" id="humanoid">Humanoid</a>
+                <a href="#" id="animal">Animal</a>
+                <a href="#" id="mytholog">Mythological</a>
+                <a href="#" id="robot">Robot</a>
+                <a href="#" id="unknownSpecie">Unknown</a>
+                <a href="#" id="cronenberg">Cronenberg</a>
+                <a href="#" id="poopybutthole">Poopybutthole</a>
+                <a href="#" id="disease">Disease</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button id="gender" class="dropbtn">GENDER <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content listGender">
+                <a href="#" id="male">Male</a>
+                <a href="#" id="female">Female</a>
+                <a href="#" id="genderless">Genderless</a>
+                <a href="#" id="unknownGender">Unknown</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button id="status" class="dropbtn">STATUS <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content listStatus">
+                <a href="#" id="alive">Alive</a>
+                <a href="#" id="dead">Dead</a>
+                <a href="#" id="unknown">Unknown</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button id="order" class="dropbtn">ORDER <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="#" id="orderAtoZ">A - Z</a>
+                <a href="#" id="orderZtoA">Z - A</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- CHARACTERS' CARDS -->
+
+    <section>
         <main class="mainContainer">
-        
-            <div>
-                <div class="dropdown">
-                    <button id="species" class="dropbtn">SPECIE <i class="fa fa-caret-down"></i></button>
-                    <div class="dropdown-content listSpecies">
-                    <a href="#" id="human">Human</a>
-                    <a href="#" id="alien">Alien</a>
-                    <a href="#" id="humanoid">Humanoid</a>
-                    <a href="#" id="animal">Animal</a>
-                    <a href="#" id="mytholog">Mythological</a>
-                    <a href="#" id="robot">Robot</a>
-                    <a href="#" id="unknownSpecie">Unknown</a>
-                    <a href="#" id="cronenberg">Cronenberg</a>
-                    <a href="#" id="poopybutthole">Poopybutthole</a>
-                    <a href="#" id="disease">Disease</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <button id="gender" class="dropbtn">GENDER <i class="fa fa-caret-down"></i></button>
-                    <div class="dropdown-content listGender">
-                        <a href="#" id="male">Male</a>
-                        <a href="#" id="female">Female</a>
-                        <a href="#" id="genderless">Genderless</a>
-                        <a href="#" id="unknownGender">Unknown</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <button id="status" class="dropbtn">STATUS <i class="fa fa-caret-down"></i></button>
-                    <div class="dropdown-content listStatus">
-                        <a href="#" id="alive">Alive</a>
-                        <a href="#" id="dead">Dead</a>
-                        <a href="#" id="unknown">Unknown</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <button id="order" class="dropbtn">ORDER <i class="fa fa-caret-down"></i></button>
-                    <div class="dropdown-content">
-                        <a href="#" id="orderAtoZ">A - Z</a>
-                        <a href="#" id="orderZtoA">Z - A</a>
-                    </div>
-                </div>
-            </div>
-        
-            <div id="searchWrapper"class="searchWrapper">
-                <input type="text" name="searchBar" id="searchBar" placeholder="Search for a Character"/>
-            </div>
-            
-            <div id="listCharacters" class="flex-container"></div>
-            <div id="buttonsContainer" class="buttonsContainer active" ></div>
-        
+            <div id="listCharacters" class="listCharacters"></div>
+            <div id="buttonsContainer" class="buttonsContainer active"></div>
             <section class="overlay" id="overlay">
                 <div class="overlay-characters" id="overlay-characters"></div>
                 <button id="btn-close"><i class="fas fa-times"></i></button>
@@ -89,15 +95,10 @@
                 <p class="description"></p>
                 </div>
             </section>
-
-            
-
         </main>
-    
     </section>
 
-    
-<script src="main.js" type="module"></script>
+    <script src="main.js" type="module"></script>
 
 </body>
 
