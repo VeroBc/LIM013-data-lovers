@@ -444,8 +444,8 @@ function drawCharactersPage(index, arrayOfCharacters) {
             elementDiv.addEventListener('click', () => clickToShowCharacterDetail(elementDiv))
             elementDiv.innerHTML = `
                 <img src="${result.image}" alt="${result.name}">
-                <h3>${result.name}</h3>
-                <h4>${result.species}</h4>`
+                <span>${result.name}</span>`
+                // <h4>${result.species}</h4>
             elementOrderedList.appendChild(elementDiv);            
         }
 }
@@ -471,16 +471,16 @@ function drawResults(arrayOfCharacters){
 
 
 
-function clickHambMenu() {
-    let menuBar = document.getElementById("myTopnav");
-    if (menuBar.className === "topnav") {
-      menuBar.className += " responsive";
-    } else {
-     menuBar.className = "topnav";
-    }
-  }
+// function clickHambMenu() {
+//     let menuBar = document.getElementById("myTopnav");
+//     if (menuBar.className === "topnav") {
+//       menuBar.className += " responsive";
+//     } else {
+//      menuBar.className = "topnav";
+//     }
+//   }
   
-document.querySelector('#iconMenu').addEventListener('click', clickHambMenu);
+// document.querySelector('#iconMenu').addEventListener('click', clickHambMenu);
 
 
 
@@ -496,3 +496,60 @@ searchBar.addEventListener('keyup', (e) =>{
     drawResults(filteredCharacters);
 });
 
+/* Menu responsive */
+let boton = document.getElementById("iconMenu");
+let topnav = document.getElementById("myTopnav");
+let contador = 0;
+
+boton.addEventListener("click", function() {
+    if(contador == 0) {
+        topnav.className = ("topnav close-menu");
+        contador = 1;
+    }else {
+        topnav.classList.remove("close-menu");
+        topnav.className= ("topnav open-menu");
+        contador = 0;
+    }
+})
+
+window.addEventListener('resize', function(){
+    if(screen.width > 750) {
+        contador = 0;
+        topnav.classList.remove("close-menu");
+        topnav.className= ("topnav open-menu");
+    }
+})
+
+/*CRECE LETRA ACTIVO*/
+window.addEventListener('load', () => {
+    const menuLinks = document.querySelectorAll('#myTopnav a');
+
+    menuLinks.forEach((element) => {
+        element.addEventListener('click', (event) => {
+            event.preventDefault();
+            menuLinks.forEach((menuLinks) => menuLinks.classList.remove('active'));
+            event.target.classList.add('active');
+        });
+    });
+
+})
+
+/*----SCROLL------*/
+const speciesBtn = document.getElementById('species');
+const genderBtn = document.getElementById('gender');
+const scrollableSpecies = document.getElementById('scroll');
+
+window.addEventListener('resize', function(){
+    if(screen.width > 750) {
+        function scrollFunction() {
+            scrollableSpecies.style.display = 'flex'
+        }
+        
+        function hideScroll() {
+            scrollableSpecies.style.display = 'none'
+        }
+        
+        speciesBtn.addEventListener('click', scrollFunction);
+        genderBtn.addEventListener('click', hideScroll)
+    }
+})
