@@ -1,328 +1,65 @@
-import {filterStatus, filterSpecies, filterGender, order } from './data.js'
+import {allCharacters, filterBySpecies, filterByStatus, filterByGender, getSpeciesArray, getStatusArray, getGenderArray, order } from './data.js'
 
-import data from './data/rickandmorty/rickandmorty.js';
 
-const allCharacters = data.results;
-
+document.querySelector('#all').addEventListener('click', allCharacters);
 
 const getListAllCharacters = () => {
-    
     drawResults(allCharacters);
- 
 }
 document.querySelector('#all').addEventListener('click', getListAllCharacters);
 
-
-const getListSpeciesHuman = () => {
-    
-    let speciesHuman = [];
-    speciesHuman = filterSpecies.human(allCharacters);
-
-    drawResults(speciesHuman);
-    
+const getListSpecies = (species) => {
+    let filteredSpecies = filterBySpecies(species);
+    drawResults(filteredSpecies);
 }
-document.querySelector('#human').addEventListener('click', getListSpeciesHuman);
 
+const speciesArray = getSpeciesArray();
+speciesArray.forEach(species => {
+    if(document.querySelector('#' + species.toLowerCase()))
+        document.querySelector('#' + species.toLowerCase()).addEventListener('click', () => getListSpecies(species));
+    // else    
+    //     console.log("Esta especie no tiene elemento en HTML: " + species);
+})
 
-
-const getListSpeciesAlien = () => {
-
-    let speciesAlien = [];
-    speciesAlien = filterSpecies.alien(allCharacters);
-    drawResults(speciesAlien);
-    
+const getListStatus = (status) => {
+    let filteredStatus = filterByStatus(status);
+    drawResults(filteredStatus);
 }
-document.querySelector('#alien').addEventListener('click', getListSpeciesAlien);
 
+const statusArray = getStatusArray();
+statusArray.forEach(status => {
+    if(document.querySelector('#' + status.toLowerCase()))
+        document.querySelector('#' + status.toLowerCase()).addEventListener('click', () => getListStatus(status));
+    // else    
+    //     console.log("Esta especie no tiene elemento en HTML: " + status);
+})
 
-
-const getListSpeciesHumanoid = () => {
-
-    let speciesHumanoid = [];
-    speciesHumanoid = filterSpecies.humanoid(allCharacters);
-    drawResults(speciesHumanoid);
-    
+const getListGender = (gender) => {
+    let filteredGender = filterByGender(gender);
+    drawResults(filteredGender);
 }
-document.querySelector('#humanoid').addEventListener('click', getListSpeciesHumanoid);
 
-
-const getListSpeciesAnimal = () => {
-
-    let specieAnimal = [];
-    specieAnimal = filterSpecies.animal(allCharacters);
-    drawResults(specieAnimal);
-    
-}
-document.querySelector('#animal').addEventListener('click', getListSpeciesAnimal);
-
-
-
-const getListSpeciesMytholog = () => {
-
-    let specieMytholog = [];
-    specieMytholog = filterSpecies.mytholog(allCharacters);
-    drawResults(specieMytholog);
-    
-}
-document.querySelector('#mytholog').addEventListener('click', getListSpeciesMytholog);
-
-
-
-const getListSpeciesRobot = () => {
-
-    let specieRobot = [];
-    specieRobot = filterSpecies.robot(allCharacters);
-    drawResults(specieRobot);
-    
-}
-document.querySelector('#robot').addEventListener('click', getListSpeciesRobot);
-
-
-
-const getListSpeciesUnknown = () => {
-
-    let specieUnknown = [];
-    specieUnknown = filterSpecies.unknown(allCharacters);
-    drawResults(specieUnknown);
-    
-}
-document.querySelector('#unknownSpecie').addEventListener('click', getListSpeciesUnknown);
-
-
-const getListSpeciesCronenberg = () => {
-
-    let specieCronenberg = [];
-    specieCronenberg = filterSpecies.cronenberg(allCharacters);
-    drawResults(specieCronenberg);
-    
-}
-document.querySelector('#cronenberg').addEventListener('click', getListSpeciesCronenberg);
-
-
-const getListSpeciesPoopybutthole = () => {
-
-    let speciePoopybutthole = [];
-    speciePoopybutthole = filterSpecies.poopybutthole(allCharacters);
-    drawResults(speciePoopybutthole);
-    
-}
-document.querySelector('#poopybutthole').addEventListener('click', getListSpeciesPoopybutthole);
-
-
-const getListSpeciesDisease = () => {
-
-    let specieDisease = [];
-    specieDisease = filterSpecies.disease(allCharacters);
-    drawResults(specieDisease);
-    
-}
-document.querySelector('#disease').addEventListener('click', getListSpeciesDisease);
-
-
-
-const getListStatusAlive = () => {
-
-    let statusAlive = [];
-    statusAlive = filterStatus.alive(allCharacters);
-    drawResults(statusAlive);
-    
-}
-document.querySelector('#alive').addEventListener('click', getListStatusAlive);
-
-
-const getListStatusDead = () => {  
-
-    let statusDead = [];
-    statusDead = filterStatus.dead(allCharacters);
-    drawResults(statusDead);
-    
-}
-document.querySelector('#dead').addEventListener('click', getListStatusDead);
-
-
-const getListStatusUnknown = () => {
-
-    let statusUnknown = [];
-    statusUnknown = filterStatus.unknown(allCharacters);
-    drawResults(statusUnknown);
-    
-}
-document.querySelector('#unknown').addEventListener('click', getListStatusUnknown);
-
-
-const getListGenderMale = () => {
-
-    let genderMale = [];
-    genderMale = filterGender.male(allCharacters);
-    drawResults(genderMale);
-    
-}
-document.querySelector('#male').addEventListener('click', getListGenderMale);
-
-
-const getListGenderFemale = () => {
-
-    let genderFemale = [];
-    genderFemale = filterGender.female(allCharacters);
-    drawResults(genderFemale);
-    
-}
-document.querySelector('#female').addEventListener('click', getListGenderFemale);
-
-
-const getListGenderGenderless = () => {
-
-    let genderGenderless = [];
-    genderGenderless = filterGender.genderless(allCharacters);
-    drawResults(genderGenderless);
-    
-}
-document.querySelector('#genderless').addEventListener('click', getListGenderGenderless);
-
-
-const getListGenderUnknown = () => {
-
-    let genderUnknown = [];
-    genderUnknown = filterGender.unknown(allCharacters);
-    drawResults(genderUnknown);
-    
-}
-document.querySelector('#unknownGender').addEventListener('click', getListGenderUnknown);
-
-
+const genderArray = getGenderArray();
+genderArray.forEach(gender => {
+    if(document.querySelector('#' + gender.toLowerCase()))
+        document.querySelector('#' + gender.toLowerCase()).addEventListener('click', () => getListGender(gender));
+    // else    
+    //     console.log("Esta especie no tiene elemento en HTML: " + gender);
+})
+ 
 const getListAtoZ = () => {
-
     let sortedAscending = [];
     sortedAscending = order.ascending(allCharacters);
     drawResults(sortedAscending);
-    
 }
 document.querySelector('#orderAtoZ').addEventListener('click', getListAtoZ);
 
-
 const getListZtoA = () => {
-
     let sortedDescending = [];
     sortedDescending = order.descending(allCharacters);
     drawResults(sortedDescending);
-    
 }
 document.querySelector('#orderZtoA').addEventListener('click', getListZtoA);
-
-
-
-// function getListAll(){
-
-//     let leaveGender = document.getElementById("listGender");
-//     leaveGender.classList.add("hide");
-
-//     let leaveStatus = document.getElementById("listStatus");
-//     leaveStatus.classList.add("hide");
-
-//     let leaveSpecies = document.getElementById("listSpecies");
-//     leaveSpecies.classList.add("hide");
-
-//     let leaveOrder = document.getElementById("listOrder");
-//     leaveOrder.classList.add("hide");
-
-// }
-// document.querySelector('#all').addEventListener('click', getListAll);
-
-
-// function getListSpecies(){
-
-//     let leaveGender = document.getElementById("listGender");
-//     leaveGender.classList.add("hide");
-
-//     let leaveStatus = document.getElementById("listStatus");
-//     leaveStatus.classList.add("hide");
-
-//     let leaveOrder = document.getElementById("listOrder");
-//     leaveOrder.classList.add("hide");
-
-//     let displaySpecies = document.getElementById("listSpecies");
-//     displaySpecies.classList.remove("hide");
-
-// }
-// document.querySelector('#species').addEventListener('click', getListSpecies);
-// document.querySelector('#species').addEventListener('click', getListSpeciesHuman);
-
-
-// function getListGender(){
-
-//     let leaveSpecies = document.getElementById("listSpecies");
-//     leaveSpecies.classList.add("hide");
-
-//     let leaveStatus = document.getElementById("listStatus");
-//     leaveStatus.classList.add("hide");
-
-//     let leaveOrder = document.getElementById("listOrder");
-//     leaveOrder.classList.add("hide");
-
-//     let displayStatus = document.getElementById("listGender");
-//     displayStatus.classList.remove("hide");
-
-// }
-// document.querySelector('#gender').addEventListener('click', getListGender);
-// document.querySelector('#gender').addEventListener('click', getListGenderMale);
-
-
-// function getListStatus(){
-
-//     let leaveGender = document.getElementById("listGender");
-//     leaveGender.classList.add("hide");
-
-//     let leaveSpecies = document.getElementById("listSpecies");
-//     leaveSpecies.classList.add("hide");
-
-//     let leaveOrder = document.getElementById("listOrder");
-//     leaveOrder.classList.add("hide");
-
-//     let displayStatus = document.getElementById("listStatus");
-//     displayStatus.classList.remove("hide");
-
-// }
-// document.querySelector('#status').addEventListener('click', getListStatus);
-// document.querySelector('#status').addEventListener('click', getListStatusAlive);
-
-
-
-// function getListOrderAtoZ(){
-
-//     let leaveGender = document.getElementById("listGender");
-//     leaveGender.classList.add("hide");
-
-//     let leaveSpecies = document.getElementById("listSpecies");
-//     leaveSpecies.classList.add("hide");
-
-//     let leaveStatus = document.getElementById("listStatus");
-//     leaveStatus.classList.add("hide");
-
-//     let displayOrder = document.getElementById("listOrder");
-//     displayOrder.classList.remove("hide");
-
-// }
-// document.querySelector('#order').addEventListener('click', getListOrderAtoZ);
-// document.querySelector('#order').addEventListener('click', getListAtoZ);
-
-
-// function getListOrderZtoA(){
-
-//     let leaveGender = document.getElementById("listGender");
-//     leaveGender.classList.add("hide");
-
-//     let leaveSpecies = document.getElementById("listSpecies");
-//     leaveSpecies.classList.add("hide");
-
-//     let leaveStatus = document.getElementById("listStatus");
-//     leaveStatus.classList.add("hide");
-
-//     let displayOrder = document.getElementById("listOrder");
-//     displayOrder.classList.remove("hide");
-
-// }
-// document.querySelector('#order').addEventListener('click', getListOrderZtoA);
-// document.querySelector('#order').addEventListener('click', getListZtoA);
 
 
 
@@ -366,28 +103,6 @@ window.addEventListener('load', () => {
 
 
 
-
-// const overlay = document.getElementById('overlay');
-
-// const clickToShowCharacterDetail = (characterElement) => {
-//     const path =    characterElement.getAttribute('src');
-//     const name =    characterElement.dataset.name;
-//     const species = characterElement.dataset.species;
-//     const gender =  characterElement.dataset.gender;
-//     const status =  characterElement.dataset.status;
-//     overlay.classList.add('active');
-//     document.querySelector('#overlay img').src = path;
-//     document.querySelector('#overlay .description').innerHTML = `
-//         <div>
-//             <div class="character-name">${name}</div>
-//             <div>Status: ${status}</div>
-//             <div>Gender: ${gender}</div>
-//             <div>Specie: ${species}</div>
-//         </div>
-//      `;
-// };
-
-
 const overlay = document.getElementById('overlay');
 
 const clickToShowCharacterDetail = (characterElement) => {
@@ -417,35 +132,28 @@ overlay.addEventListener('click', (event) => {
 })
 
 
-
 function drawCharactersPage(index, arrayOfCharacters) {
-        //selecciona los 20 charaacters de la pagina actual
         let pageOfCharacters = arrayOfCharacters.slice(index, index+20);
 
-        // borrar los caracteres que hayan estado antes
         const elementOrderedList = document.getElementById('listCharacters');
         elementOrderedList.innerHTML = "";
 
-        // dibuja cada character, y escucha el clik para mostrar detalle
         for (let i=0; i < pageOfCharacters.length; i++) {
 
             const result = pageOfCharacters[i]; 
             const elementDiv = document.createElement("div");
             elementDiv.classList.add("character");
 
-            // Pegar en el cuadro la data del personaje
             elementDiv.dataset.image = result.image;
             elementDiv.dataset.name = result.name;
             elementDiv.dataset.species = result.species;
             elementDiv.dataset.gender = result.gender;
             elementDiv.dataset.status = result.status;
 
-            // Set click event to show detail popup
             elementDiv.addEventListener('click', () => clickToShowCharacterDetail(elementDiv))
             elementDiv.innerHTML = `
                 <img src="${result.image}" alt="${result.name}">
-                <span>${result.name}</span>`
-                // <h4>${result.species}</h4>
+                <h3>${result.name}</h3>`
             elementOrderedList.appendChild(elementDiv);            
         }
 }
@@ -458,7 +166,6 @@ function drawResults(arrayOfCharacters){
 
     drawCharactersPage(0, arrayOfCharacters);
 
-    // Paginación. Cada cuadradito numero de página
     for (let pageIndex=0; pageIndex < arrayOfCharacters.length; pageIndex=pageIndex+20 ){
         const button = document.createElement("button");
         const buttonText = document.createTextNode(parseInt(pageIndex / 20) + 1);
@@ -471,30 +178,16 @@ function drawResults(arrayOfCharacters){
 
 
 
-// function clickHambMenu() {
-//     let menuBar = document.getElementById("myTopnav");
-//     if (menuBar.className === "topnav") {
-//       menuBar.className += " responsive";
-//     } else {
-//      menuBar.className = "topnav";
-//     }
-//   }
-  
-// document.querySelector('#iconMenu').addEventListener('click', clickHambMenu);
-
-
-
+// Searching function
 const searchBar = document.getElementById('searchBar');
-let hpcharacters = [];
-hpcharacters = data.results;
-
 searchBar.addEventListener('keyup', (e) =>{
    const searchString = e.target.value.toLowerCase();
-   const filteredCharacters = hpcharacters.filter( character => {
+   const filteredCharacters = allCharacters.filter( character => {
         return character.name.toLowerCase().includes(searchString);
     });
     drawResults(filteredCharacters);
 });
+
 
 /* Menu responsive */
 let boton = document.getElementById("iconMenu");
@@ -523,7 +216,6 @@ window.addEventListener('resize', function(){
 /*CRECE LETRA ACTIVO*/
 window.addEventListener('load', () => {
     const menuLinks = document.querySelectorAll('#myTopnav a');
-
     menuLinks.forEach((element) => {
         element.addEventListener('click', (event) => {
             event.preventDefault();
@@ -531,25 +223,22 @@ window.addEventListener('load', () => {
             event.target.classList.add('active');
         });
     });
-
 })
 
 /*----SCROLL------*/
-const speciesBtn = document.getElementById('species');
-const genderBtn = document.getElementById('gender');
-const scrollableSpecies = document.getElementById('scroll');
+// const speciesBtn = document.getElementById('species');
+// const genderBtn = document.getElementById('gender');
+// const scrollableSpecies = document.getElementById('scroll');
 
-window.addEventListener('resize', function(){
-    if(screen.width > 750) {
-        function scrollFunction() {
-            scrollableSpecies.style.display = 'flex'
-        }
-        
-        function hideScroll() {
-            scrollableSpecies.style.display = 'none'
-        }
-        
-        speciesBtn.addEventListener('click', scrollFunction);
-        genderBtn.addEventListener('click', hideScroll)
-    }
-})
+// window.addEventListener('resize', function(){
+//     if(screen.width > 750) {
+//         function scrollFunction() {
+//             scrollableSpecies.style.display = 'flex'
+//         }
+//         function hideScroll() {
+//             scrollableSpecies.style.display = 'none'
+//         }
+//         speciesBtn.addEventListener('click', scrollFunction);
+//         genderBtn.addEventListener('click', hideScroll)
+//     }
+// })
