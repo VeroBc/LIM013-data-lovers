@@ -1,13 +1,15 @@
-import { example, anotherExample } from '../src/data.js';
+import { filterByGender, anotherExample } from './src/data.js';
 
+jest.mock("../src/data/rickandmorty/rickandmorty.js");
 
 describe('example', () => {
   it('is a function', () => {
     expect(typeof example).toBe('function');
   });
-
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+  
+  it.only('returns `example`', () => {
+    console.log(filterByGender("male").length);
+    expect(filterByGender("male")).toBe('example');
   });
 });
 
