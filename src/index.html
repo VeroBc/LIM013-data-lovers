@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -47,6 +48,8 @@
                     <a href="#" id="cronenberg">Cronenberg</a>
                     <a href="#" id="poopybutthole">Poopybutthole</a>
                     <a href="#" id="disease">Disease</a>
+                    <a href="#" id="vampire">Vampire</a>
+                    <a href="#" id="parasite">Parasite</a>
                     </div>
                 </div>
                 <div class="dropdown">
@@ -79,6 +82,28 @@
                 <input type="text" name="searchBar" id="searchBar" placeholder="Search for a Character"/>
             </div>
             
+            <div id="searchWrapper"class="searchWrapper">
+                <input type="text" name="searchBarEpisodes" id="searchBarEpisodes" placeholder="Search for a Episode"/>
+            </div>
+
+            <div id="season">
+                <input type="radio" id="choiceOne" name="season" value="S01">
+                <label for="choice1">Season 1</label>
+            
+                <input type="radio" id="choiceTwo" name="season" value="S02">
+                <label for="choice2">Season 2</label>
+            
+                <input type="radio" id="choiceThree" name="season" value="S03">
+                <label for="choice3">Season 3</label>
+
+                <input type="radio" id="choiceFour" name="season" value="S04">
+                <label for="choice4">Season 4</label>
+              </div>
+
+
+
+
+
             <div id="listCharacters" class="flex-container"></div>
             <div id="buttonsContainer" class="buttonsContainer active" ></div>
         
@@ -98,6 +123,8 @@
 
     
 <script src="main.js" type="module"></script>
+
+<script src="dataepisodes.js" type="module"></script>
 
 </body>
 

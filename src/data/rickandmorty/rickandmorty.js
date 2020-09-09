@@ -1,11 +1,4 @@
-export default {
-  "info": {
-      "count": 493,
-      "pages": 25,
-      "next": "https://rickandmortyapi.com/api/character/?page=2",
-      "prev": ""
-  },
-  "results": [
+export default [
       {
           "id": 1,
           "name": "Rick Sanchez",
@@ -11160,6 +11153,3922 @@ export default {
           ],
           "url": "https://rickandmortyapi.com/api/character/493",
           "created": "2018-05-22T17:51:07.373Z"
-      }
-  ]
-};
+      },
+      {
+        "id": 494,
+        "name": "Crystal Poacher",
+        "status": "Dead",
+        "species": "Alien",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "unknown",
+            "url": ""
+        },
+        "location": {
+            "name": "Forbodulon Prime",
+            "url": "https://rickandmortyapi.com/api/location/79"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/494.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/32"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/494",
+        "created": "2020-05-02T10:05:08.737Z"
+    },
+    {
+        "id": 495,
+        "name": "Crystal Poacher",
+        "status": "Dead",
+        "species": "Alien",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "unknown",
+            "url": ""
+        },
+        "location": {
+            "name": "Forbodulon Prime",
+            "url": "https://rickandmortyapi.com/api/location/79"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/495.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/32"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/495",
+        "created": "2020-05-02T10:10:44.766Z"
+    },
+    {
+        "id": 496,
+        "name": "Crystal Poacher",
+        "status": "Dead",
+        "species": "Alien",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "unknown",
+            "url": ""
+        },
+        "location": {
+            "name": "Forbodulon Prime",
+            "url": "https://rickandmortyapi.com/api/location/79"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/496.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/32"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/496",
+        "created": "2020-05-02T10:27:21.015Z"
+    },
+    {
+        "id": 497,
+        "name": "Hologram Rick",
+        "status": "Dead",
+        "species": "Humanoid",
+        "type": "Hologram",
+        "gender": "Male",
+        "origin": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "location": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/497.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/32"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/497",
+        "created": "2020-05-02T10:30:38.622Z"
+    },
+    {
+        "id": 498,
+        "name": "Fascist Rick",
+        "status": "Dead",
+        "species": "Human",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "Earth (Fascist Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/77"
+        },
+        "location": {
+            "name": "Earth (Fascist Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/77"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/498.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/32"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/498",
+        "created": "2020-05-02T10:34:12.495Z"
+    },
+    {
+        "id": 499,
+        "name": "Fascist Morty",
+        "status": "Dead",
+        "species": "Human",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "Earth (Fascist Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/77"
+        },
+        "location": {
+            "name": "Earth (Fascist Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/77"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/499.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/32"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/499",
+        "created": "2020-05-02T11:24:36.156Z"
+    },
+    {
+        "id": 500,
+        "name": "Fascist Mr. President",
+        "status": "Alive",
+        "species": "Human",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "Earth (Fascist Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/77"
+        },
+        "location": {
+            "name": "Earth (Fascist Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/77"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/500.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/32"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/500",
+        "created": "2020-05-02T11:25:26.903Z"
+    },
+    {
+        "id": 501,
+        "name": "Fascist Rick’s Clone",
+        "status": "Dead",
+        "species": "Human",
+        "type": "Clone",
+        "gender": "Male",
+        "origin": {
+            "name": "Earth (Fascist Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/77"
+        },
+        "location": {
+            "name": "Earth (Fascist Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/77"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/501.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/32"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/501",
+        "created": "2020-05-02T11:28:36.137Z"
+    },
+    {
+        "id": 502,
+        "name": "Revolio Clockberg Jr.",
+        "status": "Dead",
+        "species": "Alien",
+        "type": "Gear-Person",
+        "gender": "Male",
+        "origin": {
+            "name": "Earth (Fascist Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/77"
+        },
+        "location": {
+            "name": "Earth (Fascist Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/77"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/502.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/32"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/502",
+        "created": "2020-05-02T11:35:26.572Z"
+    },
+    {
+        "id": 503,
+        "name": "Fascist Shrimp Rick",
+        "status": "Alive",
+        "species": "Animal",
+        "type": "Shrimp",
+        "gender": "Male",
+        "origin": {
+            "name": "Earth (Fascist Shrimp Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/80"
+        },
+        "location": {
+            "name": "Earth (Fascist Shrimp Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/80"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/503.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/32"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/503",
+        "created": "2020-05-02T11:53:46.229Z"
+    },
+    {
+        "id": 504,
+        "name": "Fascist Shrimp Rick’s Clone",
+        "status": "Dead",
+        "species": "Animal",
+        "type": "Shrimp",
+        "gender": "Male",
+        "origin": {
+            "name": "Earth (Fascist Shrimp Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/80"
+        },
+        "location": {
+            "name": "Earth (Fascist Shrimp Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/80"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/504.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/32"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/504",
+        "created": "2020-05-02T12:05:12.832Z"
+    },
+    {
+        "id": 505,
+        "name": "Fascist Shrimp Morty",
+        "status": "Alive",
+        "species": "Animal",
+        "type": "Shrimp",
+        "gender": "Male",
+        "origin": {
+            "name": "Earth (Fascist Shrimp Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/80"
+        },
+        "location": {
+            "name": "Earth (Fascist Shrimp Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/80"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/505.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/32"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/505",
+        "created": "2020-05-02T12:11:23.379Z"
+    },
+    {
+        "id": 506,
+        "name": "Fascist Shrimp SS",
+        "status": "Alive",
+        "species": "Animal",
+        "type": "Shrimp",
+        "gender": "Male",
+        "origin": {
+            "name": "Earth (Fascist Shrimp Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/80"
+        },
+        "location": {
+            "name": "Earth (Fascist Shrimp Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/80"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/506.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/32"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/506",
+        "created": "2020-05-02T12:13:03.799Z"
+    },
+    {
+        "id": 507,
+        "name": "Fascist Teddy Bear Rick",
+        "status": "Alive",
+        "species": "Animal",
+        "type": "Teddy Bear",
+        "gender": "Male",
+        "origin": {
+            "name": "Earth (Fascist Teddy Bear Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/81"
+        },
+        "location": {
+            "name": "Earth (Fascist Teddy Bear Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/81"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/507.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/32"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/507",
+        "created": "2020-05-02T12:18:23.346Z"
+    },
+    {
+        "id": 508,
+        "name": "Fascist Teddy Bear Rick’s Clone",
+        "status": "Dead",
+        "species": "Animal",
+        "type": "Teddy Bear",
+        "gender": "Male",
+        "origin": {
+            "name": "Earth (Fascist Teddy Bear Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/81"
+        },
+        "location": {
+            "name": "Earth (Fascist Teddy Bear Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/81"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/508.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/32"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/508",
+        "created": "2020-05-02T12:20:28.005Z"
+    },
+    {
+        "id": 509,
+        "name": "Bully",
+        "status": "unknown",
+        "species": "Human",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "location": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/509.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/32"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/509",
+        "created": "2020-05-02T12:22:11.339Z"
+    },
+    {
+        "id": 510,
+        "name": "Anchorman",
+        "status": "Alive",
+        "species": "Human",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "location": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/510.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/32"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/510",
+        "created": "2020-05-02T12:23:38.655Z"
+    },
+    {
+        "id": 511,
+        "name": "Anchorwoman",
+        "status": "Alive",
+        "species": "Human",
+        "type": "",
+        "gender": "Female",
+        "origin": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "location": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/511.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/32"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/511",
+        "created": "2020-05-02T12:24:07.452Z"
+    },
+    {
+        "id": 512,
+        "name": "Morty’s Lawyer",
+        "status": "Alive",
+        "species": "Human",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "location": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/512.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/32"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/512",
+        "created": "2020-05-02T12:25:59.290Z"
+    },
+    {
+        "id": 513,
+        "name": "Judge",
+        "status": "Dead",
+        "species": "Human",
+        "type": "",
+        "gender": "Female",
+        "origin": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "location": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/513.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/32"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/513",
+        "created": "2020-05-02T12:27:08.223Z"
+    },
+    {
+        "id": 514,
+        "name": "Public Opinion Judge",
+        "status": "Alive",
+        "species": "Human",
+        "type": "",
+        "gender": "Female",
+        "origin": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "location": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/514.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/32"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/514",
+        "created": "2020-05-02T12:28:05.671Z"
+    },
+    {
+        "id": 515,
+        "name": "Caterpillar Mr. Goldenfold",
+        "status": "Dead",
+        "species": "Animal",
+        "type": "Caterpillar",
+        "gender": "Male",
+        "origin": {
+            "name": "Earth (Wasp Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/82"
+        },
+        "location": {
+            "name": "Earth (Wasp Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/82"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/515.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/32"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/515",
+        "created": "2020-05-02T12:34:49.151Z"
+    },
+    {
+        "id": 516,
+        "name": "Wasp Rick",
+        "status": "Alive",
+        "species": "Animal",
+        "type": "Wasp",
+        "gender": "Male",
+        "origin": {
+            "name": "Earth (Wasp Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/82"
+        },
+        "location": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/516.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/32"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/516",
+        "created": "2020-05-02T12:36:47.872Z"
+    },
+    {
+        "id": 517,
+        "name": "Wasp Rick’s Clone",
+        "status": "unknown",
+        "species": "Animal",
+        "type": "Wasp",
+        "gender": "Male",
+        "origin": {
+            "name": "Earth (Wasp Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/82"
+        },
+        "location": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/517.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/32"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/517",
+        "created": "2020-05-02T12:38:18.097Z"
+    },
+    {
+        "id": 518,
+        "name": "Wasp Morty",
+        "status": "Alive",
+        "species": "Animal",
+        "type": "Wasp",
+        "gender": "Male",
+        "origin": {
+            "name": "Earth (Wasp Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/82"
+        },
+        "location": {
+            "name": "Earth (Wasp Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/82"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/518.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/32"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/518",
+        "created": "2020-05-02T12:39:50.688Z"
+    },
+    {
+        "id": 519,
+        "name": "Wasp Summer",
+        "status": "Alive",
+        "species": "Animal",
+        "type": "Wasp",
+        "gender": "Female",
+        "origin": {
+            "name": "Earth (Wasp Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/82"
+        },
+        "location": {
+            "name": "Earth (Wasp Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/82"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/519.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/32"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/519",
+        "created": "2020-05-02T12:40:45.760Z"
+    },
+    {
+        "id": 520,
+        "name": "Wasp Jerry",
+        "status": "Alive",
+        "species": "Animal",
+        "type": "Wasp",
+        "gender": "Male",
+        "origin": {
+            "name": "Earth (Wasp Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/82"
+        },
+        "location": {
+            "name": "Earth (Wasp Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/82"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/520.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/32"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/520",
+        "created": "2020-05-02T12:41:19.879Z"
+    },
+    {
+        "id": 521,
+        "name": "Wasp Beth",
+        "status": "Alive",
+        "species": "Animal",
+        "type": "Wasp",
+        "gender": "Female",
+        "origin": {
+            "name": "Earth (Wasp Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/82"
+        },
+        "location": {
+            "name": "Earth (Wasp Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/82"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/521.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/32"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/521",
+        "created": "2020-05-02T12:41:48.912Z"
+    },
+    {
+        "id": 522,
+        "name": "Caterpillar Mr. Goldenfold’s Larvae",
+        "status": "Dead",
+        "species": "Animal",
+        "type": "Caterpillar",
+        "gender": "unknown",
+        "origin": {
+            "name": "Earth (Wasp Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/82"
+        },
+        "location": {
+            "name": "Earth (Wasp Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/82"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/522.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/32"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/522",
+        "created": "2020-05-02T12:43:21.266Z"
+    },
+    {
+        "id": 523,
+        "name": "Boglin",
+        "status": "unknown",
+        "species": "unknown",
+        "type": "Toy",
+        "gender": "unknown",
+        "origin": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "location": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/523.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/32"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/523",
+        "created": "2020-05-02T12:50:15.005Z"
+    },
+    {
+        "id": 524,
+        "name": "Kirkland Brand Mr. Meeseeks",
+        "status": "unknown",
+        "species": "Humanoid",
+        "type": "Meeseeks",
+        "gender": "Male",
+        "origin": {
+            "name": "Mr. Meeseeks Box",
+            "url": "https://rickandmortyapi.com/api/location/53"
+        },
+        "location": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/524.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/32"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/524",
+        "created": "2020-05-02T12:52:58.134Z"
+    },
+    {
+        "id": 525,
+        "name": "Glootie",
+        "status": "Alive",
+        "species": "Alien",
+        "type": "Monogatron",
+        "gender": "Male",
+        "origin": {
+            "name": "unknown",
+            "url": ""
+        },
+        "location": {
+            "name": "Monogatron Mothership",
+            "url": "https://rickandmortyapi.com/api/location/83"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/525.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/33"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/525",
+        "created": "2020-05-02T13:13:31.593Z"
+    },
+    {
+        "id": 526,
+        "name": "Danny Publitz",
+        "status": "Alive",
+        "species": "Human",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "location": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/526.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/33"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/526",
+        "created": "2020-05-02T13:14:28.386Z"
+    },
+    {
+        "id": 527,
+        "name": "Mothership Intern",
+        "status": "Alive",
+        "species": "Alien",
+        "type": "Monogatron",
+        "gender": "Male",
+        "origin": {
+            "name": "unknown",
+            "url": ""
+        },
+        "location": {
+            "name": "Monogatron Mothership",
+            "url": "https://rickandmortyapi.com/api/location/83"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/527.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/33"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/527",
+        "created": "2020-05-02T13:26:53.358Z"
+    },
+    {
+        "id": 528,
+        "name": "Monogatron Leader",
+        "status": "Alive",
+        "species": "Alien",
+        "type": "Monogatron",
+        "gender": "Male",
+        "origin": {
+            "name": "unknown",
+            "url": ""
+        },
+        "location": {
+            "name": "Monogatron Mothership",
+            "url": "https://rickandmortyapi.com/api/location/83"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/528.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/33"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/528",
+        "created": "2020-05-02T13:27:50.476Z"
+    },
+    {
+        "id": 529,
+        "name": "Lizard",
+        "status": "Dead",
+        "species": "Alien",
+        "type": "Lizard",
+        "gender": "Male",
+        "origin": {
+            "name": "Midland Quasar",
+            "url": "https://rickandmortyapi.com/api/location/85"
+        },
+        "location": {
+            "name": "Midland Quasar",
+            "url": "https://rickandmortyapi.com/api/location/85"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/529.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/33"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/529",
+        "created": "2020-05-02T13:31:49.867Z"
+    },
+    {
+        "id": 530,
+        "name": "Deliverance",
+        "status": "Dead",
+        "species": "Robot",
+        "type": "",
+        "gender": "Genderless",
+        "origin": {
+            "name": "Midland Quasar",
+            "url": "https://rickandmortyapi.com/api/location/85"
+        },
+        "location": {
+            "name": "Midland Quasar",
+            "url": "https://rickandmortyapi.com/api/location/85"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/530.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/33"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/530",
+        "created": "2020-05-02T13:32:41.259Z"
+    },
+    {
+        "id": 531,
+        "name": "Tony",
+        "status": "Dead",
+        "species": "Alien",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "unknown",
+            "url": ""
+        },
+        "location": {
+            "name": "Mount Space Everest",
+            "url": "https://rickandmortyapi.com/api/location/86"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/531.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/33"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/531",
+        "created": "2020-05-02T13:35:07.498Z"
+    },
+    {
+        "id": 532,
+        "name": "Tony’s Wife",
+        "status": "Dead",
+        "species": "Alien",
+        "type": "",
+        "gender": "Female",
+        "origin": {
+            "name": "Globaflyn",
+            "url": "https://rickandmortyapi.com/api/location/87"
+        },
+        "location": {
+            "name": "Globaflyn",
+            "url": "https://rickandmortyapi.com/api/location/87"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/532.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/33"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/532",
+        "created": "2020-05-02T13:45:32.092Z"
+    },
+    {
+        "id": 533,
+        "name": "Monogatron Queen",
+        "status": "Alive",
+        "species": "Alien",
+        "type": "Monogatron",
+        "gender": "Female",
+        "origin": {
+            "name": "unknown",
+            "url": ""
+        },
+        "location": {
+            "name": "Monogatron Mothership",
+            "url": "https://rickandmortyapi.com/api/location/83"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/533.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/33"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/533",
+        "created": "2020-05-02T13:46:10.906Z"
+    },
+    {
+        "id": 534,
+        "name": "Tony's Dad",
+        "status": "Alive",
+        "species": "Alien",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "unknown",
+            "url": ""
+        },
+        "location": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/534.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/33"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/534",
+        "created": "2020-05-02T13:52:06.880Z"
+    },
+    {
+        "id": 535,
+        "name": "Jeff",
+        "status": "Alive",
+        "species": "Human",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "location": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/535.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/33"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/535",
+        "created": "2020-05-02T13:54:21.374Z"
+    },
+    {
+        "id": 536,
+        "name": "Josiah",
+        "status": "Alive",
+        "species": "Human",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "location": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/536.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/33"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/536",
+        "created": "2020-05-02T13:54:48.651Z"
+    },
+    {
+        "id": 537,
+        "name": "Maggie",
+        "status": "Alive",
+        "species": "Human",
+        "type": "",
+        "gender": "Female",
+        "origin": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "location": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/537.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/33"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/537",
+        "created": "2020-05-02T13:55:15.098Z"
+    },
+    {
+        "id": 538,
+        "name": "Priest Witherspoon",
+        "status": "Alive",
+        "species": "Human",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "location": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/538.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/33"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/538",
+        "created": "2020-05-02T13:55:45.767Z"
+    },
+    {
+        "id": 539,
+        "name": "Richard",
+        "status": "Alive",
+        "species": "Human",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "location": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/539.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/33"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/539",
+        "created": "2020-05-02T13:56:14.834Z"
+    },
+    {
+        "id": 540,
+        "name": "Running Bird",
+        "status": "Alive",
+        "species": "Human",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "location": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/540.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/33"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/540",
+        "created": "2020-05-02T13:56:45.926Z"
+    },
+    {
+        "id": 541,
+        "name": "Secretary at Tony's",
+        "status": "Alive",
+        "species": "Alien",
+        "type": "",
+        "gender": "Female",
+        "origin": {
+            "name": "unknown",
+            "url": ""
+        },
+        "location": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/541.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/33"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/541",
+        "created": "2020-05-02T13:57:49.250Z"
+    },
+    {
+        "id": 542,
+        "name": "Mountain Sweat Jerry",
+        "status": "Alive",
+        "species": "Human",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "Globaflyn",
+            "url": "https://rickandmortyapi.com/api/location/87"
+        },
+        "location": {
+            "name": "Globaflyn",
+            "url": "https://rickandmortyapi.com/api/location/87"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/542.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/33"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/542",
+        "created": "2020-05-02T13:58:42.083Z"
+    },
+    {
+        "id": 543,
+        "name": "Vermigurber",
+        "status": "Alive",
+        "species": "Alien",
+        "type": "Fly",
+        "gender": "Male",
+        "origin": {
+            "name": "unknown",
+            "url": ""
+        },
+        "location": {
+            "name": "Gorgon Quadrant",
+            "url": "https://rickandmortyapi.com/api/location/84"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/543.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/33"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/543",
+        "created": "2020-05-07T09:05:37.614Z"
+    },
+    {
+        "id": 544,
+        "name": "Miles Knightly",
+        "status": "Dead",
+        "species": "Alien",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "unknown",
+            "url": ""
+        },
+        "location": {
+            "name": "Heist-Con",
+            "url": "https://rickandmortyapi.com/api/location/88"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/544.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/34"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/544",
+        "created": "2020-05-07T09:09:06.114Z"
+    },
+    {
+        "id": 545,
+        "name": "Heist-Con Receptionist",
+        "status": "Alive",
+        "species": "Alien",
+        "type": "",
+        "gender": "Female",
+        "origin": {
+            "name": "unknown",
+            "url": ""
+        },
+        "location": {
+            "name": "Heist-Con",
+            "url": "https://rickandmortyapi.com/api/location/88"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/545.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/34"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/545",
+        "created": "2020-05-07T09:12:12.200Z"
+    },
+    {
+        "id": 546,
+        "name": "Angie Flint",
+        "status": "Alive",
+        "species": "Human",
+        "type": "Cyborg",
+        "gender": "Female",
+        "origin": {
+            "name": "unknown",
+            "url": ""
+        },
+        "location": {
+            "name": "Heist-Con",
+            "url": "https://rickandmortyapi.com/api/location/88"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/546.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/34"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/546",
+        "created": "2020-05-07T09:14:00.009Z"
+    },
+    {
+        "id": 547,
+        "name": "Glar",
+        "status": "Alive",
+        "species": "Alien",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "unknown",
+            "url": ""
+        },
+        "location": {
+            "name": "Heist-Con",
+            "url": "https://rickandmortyapi.com/api/location/88"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/547.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/34"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/547",
+        "created": "2020-05-07T09:14:34.918Z"
+    },
+    {
+        "id": 548,
+        "name": "Truckula",
+        "status": "Alive",
+        "species": "Mythological Creature",
+        "type": "Vampire",
+        "gender": "Male",
+        "origin": {
+            "name": "unknown",
+            "url": ""
+        },
+        "location": {
+            "name": "Heist-Con",
+            "url": "https://rickandmortyapi.com/api/location/88"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/548.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/34"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/548",
+        "created": "2020-05-07T09:19:47.204Z"
+    },
+    {
+        "id": 549,
+        "name": "Snake Arms",
+        "status": "Alive",
+        "species": "Alien",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "unknown",
+            "url": ""
+        },
+        "location": {
+            "name": "Heist-Con",
+            "url": "https://rickandmortyapi.com/api/location/88"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/549.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/34"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/549",
+        "created": "2020-05-07T09:51:03.022Z"
+    },
+    {
+        "id": 550,
+        "name": "Double Microwawe",
+        "status": "Alive",
+        "species": "Humanoid",
+        "type": "Cyborg",
+        "gender": "Male",
+        "origin": {
+            "name": "unknown",
+            "url": ""
+        },
+        "location": {
+            "name": "Heist-Con",
+            "url": "https://rickandmortyapi.com/api/location/88"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/550.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/34"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/550",
+        "created": "2020-05-07T10:07:53.077Z"
+    },
+    {
+        "id": 551,
+        "name": "Monitor Lord",
+        "status": "Alive",
+        "species": "Alien",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "unknown",
+            "url": ""
+        },
+        "location": {
+            "name": "Heist-Con",
+            "url": "https://rickandmortyapi.com/api/location/88"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/551.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/34"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/551",
+        "created": "2020-05-07T10:08:49.225Z"
+    },
+    {
+        "id": 552,
+        "name": "Key Catcher",
+        "status": "Alive",
+        "species": "Alien",
+        "type": "",
+        "gender": "Female",
+        "origin": {
+            "name": "unknown",
+            "url": ""
+        },
+        "location": {
+            "name": "Heist-Con",
+            "url": "https://rickandmortyapi.com/api/location/88"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/552.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/34"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/552",
+        "created": "2020-05-07T10:09:21.779Z"
+    },
+    {
+        "id": 553,
+        "name": "The Shapeshiftress",
+        "status": "Alive",
+        "species": "Alien",
+        "type": "Shapeshifter",
+        "gender": "Female",
+        "origin": {
+            "name": "unknown",
+            "url": ""
+        },
+        "location": {
+            "name": "Heist-Con",
+            "url": "https://rickandmortyapi.com/api/location/88"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/553.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/34"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/553",
+        "created": "2020-05-07T10:10:37.809Z"
+    },
+    {
+        "id": 554,
+        "name": "Heistotron",
+        "status": "Dead",
+        "species": "Robot",
+        "type": "",
+        "gender": "Genderless",
+        "origin": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "location": {
+            "name": "Heistotron Base",
+            "url": "https://rickandmortyapi.com/api/location/89"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/554.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/34"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/554",
+        "created": "2020-05-07T10:12:10.339Z"
+    },
+    {
+        "id": 555,
+        "name": "Randotron",
+        "status": "Dead",
+        "species": "Robot",
+        "type": "",
+        "gender": "Genderless",
+        "origin": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "location": {
+            "name": "Heistotron Base",
+            "url": "https://rickandmortyapi.com/api/location/89"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/555.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/34"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/555",
+        "created": "2020-05-07T10:12:53.234Z"
+    },
+    {
+        "id": 556,
+        "name": "Hephaestus",
+        "status": "Alive",
+        "species": "Mythological Creature",
+        "type": "God",
+        "gender": "Male",
+        "origin": {
+            "name": "Mount Olympus",
+            "url": "https://rickandmortyapi.com/api/location/90"
+        },
+        "location": {
+            "name": "Heistotron Base",
+            "url": "https://rickandmortyapi.com/api/location/89"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/556.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/34"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/556",
+        "created": "2020-05-07T10:19:57.456Z"
+    },
+    {
+        "id": 557,
+        "name": "Ventriloquiver",
+        "status": "Alive",
+        "species": "Humanoid",
+        "type": "Dummy",
+        "gender": "Female",
+        "origin": {
+            "name": "Plitzville Montana",
+            "url": "https://rickandmortyapi.com/api/location/91"
+        },
+        "location": {
+            "name": "Heistotron Base",
+            "url": "https://rickandmortyapi.com/api/location/89"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/557.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/34"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/557",
+        "created": "2020-05-07T10:23:26.274Z"
+    },
+    {
+        "id": 558,
+        "name": "Elon Tusk",
+        "status": "Alive",
+        "species": "Human",
+        "type": "Human with tusks",
+        "gender": "Male",
+        "origin": {
+            "name": "Earth (Tusk Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/92"
+        },
+        "location": {
+            "name": "Heistotron Base",
+            "url": "https://rickandmortyapi.com/api/location/89"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/558.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/34"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/558",
+        "created": "2020-05-07T10:26:02.535Z"
+    },
+    {
+        "id": 559,
+        "name": "Gramuflackian Anchorman",
+        "status": "Dead",
+        "species": "Alien",
+        "type": "Gramuflackian",
+        "gender": "Male",
+        "origin": {
+            "name": "Gramuflack",
+            "url": "https://rickandmortyapi.com/api/location/93"
+        },
+        "location": {
+            "name": "Gramuflack",
+            "url": "https://rickandmortyapi.com/api/location/93"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/559.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/34"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/559",
+        "created": "2020-05-07T10:27:19.527Z"
+    },
+    {
+        "id": 560,
+        "name": "Gramuflackian General",
+        "status": "Dead",
+        "species": "Alien",
+        "type": "Gramuflackian",
+        "gender": "Male",
+        "origin": {
+            "name": "Gramuflack",
+            "url": "https://rickandmortyapi.com/api/location/93"
+        },
+        "location": {
+            "name": "Gramuflack",
+            "url": "https://rickandmortyapi.com/api/location/93"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/560.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/34"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/560",
+        "created": "2020-05-07T10:28:11.833Z"
+    },
+    {
+        "id": 561,
+        "name": "Netflix Executive",
+        "status": "Alive",
+        "species": "Human",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "location": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/561.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/34"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/561",
+        "created": "2020-05-07T11:19:57.540Z"
+    },
+    {
+        "id": 562,
+        "name": "Balthromaw",
+        "status": "Alive",
+        "species": "Mythological Creature",
+        "type": "Dragon",
+        "gender": "Male",
+        "origin": {
+            "name": "Draygon",
+            "url": "https://rickandmortyapi.com/api/location/94"
+        },
+        "location": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/562.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/35"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/562",
+        "created": "2020-05-07T11:32:16.357Z"
+    },
+    {
+        "id": 563,
+        "name": "The Wizard",
+        "status": "Dead",
+        "species": "Human",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "Draygon",
+            "url": "https://rickandmortyapi.com/api/location/94"
+        },
+        "location": {
+            "name": "Draygon",
+            "url": "https://rickandmortyapi.com/api/location/94"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/563.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/35"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/563",
+        "created": "2020-05-07T11:32:52.469Z"
+    },
+    {
+        "id": 564,
+        "name": "Talking Cat",
+        "status": "Alive",
+        "species": "Animal",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "unknown",
+            "url": ""
+        },
+        "location": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/564.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/35"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/564",
+        "created": "2020-05-07T11:33:37.456Z"
+    },
+    {
+        "id": 565,
+        "name": "Debrah",
+        "status": "Alive",
+        "species": "Mythological Creature",
+        "type": "Dragon",
+        "gender": "Male",
+        "origin": {
+            "name": "Draygon",
+            "url": "https://rickandmortyapi.com/api/location/94"
+        },
+        "location": {
+            "name": "Draygon",
+            "url": "https://rickandmortyapi.com/api/location/94"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/565.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/35"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/565",
+        "created": "2020-05-07T11:34:43.083Z"
+    },
+    {
+        "id": 566,
+        "name": "Debrah’s Partner",
+        "status": "Alive",
+        "species": "Mythological Creature",
+        "type": "Dragon",
+        "gender": "Male",
+        "origin": {
+            "name": "Draygon",
+            "url": "https://rickandmortyapi.com/api/location/94"
+        },
+        "location": {
+            "name": "Draygon",
+            "url": "https://rickandmortyapi.com/api/location/94"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/566.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/35"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/566",
+        "created": "2020-05-07T11:35:29.625Z"
+    },
+    {
+        "id": 567,
+        "name": "Michael",
+        "status": "Alive",
+        "species": "Mythological Creature",
+        "type": "Dragon",
+        "gender": "Male",
+        "origin": {
+            "name": "Draygon",
+            "url": "https://rickandmortyapi.com/api/location/94"
+        },
+        "location": {
+            "name": "Draygon",
+            "url": "https://rickandmortyapi.com/api/location/94"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/567.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/35"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/567",
+        "created": "2020-05-07T11:36:12.044Z"
+    },
+    {
+        "id": 568,
+        "name": "Slut Dragon",
+        "status": "Alive",
+        "species": "Mythological Creature",
+        "type": "Dragon",
+        "gender": "Male",
+        "origin": {
+            "name": "Draygon",
+            "url": "https://rickandmortyapi.com/api/location/94"
+        },
+        "location": {
+            "name": "Draygon",
+            "url": "https://rickandmortyapi.com/api/location/94"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/568.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/35"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/568",
+        "created": "2020-05-07T11:37:05.857Z"
+    },
+    {
+        "id": 569,
+        "name": "Shadow Jacker",
+        "status": "Alive",
+        "species": "Mythological Creature",
+        "type": "Dragon",
+        "gender": "Male",
+        "origin": {
+            "name": "Draygon",
+            "url": "https://rickandmortyapi.com/api/location/94"
+        },
+        "location": {
+            "name": "Draygon",
+            "url": "https://rickandmortyapi.com/api/location/94"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/569.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/35"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/569",
+        "created": "2020-05-07T11:37:49.533Z"
+    },
+    {
+        "id": 570,
+        "name": "Chachi",
+        "status": "Dead",
+        "species": "Alien",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "unknown",
+            "url": ""
+        },
+        "location": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/570.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/35"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/570",
+        "created": "2020-05-07T12:01:38.426Z"
+    },
+    {
+        "id": 571,
+        "name": "Slippy",
+        "status": "Alive",
+        "species": "Animal",
+        "type": "Snake",
+        "gender": "Female",
+        "origin": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "location": {
+            "name": "Snake Planet",
+            "url": "https://rickandmortyapi.com/api/location/78"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/571.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/36"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/571",
+        "created": "2020-05-07T12:10:34.574Z"
+    },
+    {
+        "id": 572,
+        "name": "Robot Snake",
+        "status": "unknown",
+        "species": "Robot",
+        "type": "Snake",
+        "gender": "Genderless",
+        "origin": {
+            "name": "Snake Planet",
+            "url": "https://rickandmortyapi.com/api/location/78"
+        },
+        "location": {
+            "name": "Snake Planet",
+            "url": "https://rickandmortyapi.com/api/location/78"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/572.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/36"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/572",
+        "created": "2020-05-07T12:11:58.105Z"
+    },
+    {
+        "id": 573,
+        "name": "Snake Hitler",
+        "status": "Dead",
+        "species": "Animal",
+        "type": "Snake",
+        "gender": "Male",
+        "origin": {
+            "name": "Snake Planet",
+            "url": "https://rickandmortyapi.com/api/location/78"
+        },
+        "location": {
+            "name": "Snake Planet",
+            "url": "https://rickandmortyapi.com/api/location/78"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/573.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/36"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/573",
+        "created": "2020-05-07T12:12:53.568Z"
+    },
+    {
+        "id": 574,
+        "name": "Snake Lincoln",
+        "status": "Dead",
+        "species": "Animal",
+        "type": "Snake",
+        "gender": "Male",
+        "origin": {
+            "name": "Snake Planet",
+            "url": "https://rickandmortyapi.com/api/location/78"
+        },
+        "location": {
+            "name": "Snake Planet",
+            "url": "https://rickandmortyapi.com/api/location/78"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/574.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/36"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/574",
+        "created": "2020-05-07T12:13:44.361Z"
+    },
+    {
+        "id": 575,
+        "name": "Snake Resistance Robot",
+        "status": "Dead",
+        "species": "Robot",
+        "type": "Human-Snake hybrid",
+        "gender": "Genderless",
+        "origin": {
+            "name": "Snake Planet",
+            "url": "https://rickandmortyapi.com/api/location/78"
+        },
+        "location": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/575.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/36"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/575",
+        "created": "2020-05-07T12:15:50.438Z"
+    },
+    {
+        "id": 576,
+        "name": "Snake Linguist",
+        "status": "unknown",
+        "species": "Animal",
+        "type": "Snake",
+        "gender": "Male",
+        "origin": {
+            "name": "Snake Planet",
+            "url": "https://rickandmortyapi.com/api/location/78"
+        },
+        "location": {
+            "name": "Snake Planet",
+            "url": "https://rickandmortyapi.com/api/location/78"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/576.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/36"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/576",
+        "created": "2020-05-07T12:16:53.781Z"
+    },
+    {
+        "id": 577,
+        "name": "Snake Terminator",
+        "status": "unknown",
+        "species": "Robot",
+        "type": "Snake",
+        "gender": "Male",
+        "origin": {
+            "name": "Snake Planet",
+            "url": "https://rickandmortyapi.com/api/location/78"
+        },
+        "location": {
+            "name": "Snake Planet",
+            "url": "https://rickandmortyapi.com/api/location/78"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/577.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/36"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/577",
+        "created": "2020-05-07T12:19:06.599Z"
+    },
+    {
+        "id": 578,
+        "name": "Snake Soldier",
+        "status": "Alive",
+        "species": "Animal",
+        "type": "Snake",
+        "gender": "Male",
+        "origin": {
+            "name": "Snake Planet",
+            "url": "https://rickandmortyapi.com/api/location/78"
+        },
+        "location": {
+            "name": "Snake Planet",
+            "url": "https://rickandmortyapi.com/api/location/78"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/578.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/36"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/578",
+        "created": "2020-05-07T12:19:11.205Z"
+    },
+    {
+        "id": 579,
+        "name": "Snake with Legs",
+        "status": "Alive",
+        "species": "Animal",
+        "type": "Snake",
+        "gender": "Male",
+        "origin": {
+            "name": "Snake Planet",
+            "url": "https://rickandmortyapi.com/api/location/78"
+        },
+        "location": {
+            "name": "Snake Planet",
+            "url": "https://rickandmortyapi.com/api/location/78"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/579.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/36"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/579",
+        "created": "2020-05-07T12:22:08.800Z"
+    },
+    {
+        "id": 580,
+        "name": "Secret Service Snake",
+        "status": "Alive",
+        "species": "Animal",
+        "type": "Snake",
+        "gender": "Male",
+        "origin": {
+            "name": "Snake Planet",
+            "url": "https://rickandmortyapi.com/api/location/78"
+        },
+        "location": {
+            "name": "Snake Planet",
+            "url": "https://rickandmortyapi.com/api/location/78"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/580.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/36"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/580",
+        "created": "2020-05-07T12:23:20.171Z"
+    },
+    {
+        "id": 581,
+        "name": "Anchosnake",
+        "status": "Alive",
+        "species": "Animal",
+        "type": "Snake",
+        "gender": "Male",
+        "origin": {
+            "name": "Snake Planet",
+            "url": "https://rickandmortyapi.com/api/location/78"
+        },
+        "location": {
+            "name": "Snake Planet",
+            "url": "https://rickandmortyapi.com/api/location/78"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/581.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/36"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/581",
+        "created": "2020-05-07T12:24:45.750Z"
+    },
+    {
+        "id": 582,
+        "name": "Anchosnake",
+        "status": "Alive",
+        "species": "Animal",
+        "type": "Snake",
+        "gender": "Female",
+        "origin": {
+            "name": "Snake Planet",
+            "url": "https://rickandmortyapi.com/api/location/78"
+        },
+        "location": {
+            "name": "Snake Planet",
+            "url": "https://rickandmortyapi.com/api/location/78"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/582.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/36"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/582",
+        "created": "2020-05-07T12:25:29.472Z"
+    },
+    {
+        "id": 583,
+        "name": "80's snake",
+        "status": "unknown",
+        "species": "Animal",
+        "type": "Snake",
+        "gender": "Male",
+        "origin": {
+            "name": "Snake Planet",
+            "url": "https://rickandmortyapi.com/api/location/78"
+        },
+        "location": {
+            "name": "Snake Planet",
+            "url": "https://rickandmortyapi.com/api/location/78"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/583.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/36"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/583",
+        "created": "2020-05-07T12:29:30.948Z"
+    },
+    {
+        "id": 584,
+        "name": "Bar Customer",
+        "status": "Alive",
+        "species": "Human",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "location": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/584.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/36"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/584",
+        "created": "2020-05-07T12:37:52.695Z"
+    },
+    {
+        "id": 585,
+        "name": "Bartender",
+        "status": "Alive",
+        "species": "Human",
+        "type": "",
+        "gender": "Female",
+        "origin": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "location": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/585.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/36"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/585",
+        "created": "2020-05-07T12:38:23.983Z"
+    },
+    {
+        "id": 586,
+        "name": "PC Basketball Player",
+        "status": "Alive",
+        "species": "Human",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "location": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/586.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/36"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/586",
+        "created": "2020-05-07T12:42:24.982Z"
+    },
+    {
+        "id": 587,
+        "name": "Cavesnake",
+        "status": "Dead",
+        "species": "Animal",
+        "type": "Snake",
+        "gender": "Male",
+        "origin": {
+            "name": "Snake Planet",
+            "url": "https://rickandmortyapi.com/api/location/78"
+        },
+        "location": {
+            "name": "Snake Planet",
+            "url": "https://rickandmortyapi.com/api/location/78"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/587.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/36"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/587",
+        "created": "2020-05-07T12:45:42.686Z"
+    },
+    {
+        "id": 588,
+        "name": "Pet Shop Employee",
+        "status": "Alive",
+        "species": "Human",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "location": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/588.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/36"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/588",
+        "created": "2020-05-07T12:46:51.424Z"
+    },
+    {
+        "id": 589,
+        "name": "Snake Reporter",
+        "status": "Alive",
+        "species": "Animal",
+        "type": "Snake",
+        "gender": "Male",
+        "origin": {
+            "name": "Snake Planet",
+            "url": "https://rickandmortyapi.com/api/location/78"
+        },
+        "location": {
+            "name": "Snake Planet",
+            "url": "https://rickandmortyapi.com/api/location/78"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/589.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/36"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/589",
+        "created": "2020-05-07T12:50:06.523Z"
+    },
+    {
+        "id": 590,
+        "name": "High Pilot",
+        "status": "unknown",
+        "species": "Human",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "location": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/590.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/36"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/590",
+        "created": "2020-05-07T12:55:35.833Z"
+    },
+    {
+        "id": 591,
+        "name": "High Pilot",
+        "status": "unknown",
+        "species": "Human",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "location": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/591.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/36"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/591",
+        "created": "2020-05-07T12:56:10.200Z"
+    },
+    {
+        "id": 592,
+        "name": "Phoenixperson",
+        "status": "Alive",
+        "species": "Alien",
+        "type": "Cyborg",
+        "gender": "Male",
+        "origin": {
+            "name": "Bird World",
+            "url": "https://rickandmortyapi.com/api/location/15"
+        },
+        "location": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/592.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/22",
+            "https://rickandmortyapi.com/api/episode/41"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/592",
+        "created": "2020-08-05T12:43:16.671Z"
+    },
+    {
+        "id": 593,
+        "name": "Tickets Please Guy",
+        "status": "Dead",
+        "species": "Human",
+        "type": "Soulless Puppet",
+        "gender": "Male",
+        "origin": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "location": {
+            "name": "Non-Diegetic Alternative Reality",
+            "url": "https://rickandmortyapi.com/api/location/97"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/593.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/593",
+        "created": "2020-08-06T09:51:15.102Z"
+    },
+    {
+        "id": 594,
+        "name": "Floaty Bloody Man",
+        "status": "Dead",
+        "species": "Human",
+        "type": "Half Soulless Puppet",
+        "gender": "Male",
+        "origin": {
+            "name": "Tickets Please Guy Nightmare",
+            "url": "https://rickandmortyapi.com/api/location/98"
+        },
+        "location": {
+            "name": "Tickets Please Guy Nightmare",
+            "url": "https://rickandmortyapi.com/api/location/98"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/594.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/594",
+        "created": "2020-08-06T09:54:08.973Z"
+    },
+    {
+        "id": 595,
+        "name": "Floaty Non-Gasm Brotherhood Member",
+        "status": "Dead",
+        "species": "Alien",
+        "type": "Soulless Puppet",
+        "gender": "Male",
+        "origin": {
+            "name": "Tickets Please Guy Nightmare",
+            "url": "https://rickandmortyapi.com/api/location/98"
+        },
+        "location": {
+            "name": "Tickets Please Guy Nightmare",
+            "url": "https://rickandmortyapi.com/api/location/98"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/595.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/595",
+        "created": "2020-08-06T11:30:50.675Z"
+    },
+    {
+        "id": 596,
+        "name": "Floaty Non-Gasm Brotherhood Member Friend",
+        "status": "Dead",
+        "species": "Alien",
+        "type": "Soulless Puppet",
+        "gender": "Female",
+        "origin": {
+            "name": "Tickets Please Guy Nightmare",
+            "url": "https://rickandmortyapi.com/api/location/98"
+        },
+        "location": {
+            "name": "Tickets Please Guy Nightmare",
+            "url": "https://rickandmortyapi.com/api/location/98"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/596.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/596",
+        "created": "2020-08-06T11:31:40.334Z"
+    },
+    {
+        "id": 597,
+        "name": "Abradolf Lincler",
+        "status": "Alive",
+        "species": "Human",
+        "type": "Soulless Puppet",
+        "gender": "Male",
+        "origin": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "location": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/597.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/597",
+        "created": "2020-08-06T11:33:03.426Z"
+    },
+    {
+        "id": 598,
+        "name": "Biblesaurus",
+        "status": "Alive",
+        "species": "Animal",
+        "type": "Soulless Puppet",
+        "gender": "Male",
+        "origin": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "location": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/598.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/598",
+        "created": "2020-08-06T11:37:30.354Z"
+    },
+    {
+        "id": 599,
+        "name": "Birdperson",
+        "status": "Alive",
+        "species": "Alien",
+        "type": "Soulless Puppet",
+        "gender": "Male",
+        "origin": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "location": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/599.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/599",
+        "created": "2020-08-06T11:39:56.623Z"
+    },
+    {
+        "id": 600,
+        "name": "Cats Fan",
+        "status": "Alive",
+        "species": "Alien",
+        "type": "Soulless Puppet",
+        "gender": "Female",
+        "origin": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "location": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/600.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/600",
+        "created": "2020-08-06T11:40:42.974Z"
+    },
+    {
+        "id": 601,
+        "name": "Christmas Storyteller",
+        "status": "Alive",
+        "species": "Alien",
+        "type": "Soulless Puppet",
+        "gender": "Male",
+        "origin": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "location": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/601.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/601",
+        "created": "2020-08-06T11:41:34.260Z"
+    },
+    {
+        "id": 602,
+        "name": "Cookies Guy",
+        "status": "Alive",
+        "species": "Human",
+        "type": "Soulless Puppet",
+        "gender": "Male",
+        "origin": {
+            "name": "Morty’s Story",
+            "url": "https://rickandmortyapi.com/api/location/99"
+        },
+        "location": {
+            "name": "Morty’s Story",
+            "url": "https://rickandmortyapi.com/api/location/99"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/602.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/602",
+        "created": "2020-08-06T11:43:40.230Z"
+    },
+    {
+        "id": 603,
+        "name": "Crossy",
+        "status": "Alive",
+        "species": "unknown",
+        "type": "Soulless Puppet",
+        "gender": "Genderless",
+        "origin": {
+            "name": "Ricks’s Story",
+            "url": "https://rickandmortyapi.com/api/location/100"
+        },
+        "location": {
+            "name": "Ricks’s Story",
+            "url": "https://rickandmortyapi.com/api/location/100"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/603.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/603",
+        "created": "2020-08-06T11:46:17.792Z"
+    },
+    {
+        "id": 604,
+        "name": "Female Scorpion",
+        "status": "Dead",
+        "species": "Animal",
+        "type": "Soulless Puppet",
+        "gender": "Female",
+        "origin": {
+            "name": "Morty’s Story",
+            "url": "https://rickandmortyapi.com/api/location/99"
+        },
+        "location": {
+            "name": "Morty’s Story",
+            "url": "https://rickandmortyapi.com/api/location/99"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/604.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/604",
+        "created": "2020-08-06T11:48:01.937Z"
+    },
+    {
+        "id": 605,
+        "name": "Floaty Bloody Man’s Daughter",
+        "status": "Dead",
+        "species": "Human",
+        "type": "Soulless Puppet",
+        "gender": "Female",
+        "origin": {
+            "name": "Tickets Please Guy Nightmare",
+            "url": "https://rickandmortyapi.com/api/location/98"
+        },
+        "location": {
+            "name": "Tickets Please Guy Nightmare",
+            "url": "https://rickandmortyapi.com/api/location/98"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/605.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/605",
+        "created": "2020-08-06T11:48:09.608Z"
+    },
+    {
+        "id": 606,
+        "name": "Goomby",
+        "status": "Alive",
+        "species": "Alien",
+        "type": "Soulless Puppet",
+        "gender": "Male",
+        "origin": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "location": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/606.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/606",
+        "created": "2020-08-06T12:34:29.455Z"
+    },
+    {
+        "id": 607,
+        "name": "Hairspray Fan",
+        "status": "Alive",
+        "species": "Alien",
+        "type": "Soulless Puppet",
+        "gender": "Female",
+        "origin": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "location": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/607.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/607",
+        "created": "2020-08-06T12:35:20.673Z"
+    },
+    {
+        "id": 608,
+        "name": "Jesus Christ",
+        "status": "Alive",
+        "species": "Human",
+        "type": "Soulless Puppet",
+        "gender": "Male",
+        "origin": {
+            "name": "Ricks’s Story",
+            "url": "https://rickandmortyapi.com/api/location/100"
+        },
+        "location": {
+            "name": "Ricks’s Story",
+            "url": "https://rickandmortyapi.com/api/location/100"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/608.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/608",
+        "created": "2020-08-06T12:36:05.897Z"
+    },
+    {
+        "id": 609,
+        "name": "Josh",
+        "status": "Dead",
+        "species": "Human",
+        "type": "Soulless Puppet",
+        "gender": "Male",
+        "origin": {
+            "name": "Tickets Please Guy Nightmare",
+            "url": "https://rickandmortyapi.com/api/location/98"
+        },
+        "location": {
+            "name": "Tickets Please Guy Nightmare",
+            "url": "https://rickandmortyapi.com/api/location/98"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/609.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/609",
+        "created": "2020-08-06T12:43:52.810Z"
+    },
+    {
+        "id": 610,
+        "name": "Josh's Sister",
+        "status": "Dead",
+        "species": "Human",
+        "type": "Soulless Puppet",
+        "gender": "Female",
+        "origin": {
+            "name": "Tickets Please Guy Nightmare",
+            "url": "https://rickandmortyapi.com/api/location/98"
+        },
+        "location": {
+            "name": "Tickets Please Guy Nightmare",
+            "url": "https://rickandmortyapi.com/api/location/98"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/610.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/610",
+        "created": "2020-08-06T12:44:35.845Z"
+    },
+    {
+        "id": 611,
+        "name": "Leah",
+        "status": "Alive",
+        "species": "unknown",
+        "type": "Soulless Puppet",
+        "gender": "Female",
+        "origin": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "location": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/611.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/611",
+        "created": "2020-08-06T12:47:45.761Z"
+    },
+    {
+        "id": 612,
+        "name": "Marcus",
+        "status": "Alive",
+        "species": "Human",
+        "type": "Soulless Puppet",
+        "gender": "Male",
+        "origin": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "location": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/612.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/612",
+        "created": "2020-08-06T12:48:25.333Z"
+    },
+    {
+        "id": 613,
+        "name": "Mike Johnson",
+        "status": "Alive",
+        "species": "Human",
+        "type": "Soulless Puppet",
+        "gender": "Male",
+        "origin": {
+            "name": "Morty’s Story",
+            "url": "https://rickandmortyapi.com/api/location/99"
+        },
+        "location": {
+            "name": "Morty’s Story",
+            "url": "https://rickandmortyapi.com/api/location/99"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/613.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/613",
+        "created": "2020-08-06T12:49:32.604Z"
+    },
+    {
+        "id": 614,
+        "name": "Mr. Celery & Friends",
+        "status": "Alive",
+        "species": "unknown",
+        "type": "Soulless Puppet",
+        "gender": "Genderless",
+        "origin": {
+            "name": "Ricks’s Story",
+            "url": "https://rickandmortyapi.com/api/location/100"
+        },
+        "location": {
+            "name": "Ricks’s Story",
+            "url": "https://rickandmortyapi.com/api/location/100"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/614.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/614",
+        "created": "2020-08-06T12:51:12.254Z"
+    },
+    {
+        "id": 615,
+        "name": "Musical Fan",
+        "status": "Alive",
+        "species": "Alien",
+        "type": "Soulless Puppet",
+        "gender": "Male",
+        "origin": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "location": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/615.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/615",
+        "created": "2020-08-06T12:52:20.880Z"
+    },
+    {
+        "id": 616,
+        "name": "Phantom of the Opera Fan",
+        "status": "Alive",
+        "species": "Alien",
+        "type": "Soulless Puppet",
+        "gender": "Male",
+        "origin": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "location": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/616.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/616",
+        "created": "2020-08-06T12:52:54.712Z"
+    },
+    {
+        "id": 617,
+        "name": "Phoenixperson",
+        "status": "Alive",
+        "species": "Alien",
+        "type": "Soulless Puppet",
+        "gender": "Male",
+        "origin": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "location": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/617.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/617",
+        "created": "2020-08-06T12:54:15.895Z"
+    },
+    {
+        "id": 618,
+        "name": "Private Smith",
+        "status": "unknown",
+        "species": "Human",
+        "type": "Soulless Puppet",
+        "gender": "Male",
+        "origin": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "location": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/618.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/618",
+        "created": "2020-08-06T12:55:53.895Z"
+    },
+    {
+        "id": 619,
+        "name": "Professor Sanchez",
+        "status": "Dead",
+        "species": "Human",
+        "type": "Soulless Puppet",
+        "gender": "Male",
+        "origin": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "location": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/619.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/619",
+        "created": "2020-08-06T12:56:56.606Z"
+    },
+    {
+        "id": 620,
+        "name": "Ramamama Lord",
+        "status": "Alive",
+        "species": "Human",
+        "type": "Soulless Puppet",
+        "gender": "Male",
+        "origin": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "location": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/620.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/620",
+        "created": "2020-08-06T15:58:14.525Z"
+    },
+    {
+        "id": 621,
+        "name": "Ruth Bader Ginsburg",
+        "status": "Alive",
+        "species": "Human",
+        "type": "Soulless Puppet",
+        "gender": "Female",
+        "origin": {
+            "name": "Morty’s Story",
+            "url": "https://rickandmortyapi.com/api/location/99"
+        },
+        "location": {
+            "name": "Morty’s Story",
+            "url": "https://rickandmortyapi.com/api/location/99"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/621.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/621",
+        "created": "2020-08-06T15:59:05.320Z"
+    },
+    {
+        "id": 622,
+        "name": "Sarge",
+        "status": "Alive",
+        "species": "Human",
+        "type": "Soulless Puppet",
+        "gender": "Male",
+        "origin": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "location": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/622.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/622",
+        "created": "2020-08-06T15:59:44.277Z"
+    },
+    {
+        "id": 623,
+        "name": "Shrek The Musical Fan",
+        "status": "Alive",
+        "species": "Alien",
+        "type": "Soulless Puppet",
+        "gender": "Male",
+        "origin": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "location": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/623.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/623",
+        "created": "2020-08-06T16:01:42.796Z"
+    },
+    {
+        "id": 624,
+        "name": "Snuffles",
+        "status": "Alive",
+        "species": "Animal",
+        "type": "Soulless Puppet",
+        "gender": "Male",
+        "origin": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "location": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/624.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/624",
+        "created": "2020-08-06T16:03:17.291Z"
+    },
+    {
+        "id": 625,
+        "name": "Storylord",
+        "status": "Alive",
+        "species": "Human",
+        "type": "Soulless Puppet",
+        "gender": "Male",
+        "origin": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "location": {
+            "name": "Ricks’s Story",
+            "url": "https://rickandmortyapi.com/api/location/100"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/625.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/625",
+        "created": "2020-08-06T16:24:53.547Z"
+    },
+    {
+        "id": 626,
+        "name": "Tammy Guetermann",
+        "status": "Alive",
+        "species": "Human",
+        "type": "Soulless Puppet",
+        "gender": "Female",
+        "origin": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "location": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/626.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/626",
+        "created": "2020-08-06T16:34:20.500Z"
+    },
+    {
+        "id": 627,
+        "name": "The Concept of Time",
+        "status": "Alive",
+        "species": "unknown",
+        "type": "Soulless Puppet",
+        "gender": "Genderless",
+        "origin": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "location": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/627.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/627",
+        "created": "2020-08-06T16:35:31.655Z"
+    },
+    {
+        "id": 628,
+        "name": "Beth Smith",
+        "status": "Alive",
+        "species": "Human",
+        "type": "Soulless Puppet",
+        "gender": "Female",
+        "origin": {
+            "name": "Morty’s Story",
+            "url": "https://rickandmortyapi.com/api/location/99"
+        },
+        "location": {
+            "name": "Morty’s Story",
+            "url": "https://rickandmortyapi.com/api/location/99"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/628.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/628",
+        "created": "2020-08-06T16:36:20.255Z"
+    },
+    {
+        "id": 629,
+        "name": "Summer Smith",
+        "status": "Alive",
+        "species": "Human",
+        "type": "Soulless Puppet",
+        "gender": "Female",
+        "origin": {
+            "name": "Morty’s Story",
+            "url": "https://rickandmortyapi.com/api/location/99"
+        },
+        "location": {
+            "name": "Morty’s Story",
+            "url": "https://rickandmortyapi.com/api/location/99"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/629.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/629",
+        "created": "2020-08-06T16:37:48.051Z"
+    },
+    {
+        "id": 630,
+        "name": "Morty Smith",
+        "status": "Alive",
+        "species": "Human",
+        "type": "Soulless Puppet",
+        "gender": "Male",
+        "origin": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "location": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/630.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/630",
+        "created": "2020-08-06T16:38:30.136Z"
+    },
+    {
+        "id": 631,
+        "name": "Rick Sanchez",
+        "status": "Alive",
+        "species": "Human",
+        "type": "Soulless Puppet",
+        "gender": "Male",
+        "origin": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "location": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/631.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/631",
+        "created": "2020-08-06T16:39:08.485Z"
+    },
+    {
+        "id": 632,
+        "name": "Train Cop",
+        "status": "Dead",
+        "species": "Human",
+        "type": "Soulless Puppet",
+        "gender": "Male",
+        "origin": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "location": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/632.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/632",
+        "created": "2020-08-06T16:39:50.056Z"
+    },
+    {
+        "id": 633,
+        "name": "Train Cops",
+        "status": "Alive",
+        "species": "Human",
+        "type": "Soulless Puppet",
+        "gender": "Female",
+        "origin": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "location": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/633.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/633",
+        "created": "2020-08-06T16:40:54.181Z"
+    },
+    {
+        "id": 634,
+        "name": "Train Cops Instructor",
+        "status": "Dead",
+        "species": "Human",
+        "type": "Soulless Puppet",
+        "gender": "Male",
+        "origin": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "location": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/634.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/634",
+        "created": "2020-08-06T16:42:42.455Z"
+    },
+    {
+        "id": 635,
+        "name": "Darth Poopybutthole",
+        "status": "Alive",
+        "species": "Poopybutthole",
+        "type": "Soulless Puppet",
+        "gender": "Male",
+        "origin": {
+            "name": "Ricks’s Story",
+            "url": "https://rickandmortyapi.com/api/location/100"
+        },
+        "location": {
+            "name": "Ricks’s Story",
+            "url": "https://rickandmortyapi.com/api/location/100"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/635.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/635",
+        "created": "2020-08-06T16:43:46.757Z"
+    },
+    {
+        "id": 636,
+        "name": "Evil Morty",
+        "status": "Alive",
+        "species": "Human",
+        "type": "Soulless Puppet",
+        "gender": "Male",
+        "origin": {
+            "name": "Ricks’s Story",
+            "url": "https://rickandmortyapi.com/api/location/100"
+        },
+        "location": {
+            "name": "Ricks’s Story",
+            "url": "https://rickandmortyapi.com/api/location/100"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/636.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/636",
+        "created": "2020-08-06T16:45:03.209Z"
+    },
+    {
+        "id": 637,
+        "name": "Morty’s Disguise",
+        "status": "Alive",
+        "species": "Human",
+        "type": "Soulless Puppet",
+        "gender": "Female",
+        "origin": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "location": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/637.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/637",
+        "created": "2020-08-06T16:49:30.253Z"
+    },
+    {
+        "id": 638,
+        "name": "Rick’s Disguise",
+        "status": "Alive",
+        "species": "Human",
+        "type": "Soulless Puppet",
+        "gender": "Male",
+        "origin": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "location": {
+            "name": "Story Train",
+            "url": "https://rickandmortyapi.com/api/location/96"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/638.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/638",
+        "created": "2020-08-06T16:50:10.447Z"
+    },
+    {
+        "id": 639,
+        "name": "Uncle Nibbles",
+        "status": "Dead",
+        "species": "Alien",
+        "type": "Soulless Puppet",
+        "gender": "Male",
+        "origin": {
+            "name": "Tickets Please Guy Nightmare",
+            "url": "https://rickandmortyapi.com/api/location/98"
+        },
+        "location": {
+            "name": "Tickets Please Guy Nightmare",
+            "url": "https://rickandmortyapi.com/api/location/98"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/639.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/37"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/639",
+        "created": "2020-08-06T16:51:23.084Z"
+    },
+    {
+        "id": 640,
+        "name": "Angry Glorzo",
+        "status": "Dead",
+        "species": "Alien",
+        "type": "Glorzo",
+        "gender": "Male",
+        "origin": {
+            "name": "Glorzo Asteroid",
+            "url": "https://rickandmortyapi.com/api/location/101"
+        },
+        "location": {
+            "name": "Glorzo Asteroid",
+            "url": "https://rickandmortyapi.com/api/location/101"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/640.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/38"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/640",
+        "created": "2020-08-07T11:36:14.528Z"
+    },
+    {
+        "id": 641,
+        "name": "Bruce",
+        "status": "Dead",
+        "species": "Alien",
+        "type": "Glorzo",
+        "gender": "Male",
+        "origin": {
+            "name": "Glorzo Asteroid",
+            "url": "https://rickandmortyapi.com/api/location/101"
+        },
+        "location": {
+            "name": "Glorzo Asteroid",
+            "url": "https://rickandmortyapi.com/api/location/101"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/641.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/38"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/641",
+        "created": "2020-08-07T11:37:06.351Z"
+    },
+    {
+        "id": 642,
+        "name": "Council of Glorzos Member",
+        "status": "Dead",
+        "species": "Alien",
+        "type": "Glorzo",
+        "gender": "Male",
+        "origin": {
+            "name": "Glorzo Asteroid",
+            "url": "https://rickandmortyapi.com/api/location/101"
+        },
+        "location": {
+            "name": "Glorzo Asteroid",
+            "url": "https://rickandmortyapi.com/api/location/101"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/642.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/38"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/642",
+        "created": "2020-08-07T11:38:26.393Z"
+    },
+    {
+        "id": 643,
+        "name": "Council of Glorzos Member",
+        "status": "Dead",
+        "species": "Alien",
+        "type": "Glorzo",
+        "gender": "Male",
+        "origin": {
+            "name": "Glorzo Asteroid",
+            "url": "https://rickandmortyapi.com/api/location/101"
+        },
+        "location": {
+            "name": "Glorzo Asteroid",
+            "url": "https://rickandmortyapi.com/api/location/101"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/643.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/38"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/643",
+        "created": "2020-08-07T11:39:06.237Z"
+    },
+    {
+        "id": 644,
+        "name": "Old Glorzo",
+        "status": "Dead",
+        "species": "Alien",
+        "type": "Glorzo",
+        "gender": "Male",
+        "origin": {
+            "name": "Glorzo Asteroid",
+            "url": "https://rickandmortyapi.com/api/location/101"
+        },
+        "location": {
+            "name": "Glorzo Asteroid",
+            "url": "https://rickandmortyapi.com/api/location/101"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/644.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/38"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/644",
+        "created": "2020-08-07T11:40:03.124Z"
+    },
+    {
+        "id": 645,
+        "name": "Shane",
+        "status": "unknown",
+        "species": "Alien",
+        "type": "Glorzo",
+        "gender": "Male",
+        "origin": {
+            "name": "Glorzo Asteroid",
+            "url": "https://rickandmortyapi.com/api/location/101"
+        },
+        "location": {
+            "name": "Glorzo Asteroid",
+            "url": "https://rickandmortyapi.com/api/location/101"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/645.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/38"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/645",
+        "created": "2020-08-07T11:40:51.282Z"
+    },
+    {
+        "id": 646,
+        "name": "Steve",
+        "status": "Dead",
+        "species": "Alien",
+        "type": "Glorzo",
+        "gender": "Male",
+        "origin": {
+            "name": "Glorzo Asteroid",
+            "url": "https://rickandmortyapi.com/api/location/101"
+        },
+        "location": {
+            "name": "Glorzo Asteroid",
+            "url": "https://rickandmortyapi.com/api/location/101"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/646.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/38"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/646",
+        "created": "2020-08-07T11:41:34.032Z"
+    },
+    {
+        "id": 647,
+        "name": "Troy",
+        "status": "Dead",
+        "species": "Alien",
+        "type": "Glorzo",
+        "gender": "Male",
+        "origin": {
+            "name": "Glorzo Asteroid",
+            "url": "https://rickandmortyapi.com/api/location/101"
+        },
+        "location": {
+            "name": "Glorzo Asteroid",
+            "url": "https://rickandmortyapi.com/api/location/101"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/647.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/38"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/647",
+        "created": "2020-08-07T11:42:14.362Z"
+    },
+    {
+        "id": 648,
+        "name": "Crystal Dealers Boss",
+        "status": "Dead",
+        "species": "Alien",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "unknown",
+            "url": ""
+        },
+        "location": {
+            "name": "Alien Acid Plant",
+            "url": "https://rickandmortyapi.com/api/location/102"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/648.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/39"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/648",
+        "created": "2020-08-13T10:09:21.278Z"
+    },
+    {
+        "id": 649,
+        "name": "Crystal Dealer",
+        "status": "Dead",
+        "species": "Alien",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "unknown",
+            "url": ""
+        },
+        "location": {
+            "name": "Alien Acid Plant",
+            "url": "https://rickandmortyapi.com/api/location/102"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/649.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/39"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/649",
+        "created": "2020-08-13T10:10:01.602Z"
+    },
+    {
+        "id": 650,
+        "name": "Crystal Dealer",
+        "status": "Dead",
+        "species": "Alien",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "unknown",
+            "url": ""
+        },
+        "location": {
+            "name": "Alien Acid Plant",
+            "url": "https://rickandmortyapi.com/api/location/102"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/650.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/39"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/650",
+        "created": "2020-08-13T10:10:33.026Z"
+    },
+    {
+        "id": 651,
+        "name": "Crystal Dealer",
+        "status": "Dead",
+        "species": "Alien",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "unknown",
+            "url": ""
+        },
+        "location": {
+            "name": "Alien Acid Plant",
+            "url": "https://rickandmortyapi.com/api/location/102"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/651.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/39"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/651",
+        "created": "2020-08-13T10:11:00.473Z"
+    },
+    {
+        "id": 652,
+        "name": "SWAT Officer",
+        "status": "Dead",
+        "species": "Human",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "Merged Universe",
+            "url": "https://rickandmortyapi.com/api/location/103"
+        },
+        "location": {
+            "name": "Merged Universe",
+            "url": "https://rickandmortyapi.com/api/location/103"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/652.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/39"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/652",
+        "created": "2020-08-13T10:16:47.618Z"
+    },
+    {
+        "id": 653,
+        "name": "Plane Crash Survivor",
+        "status": "unknown",
+        "species": "Human",
+        "type": "",
+        "gender": "Female",
+        "origin": {
+            "name": "Near-Duplicate Reality",
+            "url": "https://rickandmortyapi.com/api/location/104"
+        },
+        "location": {
+            "name": "Near-Duplicate Reality",
+            "url": "https://rickandmortyapi.com/api/location/104"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/653.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/39"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/653",
+        "created": "2020-08-13T11:16:21.997Z"
+    },
+    {
+        "id": 654,
+        "name": "Plane Crash Survivor",
+        "status": "unknown",
+        "species": "Human",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "Near-Duplicate Reality",
+            "url": "https://rickandmortyapi.com/api/location/104"
+        },
+        "location": {
+            "name": "Near-Duplicate Reality",
+            "url": "https://rickandmortyapi.com/api/location/104"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/654.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/39"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/654",
+        "created": "2020-08-13T11:17:08.527Z"
+    },
+    {
+        "id": 655,
+        "name": "Heroine Keith",
+        "status": "Alive",
+        "species": "Human",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "Near-Duplicate Reality",
+            "url": "https://rickandmortyapi.com/api/location/104"
+        },
+        "location": {
+            "name": "Merged Universe",
+            "url": "https://rickandmortyapi.com/api/location/103"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/655.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/39"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/655",
+        "created": "2020-08-13T11:17:47.228Z"
+    },
+    {
+        "id": 656,
+        "name": "Impervious to Acid SWAT Officer",
+        "status": "Dead",
+        "species": "Human",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "Merged Universe",
+            "url": "https://rickandmortyapi.com/api/location/103"
+        },
+        "location": {
+            "name": "Merged Universe",
+            "url": "https://rickandmortyapi.com/api/location/103"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/656.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/39"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/656",
+        "created": "2020-08-13T11:20:20.047Z"
+    },
+    {
+        "id": 657,
+        "name": "Johnny Carson",
+        "status": "Alive",
+        "species": "Human",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "Merged Universe",
+            "url": "https://rickandmortyapi.com/api/location/103"
+        },
+        "location": {
+            "name": "Merged Universe",
+            "url": "https://rickandmortyapi.com/api/location/103"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/657.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/39"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/657",
+        "created": "2020-08-13T11:21:32.236Z"
+    },
+    {
+        "id": 658,
+        "name": "Sonia Sotomayor",
+        "status": "Alive",
+        "species": "Human",
+        "type": "",
+        "gender": "Female",
+        "origin": {
+            "name": "Merged Universe",
+            "url": "https://rickandmortyapi.com/api/location/103"
+        },
+        "location": {
+            "name": "Merged Universe",
+            "url": "https://rickandmortyapi.com/api/location/103"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/658.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/39"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/658",
+        "created": "2020-08-13T11:23:00.414Z"
+    },
+    {
+        "id": 659,
+        "name": "Morty’s Father-in-law",
+        "status": "Alive",
+        "species": "Human",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "Near-Duplicate Reality",
+            "url": "https://rickandmortyapi.com/api/location/104"
+        },
+        "location": {
+            "name": "Near-Duplicate Reality",
+            "url": "https://rickandmortyapi.com/api/location/104"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/659.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/39"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/659",
+        "created": "2020-08-13T11:23:55.003Z"
+    },
+    {
+        "id": 660,
+        "name": "Morty’s Mother-in-law",
+        "status": "Alive",
+        "species": "Human",
+        "type": "",
+        "gender": "Female",
+        "origin": {
+            "name": "Near-Duplicate Reality",
+            "url": "https://rickandmortyapi.com/api/location/104"
+        },
+        "location": {
+            "name": "Near-Duplicate Reality",
+            "url": "https://rickandmortyapi.com/api/location/104"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/660.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/39"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/660",
+        "created": "2020-08-13T11:25:50.784Z"
+    },
+    {
+        "id": 661,
+        "name": "Morty’s Girlfriend",
+        "status": "Alive",
+        "species": "Human",
+        "type": "",
+        "gender": "Female",
+        "origin": {
+            "name": "Near-Duplicate Reality",
+            "url": "https://rickandmortyapi.com/api/location/104"
+        },
+        "location": {
+            "name": "Merged Universe",
+            "url": "https://rickandmortyapi.com/api/location/103"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/661.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/39"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/661",
+        "created": "2020-08-13T11:27:29.357Z"
+    },
+    {
+        "id": 662,
+        "name": "Gaia",
+        "status": "Alive",
+        "species": "Planet",
+        "type": "",
+        "gender": "Female",
+        "origin": {
+            "name": "Gaia",
+            "url": "https://rickandmortyapi.com/api/location/106"
+        },
+        "location": {
+            "name": "Gaia",
+            "url": "https://rickandmortyapi.com/api/location/106"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/662.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/40"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/662",
+        "created": "2020-08-13T11:43:23.485Z"
+    },
+    {
+        "id": 663,
+        "name": "Reggie",
+        "status": "Dead",
+        "species": "Mythological Creature",
+        "type": "Zeus",
+        "gender": "Male",
+        "origin": {
+            "name": "Mount Olympus",
+            "url": "https://rickandmortyapi.com/api/location/90"
+        },
+        "location": {
+            "name": "Gaia",
+            "url": "https://rickandmortyapi.com/api/location/106"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/663.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/40"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/663",
+        "created": "2020-08-13T12:17:15.344Z"
+    },
+    {
+        "id": 664,
+        "name": "Ticktock",
+        "status": "unknown",
+        "species": "Humanoid",
+        "type": "Clay-Person",
+        "gender": "Genderless",
+        "origin": {
+            "name": "Gaia",
+            "url": "https://rickandmortyapi.com/api/location/106"
+        },
+        "location": {
+            "name": "Gaia",
+            "url": "https://rickandmortyapi.com/api/location/106"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/664.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/40"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/664",
+        "created": "2020-08-13T12:36:16.345Z"
+    },
+    {
+        "id": 665,
+        "name": "Florflock",
+        "status": "Alive",
+        "species": "Humanoid",
+        "type": "Clay-Person",
+        "gender": "Genderless",
+        "origin": {
+            "name": "Gaia",
+            "url": "https://rickandmortyapi.com/api/location/106"
+        },
+        "location": {
+            "name": "Gaia",
+            "url": "https://rickandmortyapi.com/api/location/106"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/665.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/40"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/665",
+        "created": "2020-08-13T12:37:08.881Z"
+    },
+    {
+        "id": 666,
+        "name": "Squeeb",
+        "status": "Alive",
+        "species": "Humanoid",
+        "type": "Clay-Person",
+        "gender": "Genderless",
+        "origin": {
+            "name": "Gaia",
+            "url": "https://rickandmortyapi.com/api/location/106"
+        },
+        "location": {
+            "name": "Gaia",
+            "url": "https://rickandmortyapi.com/api/location/106"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/666.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/40"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/666",
+        "created": "2020-08-13T12:37:51.742Z"
+    },
+    {
+        "id": 667,
+        "name": "Defiance Beth",
+        "status": "Alive",
+        "species": "Human",
+        "type": "",
+        "gender": "Female",
+        "origin": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "location": {
+            "name": "Earth (Replacement Dimension)",
+            "url": "https://rickandmortyapi.com/api/location/20"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/667.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/41"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/667",
+        "created": "2020-08-13T12:48:55.885Z"
+    },
+    {
+        "id": 668,
+        "name": "Defiance Squanchette",
+        "status": "Alive",
+        "species": "Alien",
+        "type": "Cat-Person",
+        "gender": "Female",
+        "origin": {
+            "name": "Planet Squanch",
+            "url": "https://rickandmortyapi.com/api/location/35"
+        },
+        "location": {
+            "name": "Defiance's Ship",
+            "url": "https://rickandmortyapi.com/api/location/107"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/668.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/41"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/668",
+        "created": "2020-08-13T12:52:36.873Z"
+    },
+    {
+        "id": 669,
+        "name": "Defiance Doctor",
+        "status": "Alive",
+        "species": "Alien",
+        "type": "",
+        "gender": "Male",
+        "origin": {
+            "name": "unknown",
+            "url": ""
+        },
+        "location": {
+            "name": "Defiance's Base",
+            "url": "https://rickandmortyapi.com/api/location/108"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/669.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/41"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/669",
+        "created": "2020-08-13T12:55:37.437Z"
+    },
+    {
+        "id": 670,
+        "name": "New Improved Galactic Federation Guard",
+        "status": "Dead",
+        "species": "Alien",
+        "type": "Gromflomite",
+        "gender": "Male",
+        "origin": {
+            "name": "Gromflom Prime",
+            "url": "https://rickandmortyapi.com/api/location/19"
+        },
+        "location": {
+            "name": "NX-5 Planet Remover",
+            "url": "https://rickandmortyapi.com/api/location/105"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/670.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/41"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/670",
+        "created": "2020-08-13T12:56:31.130Z"
+    },
+    {
+        "id": 671,
+        "name": "New Improved Galactic Federation Guard",
+        "status": "Dead",
+        "species": "Alien",
+        "type": "Gromflomite",
+        "gender": "Male",
+        "origin": {
+            "name": "Gromflom Prime",
+            "url": "https://rickandmortyapi.com/api/location/19"
+        },
+        "location": {
+            "name": "NX-5 Planet Remover",
+            "url": "https://rickandmortyapi.com/api/location/105"
+        },
+        "image": "https://rickandmortyapi.com/api/character/avatar/671.jpeg",
+        "episode": [
+            "https://rickandmortyapi.com/api/episode/41"
+        ],
+        "url": "https://rickandmortyapi.com/api/character/671",
+        "created": "2020-08-13T12:57:08.113Z"
+    }
+  ];

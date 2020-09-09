@@ -1,212 +1,70 @@
  
-import {filterStatus, filterSpecies, filterGender, order } from './data.js'
+import {allCharacters, filterBySpecies, filterByStatus, filterByGender, getSpeciesArray, getStatusArray, getGenderArray, order } from './data.js'
 
-import data from './data/rickandmorty/rickandmorty.js';
-
-const allCharacters = data.results;
+document.querySelector('#all').addEventListener('click', allCharacters);
 
 
 const getListAllCharacters = () => {
-    
     drawResults(allCharacters);
- 
 }
 document.querySelector('#all').addEventListener('click', getListAllCharacters);
 
 
-const getListSpeciesHuman = () => {
-    
-    let speciesHuman = [];
-    speciesHuman = filterSpecies.human(allCharacters);
-
-    drawResults(speciesHuman);
-    
+// Recibe como parametro el nombre de la especie}
+// Llama a data-filterBySpecies para filtrar los personajes de esa especie
+const getListSpecies = (species) => {
+    let filteredSpecies = filterBySpecies(species);
+    drawResults(filteredSpecies);
 }
-document.querySelector('#human').addEventListener('click', getListSpeciesHuman);
 
+// Jala la lista de especies
+const speciesArray = getSpeciesArray();
+// crea un evento para cada especie, que ejecuta la anterior getListSpecies
+speciesArray.forEach(species => {
+    if(document.querySelector('#' + species.toLowerCase()))
+        document.querySelector('#' + species.toLowerCase()).addEventListener('click', () => getListSpecies(species));
+    else    
+        console.log("Esta especie no tiene elemento en HTML: " + species);
 
+})
 
-const getListSpeciesAlien = () => {
-
-    let speciesAlien = [];
-    speciesAlien = filterSpecies.alien(allCharacters);
-    drawResults(speciesAlien);
-    
+const getListStatus = (status) => {
+    let filteredStatus = filterByStatus(status);
+    drawResults(filteredStatus);
 }
-document.querySelector('#alien').addEventListener('click', getListSpeciesAlien);
 
+const statusArray = getStatusArray();
+statusArray.forEach(status => {
+    if(document.querySelector('#' + status.toLowerCase()))
+        document.querySelector('#' + status.toLowerCase()).addEventListener('click', () => getListStatus(status));
+    else    
+        console.log("Esta especie no tiene elemento en HTML: " + status);
+})
 
-
-const getListSpeciesHumanoid = () => {
-
-    let speciesHumanoid = [];
-    speciesHumanoid = filterSpecies.humanoid(allCharacters);
-    drawResults(speciesHumanoid);
-    
+const getListGender = (gender) => {
+    let filteredGender = filterByGender(gender);
+    drawResults(filteredGender);
 }
-document.querySelector('#humanoid').addEventListener('click', getListSpeciesHumanoid);
 
-
-const getListSpeciesAnimal = () => {
-
-    let specieAnimal = [];
-    specieAnimal = filterSpecies.animal(allCharacters);
-    drawResults(specieAnimal);
-    
-}
-document.querySelector('#animal').addEventListener('click', getListSpeciesAnimal);
-
-
-
-const getListSpeciesMytholog = () => {
-
-    let specieMytholog = [];
-    specieMytholog = filterSpecies.mytholog(allCharacters);
-    drawResults(specieMytholog);
-    
-}
-document.querySelector('#mytholog').addEventListener('click', getListSpeciesMytholog);
-
-
-
-const getListSpeciesRobot = () => {
-
-    let specieRobot = [];
-    specieRobot = filterSpecies.robot(allCharacters);
-    drawResults(specieRobot);
-    
-}
-document.querySelector('#robot').addEventListener('click', getListSpeciesRobot);
-
-
-
-const getListSpeciesUnknown = () => {
-
-    let specieUnknown = [];
-    specieUnknown = filterSpecies.unknown(allCharacters);
-    drawResults(specieUnknown);
-    
-}
-document.querySelector('#unknownSpecie').addEventListener('click', getListSpeciesUnknown);
-
-
-const getListSpeciesCronenberg = () => {
-
-    let specieCronenberg = [];
-    specieCronenberg = filterSpecies.cronenberg(allCharacters);
-    drawResults(specieCronenberg);
-    
-}
-document.querySelector('#cronenberg').addEventListener('click', getListSpeciesCronenberg);
-
-
-const getListSpeciesPoopybutthole = () => {
-
-    let speciePoopybutthole = [];
-    speciePoopybutthole = filterSpecies.poopybutthole(allCharacters);
-    drawResults(speciePoopybutthole);
-    
-}
-document.querySelector('#poopybutthole').addEventListener('click', getListSpeciesPoopybutthole);
-
-
-const getListSpeciesDisease = () => {
-
-    let specieDisease = [];
-    specieDisease = filterSpecies.disease(allCharacters);
-    drawResults(specieDisease);
-    
-}
-document.querySelector('#disease').addEventListener('click', getListSpeciesDisease);
-
-
-
-const getListStatusAlive = () => {
-
-    let statusAlive = [];
-    statusAlive = filterStatus.alive(allCharacters);
-    drawResults(statusAlive);
-    
-}
-document.querySelector('#alive').addEventListener('click', getListStatusAlive);
-
-
-const getListStatusDead = () => {  
-
-    let statusDead = [];
-    statusDead = filterStatus.dead(allCharacters);
-    drawResults(statusDead);
-    
-}
-document.querySelector('#dead').addEventListener('click', getListStatusDead);
-
-
-const getListStatusUnknown = () => {
-
-    let statusUnknown = [];
-    statusUnknown = filterStatus.unknown(allCharacters);
-    drawResults(statusUnknown);
-    
-}
-document.querySelector('#unknown').addEventListener('click', getListStatusUnknown);
-
-
-const getListGenderMale = () => {
-
-    let genderMale = [];
-    genderMale = filterGender.male(allCharacters);
-    drawResults(genderMale);
-    
-}
-document.querySelector('#male').addEventListener('click', getListGenderMale);
-
-
-const getListGenderFemale = () => {
-
-    let genderFemale = [];
-    genderFemale = filterGender.female(allCharacters);
-    drawResults(genderFemale);
-    
-}
-document.querySelector('#female').addEventListener('click', getListGenderFemale);
-
-
-const getListGenderGenderless = () => {
-
-    let genderGenderless = [];
-    genderGenderless = filterGender.genderless(allCharacters);
-    drawResults(genderGenderless);
-    
-}
-document.querySelector('#genderless').addEventListener('click', getListGenderGenderless);
-
-
-const getListGenderUnknown = () => {
-
-    let genderUnknown = [];
-    genderUnknown = filterGender.unknown(allCharacters);
-    drawResults(genderUnknown);
-    
-}
-document.querySelector('#unknownGender').addEventListener('click', getListGenderUnknown);
-
-
+const genderArray = getGenderArray();
+genderArray.forEach(gender => {
+    if(document.querySelector('#' + gender.toLowerCase()))
+        document.querySelector('#' + gender.toLowerCase()).addEventListener('click', () => getListGender(gender));
+    else    
+        console.log("Esta especie no tiene elemento en HTML: " + gender);
+})
+ 
 const getListAtoZ = () => {
-
     let sortedAscending = [];
     sortedAscending = order.ascending(allCharacters);
     drawResults(sortedAscending);
-    
 }
 document.querySelector('#orderAtoZ').addEventListener('click', getListAtoZ);
 
-
 const getListZtoA = () => {
-
     let sortedDescending = [];
     sortedDescending = order.descending(allCharacters);
     drawResults(sortedDescending);
-    
 }
 document.querySelector('#orderZtoA').addEventListener('click', getListZtoA);
 
@@ -306,6 +164,9 @@ document.querySelector('#orderZtoA').addEventListener('click', getListZtoA);
 // document.querySelector('#order').addEventListener('click', getListOrderAtoZ);
 // document.querySelector('#order').addEventListener('click', getListAtoZ);
 
+// function hideElement(elementId) {
+//     document.getElementById("listGender").classList.add("hide")
+// }
 
 // function getListOrderZtoA(){
 
@@ -367,28 +228,6 @@ window.addEventListener('load', () => {
 
 
 
-
-// const overlay = document.getElementById('overlay');
-
-// const clickToShowCharacterDetail = (characterElement) => {
-//     const path =    characterElement.getAttribute('src');
-//     const name =    characterElement.dataset.name;
-//     const species = characterElement.dataset.species;
-//     const gender =  characterElement.dataset.gender;
-//     const status =  characterElement.dataset.status;
-//     overlay.classList.add('active');
-//     document.querySelector('#overlay img').src = path;
-//     document.querySelector('#overlay .description').innerHTML = `
-//         <div>
-//             <div class="character-name">${name}</div>
-//             <div>Status: ${status}</div>
-//             <div>Gender: ${gender}</div>
-//             <div>Specie: ${species}</div>
-//         </div>
-//      `;
-// };
-
-
 const overlay = document.getElementById('overlay');
 
 const clickToShowCharacterDetail = (characterElement) => {
@@ -409,14 +248,12 @@ const clickToShowCharacterDetail = (characterElement) => {
      `;
 };
 
-
 document.querySelector('#btn-close').addEventListener('click', () => {
     overlay.classList.remove('active');
 });
 overlay.addEventListener('click', (event) => {
     event.target.id === 'overlay' ? overlay.classList.remove('active') : "";
 })
-
 
 
 function drawCharactersPage(index, arrayOfCharacters) {
@@ -471,7 +308,6 @@ function drawResults(arrayOfCharacters){
 }
 
 
-
 function clickHambMenu() {
     let menuBar = document.getElementById("myTopnav");
     if (menuBar.className === "topnav") {
@@ -486,15 +322,116 @@ document.querySelector('#iconMenu').addEventListener('click', clickHambMenu);
 
 
 const searchBar = document.getElementById('searchBar');
-let hpcharacters = [];
-hpcharacters = data.results;
 
 searchBar.addEventListener('keyup', (e) =>{
    const searchString = e.target.value.toLowerCase();
-   const filteredCharacters = hpcharacters.filter( character => {
+   const filteredCharacters = allCharacters.filter( character => {
         return character.name.toLowerCase().includes(searchString);
     });
     drawResults(filteredCharacters);
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+import episodesData from './data/rickandmorty/rickandmortyepisodes.js';
+const allEpisodes = episodesData;
+
+console.log(allEpisodes);
+
+const searchBarEpisodes = document.getElementById('searchBarEpisodes');
+
+searchBarEpisodes.addEventListener('keyup', (e) =>{
+    const searchStringEpisodes = e.target.value.toLowerCase();
+    const filteredEpisodes = allEpisodes.filter( episode => {
+        return episode.episode.toLowerCase().includes(searchStringEpisodes);
+    });
+    drawResultsEpisodes(filteredEpisodes);
+});
+
+
+// const selectEpisode = document.getElementById('searchBarEpisodes');
+// selectEpisode.addEventListener('keyup', (e) =>{
+//     const searchStringEpisodes = e.target.value.toLowerCase();
+//     const filteredEpisodes = allEpisodes.filter( episode => {
+//         return episode.episode.toLowerCase().includes(searchStringEpisodes);
+//     });
+//     drawResultsEpisodes(filteredEpisodes);
+// });
+
+
+
+
+
+
+function drawEpisodesPage(index, arrayOfEpisodes) {
+    //selecciona los 20 charaacters de la pagina actual
+    let pageOfEpisodes = arrayOfEpisodes.slice(index, index+20);
+
+    // borrar los caracteres que hayan estado antes
+    const elementOrderedList = document.getElementById('listCharacters');
+    elementOrderedList.innerHTML = "";
+
+    // dibuja cada character, y escucha el clik para mostrar detalle
+    for (let i=0; i < pageOfEpisodes.length; i++) {
+
+        const result = pageOfEpisodes[i]; 
+        const elementDiv = document.createElement("div");
+        elementDiv.classList.add("episode");
+
+        // Pegar en el cuadro la data del personaje
+        elementDiv.dataset.name = result.name;
+        elementDiv.dataset.air_date = result.air_date;
+        elementDiv.dataset.episode = result.episode;
+        elementDiv.dataset.characters = result.characters;
+       
+        // Set click event to show detail popup
+        elementDiv.addEventListener('click', () => clickToShowCharacterDetail(elementDiv))
+        elementDiv.innerHTML = `
+            <h3>${result.name}</h3>
+            <p>${result.air_date}</p>
+            <p>${result.episode}</p>
+            `
+        elementOrderedList.appendChild(elementDiv);            
+    }
+}
+
+
+function drawResultsEpisodes(arrayOfEpisodes){
+
+const buttonsContainer = document.getElementById("buttonsContainer");
+buttonsContainer.innerHTML = "";
+
+drawEpisodesPage(0, arrayOfEpisodes);
+
+// Paginación. Cada cuadradito numero de página
+for (let pageIndex=0; pageIndex < arrayOfEpisodes.length; pageIndex=pageIndex+20 ){
+    const button = document.createElement("button");
+    const buttonText = document.createTextNode(parseInt(pageIndex / 20) + 1);
+    button.appendChild(buttonText);
+    button.addEventListener('click', () => drawEpisodesPage(pageIndex, arrayOfEpisodes));
+    buttonsContainer.appendChild(button);
+}
+
+}
+
+
+const selectEpisode = document.getElementById('choiceOne');
+selectEpisode.addEventListener('keyup', (e) =>{
+    // const searchStringEpisodes = e.target.value.toLowerCase();
+    // const rate_value = document.getElementById('choiceOne').value;
+    const filteredEpisodes = allEpisodes.filter( episode => {
+        return episode.episode.includes("S01");
+    });
+    drawResultsEpisodes(filteredEpisodes);
+});
 
