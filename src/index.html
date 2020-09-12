@@ -25,7 +25,8 @@
             <div class="topnav open-menu" id="myTopnav">
                 <a href="#" class="active" id="home">HOME</a>
                 <a href="#" id="all">CHARACTERS</a>
-                <a href="#" id="episodes">EPISODES</a>
+                <a href="#" id="allEpisodes">EPISODES</a>
+                <a href="#" id="allLocations">LOCATIONS</a>
                 <!-- <a href="#" id="locations">LOCATIONS</a> -->
             </div>
         </nav>
@@ -35,61 +36,65 @@
     
     <!-- search bar -->
 
-    <form id="searchWrapper" class="searchWrapper">
-        <input type="text" name="searchBar" class="searchBar" id="searchBar" placeholder="Search your character" autocomplete="off"/>
-        <span class="search-btn"><i class="fas fa-search"></i></span>
-    </form>
-
     <!-- Filter and order -->
 
-    <div class="more-menu">
-        <div class="dropdown">
-            <button id="species" class="dropbtn">SPECIE <i class="fa fa-caret-down"></i></button>
-            <div id="scroll" class="dropdown-content listSpecies">
-                <a href="#" id="human">Human</a>
-                <a href="#" id="alien">Alien</a>
-                <a href="#" id="humanoid">Humanoid</a>
-                <a href="#" id="animal">Animal</a>
-                <a href="#" id="mytholog">Mythological</a>
-                <a href="#" id="robot">Robot</a>
-                <a href="#" id="unknownSpecie">Unknown</a>
-                <a href="#" id="cronenberg">Cronenberg</a>
-                <a href="#" id="poopybutthole">Poopybutthole</a>
-                <a href="#" id="disease">Disease</a>
-                <a href="#" id="vampire">Vampire</a>
-                <a href="#" id="parasite">Parasite</a>
-                <a href="#" id="planet">Planet</a>
+    <section id="subheaderSection" class="hide">
+
+        <form id="searchWrapper" class="searchWrapper">
+            <input type="text" name="searchBar" class="searchBar" id="searchBar" placeholder="Search your character" autocomplete="off"/>
+            <span class="search-btn"><i class="fas fa-search"></i></span>
+        </form>
+
+        <div class="more-menu">
+            <div class="dropdown">
+                <button id="species" class="dropbtn">SPECIE <i class="fa fa-caret-down"></i></button>
+                <div id="scroll" class="dropdown-content listSpecies">
+                    <a href="#" id="human">Human</a>
+                    <a href="#" id="alien">Alien</a>
+                    <a href="#" id="humanoid">Humanoid</a>
+                    <a href="#" id="animal">Animal</a>
+                    <a href="#" id="mytholog">Mythological</a>
+                    <a href="#" id="robot">Robot</a>
+                    <a href="#" id="unknownSpecie">Unknown</a>
+                    <a href="#" id="cronenberg">Cronenberg</a>
+                    <a href="#" id="poopybutthole">Poopybutthole</a>
+                    <a href="#" id="disease">Disease</a>
+                    <a href="#" id="vampire">Vampire</a>
+                    <a href="#" id="parasite">Parasite</a>
+                    <a href="#" id="planet">Planet</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button id="gender" class="dropbtn">GENDER <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content listGender">
+                    <a href="#" id="male">Male</a>
+                    <a href="#" id="female">Female</a>
+                    <a href="#" id="genderless">Genderless</a>
+                    <a href="#" id="unknownGender">Unknown</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button id="status" class="dropbtn">STATUS <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content listStatus">
+                    <a href="#" id="alive">Alive</a>
+                    <a href="#" id="dead">Dead</a>
+                    <a href="#" id="unknown">Unknown</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button id="order" class="dropbtn">ORDER <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#" id="orderAtoZ">A - Z</a>
+                    <a href="#" id="orderZtoA">Z - A</a>
+                </div>
             </div>
         </div>
-        <div class="dropdown">
-            <button id="gender" class="dropbtn">GENDER <i class="fa fa-caret-down"></i></button>
-            <div class="dropdown-content listGender">
-                <a href="#" id="male">Male</a>
-                <a href="#" id="female">Female</a>
-                <a href="#" id="genderless">Genderless</a>
-                <a href="#" id="unknownGender">Unknown</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <button id="status" class="dropbtn">STATUS <i class="fa fa-caret-down"></i></button>
-            <div class="dropdown-content listStatus">
-                <a href="#" id="alive">Alive</a>
-                <a href="#" id="dead">Dead</a>
-                <a href="#" id="unknown">Unknown</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <button id="order" class="dropbtn">ORDER <i class="fa fa-caret-down"></i></button>
-            <div class="dropdown-content">
-                <a href="#" id="orderAtoZ">A - Z</a>
-                <a href="#" id="orderZtoA">Z - A</a>
-            </div>
-        </div>
-    </div>
+
+    </section>
 
     <!-- CHARACTERS' CARDS -->
 
-    <section>
+    <section id="charactersSection" class="hide">
         <main class="mainContainer">
             <div id="listCharacters" class="listCharacters"></div>
             <div id="buttonsContainer" class="buttonsContainer active"></div>
@@ -103,8 +108,32 @@
         </main>
     </section>
 
-    <script src="main.js" type="module"></script>
+    <section id="episodesSection" class="hide">
 
+        <form id="searchWrapperEpisodes" class="searchWrapperEpisodes">
+            <input type="text" name="searchBarEpisodes" class="searchBarEpisodes" id="searchBarEpisodes" placeholder="Search your Episode" autocomplete="off"/>
+            <span class="search-btn"><i class="fas fa-search"></i></span>
+        </form>
+
+        <div id="episodesList" class="episodesList"></div>
+        <div id="pageEpisodes" class="pageEpisodes">
+            <button id="previous">Previous</button>
+            <button id="next">Next</button>                
+        </div>
+    </section>
+
+    <section id="locationsSection" class="hide" >    
+        <div id="locationsList" class="locationsList"></div>
+        <div id="pageLocation" class="pageLocation">
+            <button id="previousL">Previous</button>
+            <button id="nextL">Next</button>                
+        </div>
+    </section>
+    
+    <ul id="charactersList"></ul>
+
+    <script src="main.js" type="module"></script>
+    <script src="main_api.js" type="module"></script>
 </body>
 
 </html>

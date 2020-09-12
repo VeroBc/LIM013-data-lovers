@@ -1,4 +1,4 @@
-import { filterByGender, anotherExample } from './src/data.js';
+import { filterByGender, anotherExample } from '../src/data.js';
 
 jest.mock("../src/data/rickandmorty/rickandmorty.js");
 

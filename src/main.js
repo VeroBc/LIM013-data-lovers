@@ -242,3 +242,21 @@ window.addEventListener('load', () => {
 //         genderBtn.addEventListener('click', hideScroll)
 //     }
 // })
+
+
+function getCharacters(){
+  
+    let displayEpisodes = document.getElementById("episodesSection");
+    displayEpisodes.classList.add("hide");
+    
+    let displayPageLocations = document.getElementById("locationsSection");
+    displayPageLocations.classList.add("hide");
+
+    let displaySubheader = document.getElementById("subheaderSection");
+    displaySubheader.classList.remove("hide"); 
+
+    let displayCharacters = document.getElementById("charactersSection");
+    displayCharacters.classList.remove("hide"); 
+
+}
+document.querySelector('#all').addEventListener('click', getCharacters);
