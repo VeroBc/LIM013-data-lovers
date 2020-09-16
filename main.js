@@ -1,5 +1,6 @@
 import { allCharacters, filterBySpecies, filterByStatus, filterByGender, getSpeciesArray, getStatusArray, getGenderArray, order } from './data.js'
 
+console.log(allCharacters);
 
 document.querySelector('#all').addEventListener('click', allCharacters);
 
@@ -109,18 +110,22 @@ const clickToShowCharacterDetail = (characterElement) => {
     const path = characterElement.dataset.image;
     const name = characterElement.dataset.name;
     const species = characterElement.dataset.species;
-    const gender = characterElement.dataset.gender;
     const status = characterElement.dataset.status;
+    const gender = characterElement.dataset.gender;
+    const location = characterElement.dataset.location;
     overlay.classList.add('active');
     document.querySelector('#overlay img').src = path;
     document.querySelector('#overlay .description').innerHTML = `
         <div>
             <div class="character-name">${name}</div>
-            <div>Status: ${status}</div>
-            <div>Gender: ${gender}</div>
-            <div>Specie: ${species}</div>
+            <div class="character-description" style="list-style-type:none">
+            <p style="color: rgba(112,128,144)">Status: <span style="color:rgba(5, 37, 53, 1)">${status}</span></p>
+            <p style="color: rgba(112,128,144)">Species: <span style="color:rgba(5, 37, 53, 1)">${species}</span></p>
+            <p style="color: rgba(112,128,144)">Gender: <span style="color:rgba(5, 37, 53, 1)">${gender}</span></p>
+            <p style="color: rgba(112,128,144)">Location: <span style="color:rgba(5, 37, 53, 1)">${location}</span></p>
+            </div>
         </div>
-     `;
+        `;
 };
 
 
@@ -143,13 +148,12 @@ function drawCharactersPage(index, arrayOfCharacters) {
         const result = pageOfCharacters[i];
         const elementDiv = document.createElement("div");
         elementDiv.classList.add("character");
-
         elementDiv.dataset.image = result.image;
         elementDiv.dataset.name = result.name;
+        elementDiv.dataset.status = result.status;
         elementDiv.dataset.species = result.species;
         elementDiv.dataset.gender = result.gender;
-        elementDiv.dataset.status = result.status;
-
+        elementDiv.dataset.location = result.location["name"];
         elementDiv.addEventListener('click', () => clickToShowCharacterDetail(elementDiv))
         elementDiv.innerHTML = `
                 <img src="${result.image}" alt="${result.name}">
@@ -216,7 +220,7 @@ window.addEventListener('resize', function () {
     if (screen.width > 750) {
         contador = 0;
         topnav.classList.remove("close-menu");
-        topnav.className("topnav open-menu");
+        topnav.className = ("topnav open-menu");
     }
 })
 
@@ -300,3 +304,60 @@ if (screen.width <= 400) {
 
 }
 
+
+
+function getCharacters(){
+
+    let displayHome = document.getElementById("homeSection");
+    displayHome.classList.add("hide");
+    
+    let displayEpisodes = document.getElementById("episodesSection");
+    displayEpisodes.classList.add("hide");
+    
+    let displayPageLocations = document.getElementById("locationsSection");
+    displayPageLocations.classList.add("hide");
+
+    let displaySubheader = document.getElementById("subheaderSection");
+    displaySubheader.classList.remove("hide"); 
+
+    let displayCharacters = document.getElementById("charactersSection");
+    displayCharacters.classList.remove("hide"); 
+
+}
+document.querySelector('#all').addEventListener('click', getCharacters);
+
+
+function getHome(){
+
+    let displayEpisodes = document.getElementById("episodesSection");
+    displayEpisodes.classList.add("hide");
+    
+    let displayPageLocations = document.getElementById("locationsSection");
+    displayPageLocations.classList.add("hide");
+
+    let displaySubheader = document.getElementById("subheaderSection");
+    displaySubheader.classList.add("hide"); 
+
+    let displayCharacters = document.getElementById("charactersSection");
+    displayCharacters.classList.add("hide"); 
+
+    let displayHome = document.getElementById("homeSection");
+    displayHome.classList.remove("hide");
+
+}
+document.querySelector('#home').addEventListener('click', getHome);
+
+function getEnter(){
+
+    let displayHome = document.getElementById("homeSection");
+    displayHome.classList.add("hide");
+
+    let displayCharacters = document.getElementById("charactersSection");
+    displayCharacters.classList.remove("hide"); 
+
+    let displaySubheader = document.getElementById("subheaderSection");
+    displaySubheader.classList.remove("hide"); 
+
+}
+document.querySelector('#btn').addEventListener('click', getEnter);
+document.querySelector('#btn').addEventListener('click', getListAllCharacters);
