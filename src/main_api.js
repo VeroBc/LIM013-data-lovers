@@ -1,5 +1,8 @@
 import { allEpisodesData, allLocationsData } from './data_api.js';
 
+
+// -----Obtaining a complete array from Api data Episodes----
+
 let episodesList = [];
 
 allEpisodesData().then( arrayResultadoFinal => {
@@ -9,8 +12,6 @@ allEpisodesData().then( arrayResultadoFinal => {
 
 
 const displayEpisodes = () => {
-    // let index = 0;
-    // let pageOfCharacters = episodesList.slice(index, index+20);
 
     const elementOrderedList = document.getElementById('episodesList');
     elementOrderedList.innerHTML = "";
@@ -31,25 +32,8 @@ const displayEpisodes = () => {
     }
 }
 
-// function drawResults(episodesList) {
 
-//     const buttonsEpisodes = document.getElementById("buttonsEpisodes");
-//     buttonsEpisodes.innerHTML = "";
-
-//     displayEpisodes(0, episodesList);
-
-//     for (let pageIndex = 0; pageIndex < episodesList.length; pageIndex = pageIndex + 20) {
-//         const button = document.createElement("button");
-//         const buttonText = document.createTextNode(parseInt(pageIndex / 20) + 1);
-//         button.appendChild(buttonText);
-
-//         button.addEventListener('click', () => displayEpisodes(pageIndex, episodesList));
-//         buttonsEpisodes.appendChild(button);
-//     }
-// }
-
-
-
+// -----Obtaining a complete array from Api data Locations----
 
 let locationsList = [];
 
@@ -78,6 +62,9 @@ const displayLocations = () => {
         elementOrderedList.appendChild(elementDiv);  
     }
 }
+
+
+// -----Navigate options in the menu-----
 
 function getEpisodes(){
 
@@ -120,6 +107,7 @@ document.querySelector('#allLocations').addEventListener('click', getLocations);
 
 
 
+// -----Searching function for Episodes-----
 
 const searchBar = document.getElementById('searchBarEpisodes');
 searchBar.addEventListener('keyup', (e) =>{
@@ -147,6 +135,9 @@ searchBar.addEventListener('keyup', (e) =>{
     }
       
 });
+
+
+// -----Searching function for Locations-----
 
 const searchBarLocations = document.getElementById('searchBarLocations');
 searchBarLocations.addEventListener('keyup', (e) =>{
