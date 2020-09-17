@@ -1,8 +1,7 @@
 import { allCharacters, filterBySpecies, filterByStatus, filterByGender, getSpeciesArray, getStatusArray, getGenderArray, order } from './data.js'
 
-console.log(allCharacters);
 
-document.querySelector('#all').addEventListener('click', allCharacters);
+// -----Get all and filtered Characters-----
 
 const getListAllCharacters = () => {
     drawResults(allCharacters);
@@ -64,45 +63,7 @@ document.querySelector('#orderZtoA').addEventListener('click', getListZtoA);
 
 
 
-window.addEventListener('load', () => {
-    document.getElementById('listCharacters').classList.add('images-loaded');
-    const categoriesLinks = document.querySelectorAll('#topnav a');
-    const speciesLinks = document.querySelectorAll('#listSpecies a');
-    const genderLinks = document.querySelectorAll('#listGender a');
-    const statusLinks = document.querySelectorAll('#listStatus a');
-
-    categoriesLinks.forEach((element) => {
-        element.addEventListener('click', (event) => {
-            event.preventDefault();
-            categoriesLinks.forEach((categoriesLinks) => categoriesLinks.classList.remove('active'));
-            event.target.classList.add('active');
-        });
-    });
-    speciesLinks.forEach((element) => {
-        element.addEventListener('click', (event) => {
-            event.preventDefault();
-            speciesLinks.forEach((speciesLinks) => speciesLinks.classList.remove('active'));
-            event.target.classList.add('active');
-        });
-    });
-    genderLinks.forEach((element) => {
-        element.addEventListener('click', (event) => {
-            event.preventDefault();
-            genderLinks.forEach((genderLinks) => genderLinks.classList.remove('active'));
-            event.target.classList.add('active');
-        });
-    });
-    statusLinks.forEach((element) => {
-        element.addEventListener('click', (event) => {
-            event.preventDefault();
-            statusLinks.forEach((statusLinks) => statusLinks.classList.remove('active'));
-            event.target.classList.add('active');
-        });
-    });
-
-})
-
-
+// -----PopUp of detailed information of Characters-----
 
 const overlay = document.getElementById('overlay');
 
@@ -128,7 +89,6 @@ const clickToShowCharacterDetail = (characterElement) => {
         `;
 };
 
-
 document.querySelector('#btn-close').addEventListener('click', () => {
     overlay.classList.remove('active');
 });
@@ -136,6 +96,9 @@ overlay.addEventListener('click', (event) => {
     event.target.id === 'overlay' ? overlay.classList.remove('active') : "";
 })
 
+
+
+// ----- Display of Characters List on the screen and pagination-----
 
 function drawCharactersPage(index, arrayOfCharacters) {
     let pageOfCharacters = arrayOfCharacters.slice(index, index + 20);
@@ -162,7 +125,6 @@ function drawCharactersPage(index, arrayOfCharacters) {
     }
 }
 
-
 function drawResults(arrayOfCharacters) {
 
     const buttonsContainer = document.getElementById("buttonsContainer");
@@ -188,7 +150,10 @@ function drawResults(arrayOfCharacters) {
     }
 }
 
-// Searching function
+
+
+// -----Searching function-----
+
 const searchBar = document.getElementById('searchBar');
 searchBar.addEventListener('keyup', (e) => {
     const searchString = e.target.value.toLowerCase();
@@ -199,7 +164,9 @@ searchBar.addEventListener('keyup', (e) => {
 });
 
 
-/* Menu responsive */
+
+// -----Responsive menu-----
+
 let mainMenu = document.getElementById("iconMenu");
 let topnav = document.getElementById("myTopnav");
 let contador = 0;
@@ -233,20 +200,6 @@ window.addEventListener('resize', function () {
 })
 
 
-
-/*CRECE LETRA ACTIVO*/
-window.addEventListener('load', () => {
-    const menuLinks = document.querySelectorAll('#myTopnav a');
-    menuLinks.forEach((element) => {
-        element.addEventListener('click', (event) => {
-            event.preventDefault();
-            menuLinks.forEach((menuLinks) => menuLinks.classList.remove('active'));
-            event.target.classList.add('active');
-        });
-    });
-})
-
-/*----SCROLL------*/
 const speciesBtn = document.getElementById('species');
 const genderBtn = document.getElementById('gender');
 const statusBtn = document.getElementById('status');
@@ -305,6 +258,7 @@ if (screen.width <= 400) {
 }
 
 
+// -----Navigate options in the menu-----
 
 function getCharacters(){
 
