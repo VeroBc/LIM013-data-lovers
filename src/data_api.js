@@ -1,3 +1,4 @@
+
 export const allEpisodesData = async () => {
     let arrayResultadoFinal = [];
     let url  = "https://rickandmortyapi.com/api/episode";
