@@ -3,15 +3,15 @@
 ## Index
 
 * [1. Background Project](#1-background-project)
-* [2. Project Summary](#2-project-summary)
-* [3. Scope of the Project](#3-scope-of-the-project)
+* [2. Project Objectives](#2-project-summary)
+* [3. Research](#3-scope-of-the-project)
 * [4. Project Development](#4-project-development)
 * [5. Hacker Edition](#5-hacker-edition)
 * [6. Unit Tests](#6-unit-tests)
 
 ***
 
-## 1. Background
+## 1. Background Project
 
 This is a project developed within my studies at the Laboratory Bootcamp in Peru.
 Now we will work with data js and data api for Rick and Morty series.
@@ -62,21 +62,21 @@ The interface allows the user to:
 
 ### Final Sketch on paper:
 
-![Inicio](https://user-images.githubusercontent.com/55853256/90060650-a9d3c300-dcaa-11ea-9527-b6a34aa5aba8.jpg)
+![Pant1](https://user-images.githubusercontent.com/55853256/93406859-5c70e580-f856-11ea-8179-39a62ace6c17.jpg)
 
-![Categorias](https://user-images.githubusercontent.com/55853256/90060715-c112b080-dcaa-11ea-8d5c-328b1574d2b1.jpg)
+![Pant2](https://user-images.githubusercontent.com/55853256/93406921-8a562a00-f856-11ea-9645-0834602c1f8c.jpg)
 
-![Personajes](https://user-images.githubusercontent.com/55853256/90060790-dd165200-dcaa-11ea-91c0-789930b9c4a9.jpg)
+![Pant3](https://user-images.githubusercontent.com/55853256/93406983-abb71600-f856-11ea-894d-98550fbc2f57.jpg)
 
-![Filtro Personajes](https://user-images.githubusercontent.com/55853256/90060858-f7503000-dcaa-11ea-8a2b-f1a9530cefd4.jpg)
+![Pant4](https://user-images.githubusercontent.com/55853256/93407041-cbe6d500-f856-11ea-9a73-0858ef417699.jpg)
 
-![Detalle Personaje)](https://user-images.githubusercontent.com/55853256/90060963-18188580-dcab-11ea-8b72-83ce4005d24f.jpg)
+![Pant5](https://user-images.githubusercontent.com/55853256/93407102-eb7dfd80-f856-11ea-864d-691ed5ac54e4.jpg)
 
-![Temporadas](https://user-images.githubusercontent.com/55853256/90061029-2e264600-dcab-11ea-80dd-4263d3c22d2c.jpg)
+![Pant6](https://user-images.githubusercontent.com/55853256/93407135-03558180-f857-11ea-99d5-643814706700.jpg)
 
-![Episodios por temporada](https://user-images.githubusercontent.com/55853256/90061106-45653380-dcab-11ea-9ab2-31f295f0e65c.jpg)
+![Pant7](https://user-images.githubusercontent.com/55853256/93407164-18321500-f857-11ea-913a-bafa65328d9d.jpg)
 
-![Menu)](https://user-images.githubusercontent.com/55853256/90061163-60d03e80-dcab-11ea-88dc-b2b6a1694aad.jpg)
+![Pant8](https://user-images.githubusercontent.com/55853256/93407203-326bf300-f857-11ea-8267-a88edd613dd9.jpeg)
 
 
 ### Mockup:
