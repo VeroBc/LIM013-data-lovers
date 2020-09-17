@@ -1,4 +1,4 @@
-/* UNIVERSAL */
+/* General */
 
 * {
     margin: 0;
@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-/* BODY */
+/* Body */
 
 body {
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://user-images.githubusercontent.com/55853256/91184100-daa3f700-e6b1-11ea-96b2-62bb82ed786e.jpg');
@@ -17,7 +17,7 @@ body {
 }
 
 
-/* HEADER */
+/* Header */
 
 header {
     width: 100%;
@@ -54,7 +54,6 @@ nav .logo img {
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    /* filter: blur(1px); */
 }
 
 .home .btn {
@@ -74,8 +73,8 @@ nav .logo img {
     border-bottom: none;
 }
 .home .btn:hover {
-    background-color: rgb(124, 127, 133);
-    color: whitesmoke;
+    background-color: rgba(7, 40, 61, 0.9);
+    color: white;
 }
 
 .centered {
@@ -89,7 +88,6 @@ nav .logo img {
     font-size: 24px;
     color: whitesmoke;
     text-align: center;
-    /* background-color: rgba(160, 211, 211, 0.7); */
     background-color: rgba(11, 11, 11, 0.7);
     padding-top: 70px;
     padding-right: 50px;
@@ -98,7 +96,9 @@ nav .logo img {
     box-shadow: 6px 6px 6px 1px rgba(0, 0, 0, 0.7);
 }
 
-/* hidden to responsive */
+
+/* Top menu */
+
 .icon {
     display: none;
 }
@@ -130,7 +130,8 @@ nav .logo img {
     border-bottom: 1px solid yellow;
 }
 
-/* responsive menu */
+
+/* Responsive menu */
 
 @media screen and (max-width: 750px) {
     nav .logo {
@@ -166,10 +167,6 @@ nav .logo img {
         background: -webkit-linear-gradient(to right, #052535, #2d697d);  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #052535, #2d697d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
     }
-
-    /* .topnav a:hover {
-        color: rgb(207, 240, 143);
-    } */
 
     .open-menu {
 
@@ -219,9 +216,9 @@ nav .logo img {
 
 }
 
-/* SUBHEADER */
+/* -----Subheader----- */
 
-/* search bar */
+/* Searching bar*/
 
 form {
     margin-top: 128px;
@@ -262,7 +259,7 @@ form {
     font-size: 20px;
 }
 
-/* filters and order */
+/* Filters and Order */
 
 .more-menu {
     width: 40%;
@@ -296,15 +293,14 @@ form {
 }
   
 .dropdown-content {
-    /* width: 130px; */
     min-width: 100px;
     height: 140px;
     display: none;
     position: absolute;
     z-index: 1;
     overflow: auto;
-    background-color: #f9f9f9;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: rgba(7, 40, 61, 0.9);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
 }
   
 .dropdown-content a {
@@ -313,18 +309,20 @@ form {
     float: none;
     padding: 12px 16px;
     text-decoration: none;
-    color: #093756;
+    color: #f9f9f9;
 }
   
 .dropdown-content a:hover {
-    background-color: rgba(80, 107, 104, 0.3);
+    background-color: #f9f9f9;
+    color: #07283d;
 }
   
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* subheader responsive */
+
+/* Subheader responsive */
 
 @media screen and (max-width: 750px) {
     form {
@@ -368,41 +366,6 @@ form {
         font-size: 14px;
     }
 
-  
-    /* .dropdown-content {
-        display: block;
-        overflow: auto;
-    }
-     */
-
-    /* .dropdown .dropdown-content {
-        background: none;
-        width: max-content;
-        height: min-content;
-        overflow-x: auto;
-    }
-
-    .dropdown .dropdown-content a {
-        float: left;
-        color: white;
-    } */
-
-    /* .dropdown .dropdown-content a:hover {
-        border-radius: 3px;
-        background-color: rgba(255, 255, 255, 0.3);
-    } */
-
-    /* #scroll {
-        width: 70%;
-        height: min-content;
-        display: none;
-        overflow-x: auto;
-    } */
-
-    /* #scroll:-webkit-scrollbar {
-        width: 0;
-    } */
-
     .mainContainer {
         margin-top: 14px;
     }
@@ -436,45 +399,13 @@ form {
         font-size: 14px;
     }
 
-    /* .dropdown .dropdown-content {
-        margin-top: -6px;
-    } */
-
-    /* #scroll {
-        width: 93%;
-    }
-
-    #scrollGender {
-        width: 70%;
-    }
-
-    #scrollGender::-webkit-scrollbar {
-        width: 0;
-    }
-
-    #scrollStatus {
-        width: 45%;
-    }
-
-    #scrollStatus::-webkit-scrollbar {
-        width: 0;
-    }
-
-    #scrollOrder {
-        width: 23%;
-        font-size: 14px;
-    }
-
-    #scrollOrder::-webkit-scrollbar {
-        width: 0;
-    } */
-
     .mainContainer {
         margin-top: 14px;
     }
 }
 
-/* CHARACTERS' LIST */
+
+/* -----Characters List----- */
 
 .listCharacters {
     display: flex;
@@ -487,7 +418,6 @@ form {
     width: 250px;
     min-width: 130px;
     margin: 24px;
-    /* border: #c4d54a 1px solid; */
     border-radius: 5px;
     box-shadow: 6px 6px 6px 1px rgba(0, 0, 0, 0.7);
     background-color: rgba(11, 11, 11, 0.7);
@@ -506,7 +436,6 @@ h3 {
     color: yellow;
 }
 
-
 .listCharacters img{
     width: 200px;
     border-radius: 50%;
@@ -517,7 +446,9 @@ h3 {
 
 }
 
-/* cards responsive */
+
+/* -----Responsive Character List----- */
+
 @media screen and (max-width:750px) {
     .listCharacters .character {
         width: 100px;
@@ -542,7 +473,8 @@ h3 {
     }
 }
 
-/* modal */
+
+/* -----PopUp----- */
 
 .overlay {
     position: fixed;
@@ -571,9 +503,7 @@ h3 {
 
 .overlay .description {
     display: block;
-    /* background: rgba(0, 0, 0, 1); */
     background-color: whitesmoke;
-    /* padding: 20px; */
     text-align: center;
     color: #052535;
     font-family: 'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
@@ -610,7 +540,8 @@ h3 {
     color: rgba(255, 255, 255, 0.6);
 }
 
-/* PAGINATION */
+
+/* -----Pagination----- */
 
 .buttonsContainer {
     display: flex;
@@ -637,7 +568,6 @@ h3 {
     margin: 5px;
     transition: 0.4s;
     color: white;
-    /* color: #c4d54a;; */
     font-family: 'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
     text-rendering: optimizeLegibility;
     font-size: 18px;
@@ -646,7 +576,6 @@ h3 {
 }
 
 .buttonsContainer button:hover {
-    /* background-color:#093756; */
     background-color: rgba(0, 0, 0, 0.95);
     color:yellow;
 }
@@ -657,7 +586,8 @@ h3 {
 }
 
 
-/* Episodes */
+/* -----Episodes List----- */
+
 #episodesSection, #locationsSection{
     margin-top: 100px;
     margin-right: 0px;
@@ -729,7 +659,7 @@ h4 {
 }
 
 
-/* Locations */
+/* -----Locations List----- */
 .locationsList {
     display: flex;
     justify-content: center;
@@ -757,6 +687,7 @@ h4 {
     background-size: contain;
 }
 
+/* -----Navigate in menu----- */
 
 .hide {
     display: none;
