@@ -58,7 +58,7 @@ nav .logo img {
 
 .home .btn {
     position: absolute;
-    top: 65%;
+    top: 62%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -73,16 +73,16 @@ nav .logo img {
     border-bottom: none;
 }
 .home .btn:hover {
-    background-color: rgba(7, 40, 61, 0.9);
-    color: white;
+    background-color: white;
+    color: rgba(7, 40, 61);
 }
 
 .centered {
     position: absolute;
-    top: 50%;
+    top: 47%;
     left: 50%;
     margin-top: -70px;
-    margin-left: -350px;
+    margin-left: -353px;
     font-family: 'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
     text-rendering: optimizeLegibility;
     font-size: 24px;
@@ -109,7 +109,7 @@ nav .logo img {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-right: 16px;
+    margin-right: 80px;
     font-family: 'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
     text-rendering: optimizeLegibility;
     font-size: 18px;
@@ -119,6 +119,7 @@ nav .logo img {
     color:yellow;
     transition: 0.7s ease-out;
     text-decoration: none;
+    margin:10px;
 }
 
 .topnav a:hover {
@@ -147,7 +148,7 @@ nav .logo img {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: 24px;
+        margin-right: 43px;
         color: #c4d54a;
         
         cursor: pointer;
@@ -184,7 +185,7 @@ nav .logo img {
 }
 
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:360px) {
     nav .logo {
         margin-left: 16px;
     }
@@ -195,8 +196,8 @@ nav .logo img {
 
     .topnav {
         width: 100%;
-        height: 50vh;
-        right: -16px;
+        height: 43vh;
+        right: -81px;
         flex-direction: column;
         font-size: 16px;
         transition: all 1s ease;
@@ -204,6 +205,7 @@ nav .logo img {
         background: #2b5876;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #052535, #2d697d);  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #052535, #2d697d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+        padding: 20px;
     }
 
     .centered {
@@ -211,6 +213,17 @@ nav .logo img {
         margin-left: -190px;
         margin-top: -100px;
     
+    }
+
+    .icon {
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 30px;
+        color: #c4d54a;
+        
+        cursor: pointer;
     }
 
 
@@ -233,7 +246,7 @@ form {
     align-items: center;
     padding: 10px;
     background: rgba(255, 255, 255, 0.2);
-    border-radius: 40px;
+    border-radius: 16px;
 }
 
 .searchBar {
@@ -263,63 +276,94 @@ form {
 
 .more-menu {
     width: 40%;
-    height: 74px;
+    height: 70px;
     display: flex;
     justify-content: space-between;
-    margin-top: -40px;
-    margin-left: 700px;
+    margin-top: -51px;
+    margin-left: auto;
+    margin-right: 100px;
 }
 
+/* inicio */
 .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  /* padding: 14px 16px; */
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  font-family: 'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+  text-rendering: optimizeLegibility;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-family: 'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+  text-rendering: optimizeLegibility;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #07283d;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(53, 77, 89, 1);
+    color: white
+  }
+  
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.dropdown:hover .dropbtn {
+background-color: rgba(53, 77, 89, 0.7);
+color: white;
+}
+
+#scrollSpecies {
+  height: 180px;
+  overflow-y: auto;
+}
+
+
+  /*fin */
+
+
+/* .dropdown {
     font-family: 'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
     text-rendering: optimizeLegibility;
     position: relative;
-    display: inline-block;
-}
+    
+} */
     
 .dropbtn {
     font-size: 16px;    
     border: none;
     outline: none;
     color: white;
-    padding-top: 14px;
-    padding-bottom: 12px;
-    padding-right: 16px;
-    padding-left: 16px;
+    padding: 12px;
     background-color: inherit;
     font-family: 'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
     text-rendering: optimizeLegibility;
     margin: 0;
 }
   
-.dropdown-content {
-    min-width: 100px;
-    height: 140px;
-    display: none;
-    position: absolute;
-    z-index: 1;
-    overflow: auto;
-    background-color: rgba(7, 40, 61, 0.9);
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
-}
-  
-.dropdown-content a {
-    display: block;
-    text-align: left;
-    float: none;
-    padding: 12px 16px;
-    text-decoration: none;
-    color: #f9f9f9;
-}
-  
-.dropdown-content a:hover {
-    background-color: #f9f9f9;
-    color: #07283d;
-}
-  
-.dropdown:hover .dropdown-content {
-    display: block;
-}
 
 
 /* Subheader responsive */
@@ -356,29 +400,19 @@ form {
         margin-top: 12px;
         margin-left: 110px;
         width: 70%;
+        height: 53px;
     }
 
-    .dropdown {
-        font-size: 14px;
-    }
-
-    .dropdown .dropbtn {
-        font-size: 14px;
-    }
-
-    .mainContainer {
-        margin-top: 14px;
-    }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:360px) {
     form {
-        margin-top: 96px;
-        margin-left: 26px;
+        margin-top: 100px;
+        margin-left: 30px;
     }
 
     .searchWrapper {
-        width: 85%;
+        width: 84%;
     }
 
     .searchBar {
@@ -386,9 +420,10 @@ form {
     }
     
     .more-menu {
-        margin-top: 6px;
-        margin-left: 14px;
-        width: 50%;
+        margin-top: 11px;
+        margin-left: 23px;
+        width: min-content;
+        height: 53px;
     }
 
     .dropdown {
@@ -399,9 +434,29 @@ form {
         font-size: 14px;
     }
 
-    .mainContainer {
-        margin-top: 14px;
+    .dropbtn {
+        padding-top: 16px;
+        padding-bottom: 0px;
+        padding-right: 16px;
+        padding-left: 16px;
     }
+
+    .dropdown-content a {
+        text-align: left;
+        float: none;
+        padding: 10px 12px;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column
+    }
+
+    .dropdown-content {
+        min-width: 100px;
+        font-size: 13px;
+        height: 120px;
+        overflow-y: auto;
+    }
+
 }
 
 
@@ -412,6 +467,7 @@ form {
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
+    margin:16px;
 }
 
 .listCharacters .character {
@@ -451,8 +507,8 @@ h3 {
 
 @media screen and (max-width:750px) {
     .listCharacters .character {
-        width: 100px;
-        margin: 12px;
+        width: 143px;
+        margin: 13px;
     }
 
     .listCharacters img {
@@ -471,6 +527,14 @@ h3 {
         margin-left: 25px;
         text-align: center;
     }
+}
+
+@media screen and (max-width:360px) {
+    .listCharacters .character {
+        width: 137px;
+        margin: 13px;
+    }
+
 }
 
 
@@ -599,6 +663,10 @@ h3 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .episodesList .episode {
@@ -664,6 +732,10 @@ h4 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 0px;
 }
 .locationsList .location {
     width: 370px;
