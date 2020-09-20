@@ -26,7 +26,7 @@ const displayEpisodes = () => {
             <h4><span style="color:yellow">${episode.name}</span></h4>
             <p>Episode: <span style="color:rgb(230, 230, 95)">${episode.episode}</span></p>
             <p>Air Date: <span style="color:rgb(230, 230, 95)">${episode.air_date}</span></p>
-            <p>Percentage of Characters: <span style="color:rgb(230, 230, 95)">${(((episode.characters.length)/671)*100).toFixed(2)+" %"}</span></p>
+            <p>Amount of Characters: <span style="color:rgb(230, 230, 95)">${(episode.characters.length)}</span></p>
             </ol>`
         elementOrderedList.appendChild(elementDiv);  
     }
@@ -129,7 +129,7 @@ searchBar.addEventListener('keyup', (e) =>{
             <h4><span style="color:yellow">${episode.name}</span></h4>
             <p>Episode: <span style="color:rgb(230, 230, 95)">${episode.episode}</span></p>
             <p>Air Date: <span style="color:rgb(230, 230, 95)">${episode.air_date}</span></p>
-            <p>Percentage of Characters: <span style="color:rgb(230, 230, 95)">${(((episode.characters.length)/671)*100).toFixed(2)+" %"}</span></p>
+            <p>Amount of Characters: <span style="color:rgb(230, 230, 95)">${(episode.characters.length)}</span></p>
             </ol>`
         elementOrderedList.appendChild(elementDiv);  
     }
