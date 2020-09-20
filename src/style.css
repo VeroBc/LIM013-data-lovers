@@ -184,6 +184,50 @@ nav .logo img {
     }
 }
 
+@media screen and (max-width:414px) {
+    nav .logo {
+        margin-left: 16px;
+    }
+
+    nav img {
+        padding: 16px 0px 16px 0px;
+    }
+
+    .topnav {
+        width: 101%;
+        height: 43vh;
+        right: -80px;
+        flex-direction: column;
+        font-size: 16px;
+        transition: all 1s ease;
+        z-index: 90;
+        background: #2b5876;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #052535, #2d697d);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #052535, #2d697d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+        padding: 20px;
+    }
+    .topnav a {
+        color:yellow;
+        transition: 0.7s ease-out;
+        text-decoration: none;
+        margin:10px;
+    }
+
+    .centered {
+        font-size: 20px;
+        margin-left: -210px;
+        margin-top: -94px;
+    
+    }
+
+    .icon {
+
+        margin-right: 37px;
+ 
+    }
+
+}
+
 
 @media screen and (max-width:360px) {
     nav .logo {
@@ -225,9 +269,16 @@ nav .logo img {
         
         cursor: pointer;
     }
-
-
 }
+
+
+
+
+
+
+
+
+
 
 /* -----Subheader----- */
 
@@ -235,7 +286,7 @@ nav .logo img {
 
 form {
     margin-top: 128px;
-    margin-left: 105px;
+    margin-left: 70px;
 }
 
 .searchWrapper {
@@ -405,6 +456,50 @@ color: white;
 
 }
 
+@media screen and (max-width:414px) {
+    form {
+        margin-top: 123px;
+        margin-left: 40px;
+    }
+
+    .searchWrapper {
+        width: 79%;
+        height: 43px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+    }
+
+    .searchBar {
+        width: 100%;
+        color: white;
+        background: none;
+        border: none;
+        outline: none;
+        line-height: 60px;
+        font-family: 'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+        text-rendering: optimizeLegibility;
+        font-size: 16px;
+    }
+    .more-menu {
+        margin-top: 16px;
+        margin-left: 46px;
+        width: min-content;
+        height: 53px;
+    }
+    .dropdown-content {
+        min-width: 100px;
+        font-size: 14px;
+        height: 120px;
+        overflow-y: auto;
+    }
+
+}
+
+
 @media screen and (max-width:360px) {
     form {
         margin-top: 100px;
@@ -458,6 +553,25 @@ color: white;
     }
 
 }
+
+
+@media screen and (max-width:320px) {
+    .more-menu {
+        margin-top: 11px;
+        margin-left: 4px;
+        width: min-content;
+        height: 47px;
+    }
+    .dropdown-content {
+        min-width: 80px;
+        font-size: 12px;
+        height: 110px;
+        overflow-y: auto;
+    }
+
+}
+
+
 
 
 /* -----Characters List----- */
@@ -529,6 +643,18 @@ h3 {
     }
 }
 
+@media screen and (max-width:414px) {
+    .listCharacters .character {
+        width: 146px;
+        margin: 17px;
+    }
+    .listCharacters img {
+        width: 108px;
+        margin: 15px;
+    }
+
+}
+
 @media screen and (max-width:360px) {
     .listCharacters .character {
         width: 137px;
@@ -536,6 +662,20 @@ h3 {
     }
 
 }
+
+@media screen and (max-width:320px) {
+    .listCharacters .character {
+        width: 111px;
+        margin: 7px;
+    }
+    .listCharacters img {
+        width: 81px;
+        margin: 14px;
+    }
+
+}
+
+
 
 
 /* -----PopUp----- */
@@ -604,6 +744,24 @@ h3 {
     color: rgba(255, 255, 255, 0.6);
 }
 
+@media screen and (max-width:320px) {
+    .overlay img {
+        max-width: 80%;
+    }
+    .overlay .description {
+        width: 256px;
+        height: 249px;
+    }
+    .overlay #btn-close {
+        top: 8px;
+        left: 138px;
+        
+    }
+}
+
+
+
+
 
 /* -----Pagination----- */
 
@@ -670,11 +828,15 @@ h3 {
 }
 
 .episodesList .episode {
-    width: 370px;
-    height: 200px;
+    width: 293px;
+    height: 187px;
     max-height: 240px;
     margin: 10px;
     padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-radius: 5px;
     background-color: rgba(11, 11, 11, 0.7);
     flex-wrap: wrap;
@@ -695,7 +857,7 @@ p {
 h4 {
     font-family: 'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
     margin: 10px;
-    font-size: 21px;
+    font-size: 20px;
     text-rendering: optimizeLegibility;
     letter-spacing: 0.02em;
 }
@@ -738,11 +900,14 @@ h4 {
     margin-left: 0px;
 }
 .locationsList .location {
-    width: 370px;
-    height: 190px;
+    width: 293px;
+    height: 187px;
     min-height: 200px;
     margin: 10px;
     padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
     border-radius: 5px;
     background-color: rgba(11, 11, 11, 0.7);
     flex-wrap: wrap;
